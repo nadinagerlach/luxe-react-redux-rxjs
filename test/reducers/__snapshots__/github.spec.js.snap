@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Github should handle FETCH_POPULAR_REPOS_FAILURE 1`] = `
+Object {
+  "popularRepos": Object {
+    "data": Array [],
+    "message": "ajax error 404",
+    "status": "error",
+  },
+}
+`;
+
+exports[`Github should handle FETCH_POPULAR_REPOS_REQUEST 1`] = `
+Object {
+  "popularRepos": Object {
+    "data": Array [],
+    "message": "",
+    "status": "running",
+  },
+}
+`;
+
+exports[`Github should handle FETCH_POPULAR_REPOS_SUCCESS 1`] = `
+Object {
+  "popularRepos": Object {
+    "data": Array [
+      Object {
+        "id": 1,
+      },
+    ],
+    "message": "",
+    "status": "loaded",
+  },
+}
+`;
+
+exports[`Github should return the initial state 1`] = `
+Object {
+  "popularRepos": Object {
+    "data": Array [],
+    "message": "",
+    "status": "idle",
+  },
+}
+`;
