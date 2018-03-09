@@ -2,8 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
+import config from 'config';
+
 import { login, logOut } from 'actions';
 import { NavLink } from 'react-router-dom';
+import Logo from './Logo';
 
 export default class Header extends React.Component {
   static propTypes = {
@@ -51,6 +54,14 @@ export default class Header extends React.Component {
       </button>
     );
 
+    const menuBurger = (
+      <button
+        className="app__header__logout btn btn-sm btn-outline-primary btn-icon"
+        onClick={this.handleClickLogout}
+      >
+        <i className="i-bars" />
+      </button>
+    );
 
     return (
       <header className="app__header">
@@ -62,21 +73,58 @@ export default class Header extends React.Component {
                 className="app__header__link"
                 activeClassName="is-active"
                 exact
+                alt={config.title}
               >
-                Home
+                <Logo />
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/private"
+                to="/our-story"
                 className="app__header__link"
                 activeClassName="is-active"
+                exact
               >
-                Private
+                Our Story
               </NavLink>
             </li>
             <li>
-              {user.isAuthenticated ? logoutBtn : loginBtn}
+              <NavLink
+                to="/our-cigars"
+                className="app__header__link"
+                activeClassName="is-active"
+                exact
+              >
+                Our Cigars
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/find-your-blend"
+                className="app__header__link"
+                activeClassName="is-active"
+                exact
+              >
+                Find Your Blend
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/locations"
+                className="app__header__link"
+                activeClassName="is-active"
+                exact
+              >
+                Locations
+              </NavLink>
+            </li>
+            <li>
+              <a href="http://www.shop.jmtobacco.com" exact activeClassName="is-active" className="app__header__link" >
+                Shop
+              </a>
+            </li>
+            <li>
+              {user.isAuthenticated ? menuBurger : loginBtn}
             </li>
           </ul>
         </div>

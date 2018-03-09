@@ -1,5 +1,5 @@
 .app__footer {
-  background-color: $white;
+  background-color: $black;
   border-top: 0.1rem solid #ddd;
 
   .app__container {
@@ -7,7 +7,7 @@
     padding-top: $grid-gutter-width / 2;
   }
 
-  &__github {
+  &__menu {
     display: flex;
     justify-content: space-between;
   }

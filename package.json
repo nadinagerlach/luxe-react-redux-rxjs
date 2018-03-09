@@ -1,9 +1,9 @@
 {
   "name": "react-redux-observables-boilerplate",
-  "title": "React-Redux-Observables Boilerplate",
-  "description": "A starter kit for React with Router, Redux, Observable + RxJS",
+  "title": "JM Tobacco",
+  "description": "The perfect cigar",
   "version": "2018.1.0",
-  "author": "Gil Barbara <gilbarbara@gmail.com>",
+  "author": "Dygn",
   "repository": {
     "type": "git",
     "url": "https://github.com/gilbarbara/react-redux-observables-boilerplate"

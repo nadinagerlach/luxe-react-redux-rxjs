@@ -60,6 +60,8 @@ export class App extends React.Component {
           <main className="app__main">
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/home" component={Home} />
+              <Route exact path="/about" component={Home} />
               <RoutePublic
                 component={Login}
                 isAuthenticated={user.isAuthenticated}

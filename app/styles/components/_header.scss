@@ -64,7 +64,14 @@
     }
 
     a {
-      font-size: 1.3rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .105em;
+      position: relative;
+      font-family: 'acumin-pro-extra-condensed',Sans-Serif;
+
 
       @include lg {
         font-size: 1.6rem;
