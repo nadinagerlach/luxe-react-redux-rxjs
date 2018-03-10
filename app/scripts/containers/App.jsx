@@ -13,6 +13,7 @@ import config from 'config';
 import { showAlert } from 'actions';
 
 import Home from 'routes/Home';
+import Instagram from 'routes/Instagram';
 import Private from 'routes/Private';
 import Login from 'routes/Login';
 import NotFound from 'routes/NotFound';
@@ -61,7 +62,7 @@ export class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/home" component={Home} />
-              <Route exact path="/about" component={Home} />
+              <Route exact path="/about" component={Instagram} />
               <RoutePublic
                 component={Login}
                 isAuthenticated={user.isAuthenticated}

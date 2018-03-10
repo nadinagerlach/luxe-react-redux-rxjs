@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import { ActionTypes } from 'constants/index';
-import { getLatestPosts } from 'actions/index';
+import { fetchLatestPosts } from 'actions/index';
 
 import Loader from 'components/Loader';
 
@@ -16,7 +16,7 @@ export class Instagram extends React.PureComponent {
   componentWillMount() {
     const { dispatch } = this.props;
 
-    dispatch(getLatestPosts());
+    dispatch(fetchLatestPosts());
   }
 
   handleClickCancel = (e) => {
@@ -28,6 +28,7 @@ export class Instagram extends React.PureComponent {
 
   render() {
     const { instagram: { latestPosts } } = this.props;
+    const size = 4;
     const output = {
       html: (
         <div className="app__instagram__running">
@@ -48,10 +49,11 @@ export class Instagram extends React.PureComponent {
     if (latestPosts.status === 'loaded') {
       output.html = (
         <div className="app__instagram__repos">
-          {latestPosts.data.map(d => (
-            <div key={d.name}>
-              <a href={d.html_url} target="_blank">{`${d.owner.login}/${d.name}`}</a>
-              <div>{d.description}</div>
+          {latestPosts.data.slice(0, size).map(d => (
+            <div key={d.caption.text}>
+              <a href={d.link} target="_blank">
+                <img src={d.images.thumbnail} alt="Instagram" />
+              </a>
             </div>
           ))}
         </div>

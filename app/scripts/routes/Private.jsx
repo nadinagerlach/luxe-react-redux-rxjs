@@ -36,6 +36,7 @@ export class Private extends React.PureComponent {
       backgroundPosition: 'center center',
     };
     const { github: { popularRepos } } = this.props;
+    const size = 4;
     const output = {
       html: (
         <div className="app__private__running">
@@ -56,7 +57,7 @@ export class Private extends React.PureComponent {
     if (popularRepos.status === 'loaded') {
       output.html = (
         <div className="app__private__repos">
-          {popularRepos.data.map(d => (
+          {popularRepos.data.slice(0, size).map(d => (
             <div key={d.name}>
               <a href={d.html_url} target="_blank">{`${d.owner.login}/${d.name}`}</a>
               <div>{d.description}</div>
@@ -119,105 +120,8 @@ export class Private extends React.PureComponent {
                   </div>
                 </div>
               </li>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/react-router.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>react-router</h4>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/reactivex.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>RxJS</h4>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/webpack.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>Webpack 2.x</h4>
-                  </div>
-                </div>
-              </li>
             </ul>
           </div>
-        </div>
-        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-          <div className="carousel-inner" role="listbox">
-            <div className="carousel-item active">
-              <div className="overlay" />
-              <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545808/home-hero-1_eyejxg.jpg" alt="First slide" />
-              <div className="container">
-                <div className="carousel-caption">
-                  <div className="text-center">
-                    <h1 className="headline-bottom-1">Your Daily Choice</h1>
-                  </div>
-                  <p>
-                    <a href="#" className="button">
-                      <div className="button-cell">
-                        <span className="button-text-wrapper">Our Cigars</span>
-                      </div>
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="overlay" />
-              <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545808/home-hero-3_o7sds7.jpg" alt="Second slide" />
-              <div className="container">
-                <div className="carousel-caption">
-                  <div className="text-center">
-                    <h1 className="headline-bottom-1">Espanola Fine Cigars</h1>
-                  </div>
-                  <p>
-                    <a href="#" className="button">
-                      <div className="button-cell">
-                        <span className="button-text-wrapper">Our Story</span>
-                      </div>
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="overlay" />
-              <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545807/home-hero-2_cfkrph.jpg" alt="Third slide" />
-              <div className="container">
-                <div className="carousel-caption headline-bottom">
-                  <div className="text-center headline-bottom">
-                    <h1>Zoidian Cigars</h1>
-                    <h1 className="headline-bottom">An Affordable Luxury</h1>
-                  </div>
-                  <p>
-                    <a href="#" className="button">
-                      <div className="button-cell">
-                        <span className="button-text-wrapper">Our Cigars</span>
-                      </div>
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true" />
-            <span className="sr-only">Previous</span>
-          </a>
-          <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true" />
-            <span className="sr-only">Next</span>
-          </a>
         </div>
         <div className="app__home__libraries">
           <div className="app__container">
@@ -250,36 +154,6 @@ export class Private extends React.PureComponent {
                   </div>
                   <div className="app__home__library__content">
                     <h4>Redux Observable</h4>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/react-router.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>react-router</h4>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/reactivex.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>RxJS</h4>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/webpack.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>Webpack 2.x</h4>
                   </div>
                 </div>
               </li>

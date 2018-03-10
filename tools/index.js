@@ -16,7 +16,7 @@ function publish() {
     .exclude('.DS_Store')
     .flags('az')
     .source(`${paths.destination}/`)
-    .destination('gbarbara@gilbarbara.com:/home/gbarbara/public_html/react-redux-observables-boilerplate');
+    .destination('nadina@nadina.dygn.co:/home/nads/public_html/final-deploy');
 
   rsync.execute((error, code, cmd) => {
     if (error) {
