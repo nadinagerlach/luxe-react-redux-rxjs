@@ -1,0 +1,162 @@
+#lemonhead { background-image: url(https://static1.squarespace.com/static/5647aaace4b0d4e8f15c1ad7/5925e56815d5db394ff675f4/5925e56e1e5b6c4c875d8dbd/1506723119799/evanapp_lemonhead-106WEB.jpg?format=1500w);}
+#img2 { background-image: url(http://res.cloudinary.com/dygn/image/upload/v1515177234/sos_ij3db3.jpg);}
+#img3 { background-image: url(https://res.cloudinary.com/dygn/image/upload/v1515638314/bob1_trim_mxknuu.jpg);}
+#img4 { background-image: url(https://res.cloudinary.com/dygn/image/upload/v1515638241/ha1_trim_xqipiv.jpg);}
+#img5 { background-image: url(http://res.cloudinary.com/dygn/image/upload/v1515177228/jm1_mgkg3e.jpg);}
+#img6 { background-image: url(http://res.cloudinary.com/dygn/image/upload/v1515177215/alw_kdrfud.jpg);}
+#img7 { background-image: url(https://res.cloudinary.com/dygn/image/upload/v1515638074/sr1_trim_bknwyw.jpg);}
+
+.slide__image {
+  height: 56.25vw;
+  max-height: 800px; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.slide__image img {
+  height: 100%;
+  max-height: 800px;
+  margin: 0 auto; 
+}
+.portfolio__slideshow {
+  position: relative; 
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+
+.portfolio__slideshow .slide {
+  width: 100%;
+  text-align: center;
+  width: 100vw;
+  outline: 0; 
+}
+.portfolio__slideshow .slide__inner {
+  margin: 0 auto;
+  width: 100%; 
+}
+.portfolio__slideshow .slide__image {
+  height: 56.25vw;
+  max-height: 800px; 
+}
+.portfolio__slideshow .slide__image img {
+  height: 100%;
+  max-height: 800px;
+  width: auto;
+  margin: 0 auto; 
+}
+.portfolio__slideshow .slide__text {
+  height: 120px;
+  padding-top: 65px; 
+}
+.portfolio__slideshow .slide__text h2 {
+  margin-bottom: 0; 
+}
+.portfolio__slideshow .slide__text a {
+  opacity: 0.4;
+  -webkit-transition: opacity 150ms;
+  transition: opacity 150ms; 
+}
+.portfolio__slideshow .slide__text a:hover {
+  opacity: 1; 
+}
+
+/* Dots */
+.slick-dots {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  
+  list-style: none;
+
+  text-align: center;
+  -webkit-transition: -webkit-transform 150ms;
+transition: -webkit-transform 150ms;
+transition: transform 150ms;
+transition: transform 150ms, -webkit-transform 150ms;
+z-index: 998; 
+}
+.slick-dots li
+{
+  position: relative;
+  display: inline-block;
+
+  width: 20px;
+  height: 30px;
+  margin: 0 12px;
+  padding: 0;
+
+  cursor: pointer;
+}
+
+.slick-dots li button
+{
+  font-size: 0;
+  line-height: 0;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  position:absolute;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  vertical-align: middle;
+  -webkit-transition: background-color 150ms, -webkit-transform 150ms;
+  transition: background-color 150ms, -webkit-transform 150ms;
+  transition: transform 150ms, background-color 150ms;
+  transition: transform 150ms, background-color 150ms, -webkit-transform 150ms; 
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+  outline: none;
+  -webkit-transform: scale(1.5, 1.5);
+  transform: scale(1.5, 1.5);
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+  opacity: 1;
+
+}
+.slick-dots li button:before
+{
+  font-family: 'slick';
+  font-size: 0;
+  line-height: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: '•';
+  text-align: center;
+
+  opacity: .25;
+  color: rgb(255, 255, 255);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+  opacity: .75;
+  color: black;
+  -webkit-transform: scale(2, 2);
+  transform: scale(2, 2);
+}
+@media all and (max-width: 639px) {
+  .slick-dots li button {
+    bottom: 127.5px; 
+  } 
+}
