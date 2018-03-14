@@ -49,10 +49,11 @@ export class Instagram extends React.PureComponent {
     if (latestPosts.status === 'loaded') {
       output.html = (
         <div className="app__instagram__repos">
-          {latestPosts.data.slice(0, size).map(d => (
-            <div key={d.caption.text}>
-              <a href={d.link} target="_blank">
-                <img src={d.images.thumbnail} alt="Instagram" />
+          {latestPosts.res.slice(0, size).map(res => (
+            <div key={res.caption.text}>
+              <a href={res.link} target="_blank">
+                <img src={res.images.thumbnail.url} alt="Instagram" />
+                {`${res.id}`}
               </a>
             </div>
           ))}
