@@ -4,16 +4,24 @@
  */
 
 import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/fromPromise';
+
+import fetchJsonp from 'fetch-jsonp';
 
 import { ActionTypes } from 'constants/index';
 
+// get instagram data
+const ACCESS_TOKEN = '230642980.857aba3.ec6367a366284c51844e04e3e7a429e4';
+const url = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${ACCESS_TOKEN}`;
+
+// TODO refactor to not use ajax
 export function fetchLatestPosts(action$) {
   return action$.ofType(ActionTypes.FETCH_LATEST_POSTS_REQUEST)
     .switchMap(() =>
-      Observable.ajax.getJSON('https://api.instagram.com/v1/users/self/media/recent/?access_token=230642980.857aba3.ec6367a366284c51844e04e3e7a429e4')
+      Observable.fromPromise(fetchJsonp(`https://api.instagram.com/v1/users/self/media/recent/?access_token=${ACCESS_TOKEN}&callback=?`))
         .map(data => ({
           type: ActionTypes.FETCH_LATEST_POSTS_SUCCESS,
-          payload: { data: data.data },
+          payload: { data },
         }))
         .takeUntil(action$.ofType(ActionTypes.CANCEL_FETCH))
         .defaultIfEmpty({ type: ActionTypes.FETCH_LATEST_POSTS_CANCEL })
