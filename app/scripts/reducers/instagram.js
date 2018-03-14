@@ -11,7 +11,7 @@ import { ActionTypes } from 'constants/index';
 
 export const instagramState = {
   latestPosts: {
-    data: [],
+    res: [],
     message: '',
     status: 'idle',
   },
@@ -29,7 +29,7 @@ export default {
     [ActionTypes.FETCH_LATEST_POSTS_REQUEST_SUCCESS](state, { payload }) {
       return immutable(state, {
         latestPosts: {
-          data: { $set: payload.data },
+          res: { $set: payload.res },
           status: { $set: 'loaded' },
         },
       });

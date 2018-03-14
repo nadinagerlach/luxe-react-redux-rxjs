@@ -48,12 +48,12 @@ export class Instagram extends React.PureComponent {
 
     if (latestPosts.status === 'loaded') {
       output.html = (
-        <div className="app__instagram__repos">
-          {latestPosts.res.slice(0, size).map(res => (
-            <div key={res.caption.text}>
-              <a href={res.link} target="_blank">
-                <img src={res.images.thumbnail.url} alt="Instagram" />
-                {`${res.id}`}
+        <div className="app__private__repos">
+          {latestPosts.data.slice(0, size).map(d => (
+            <div key={d.caption.text}>
+              <a href={d.link} target="_blank">
+                <img src={d.images.thumbnail.url} alt="Instagram" />
+                {`${d.id}`}
               </a>
             </div>
           ))}
@@ -62,9 +62,10 @@ export class Instagram extends React.PureComponent {
     }
 
     return (
-      <div key="Instagram" className="app__instagram app__route">
+      <div key="Instagram" className="app__private  app__route">
         <div className="app__container">
           <h2>Latest Posts</h2>
+          console.log(latestPosts.status)
           {output.html}
         </div>
       </div>
