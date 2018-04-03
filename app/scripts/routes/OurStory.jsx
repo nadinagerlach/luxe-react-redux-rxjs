@@ -10,7 +10,7 @@ import SVG from 'react-inlinesvg';
 import Loader from 'components/Loader';
 import Slider from 'react-slick';
 
-export class Home extends React.PureComponent {
+export class OurStory extends React.PureComponent {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
     instagram: PropTypes.object.isRequired,
@@ -75,7 +75,7 @@ export class Home extends React.PureComponent {
       );
     }
     return (
-      <div key="Home" className="app__home app__route">
+      <div key="OurStory" className="app__home app__route">
         <div className="app__home__intro">
           <div className="overlay">
             <div className="app__container carousel slide" style={style_1} data-ride="carousel">
@@ -177,4 +177,4 @@ function mapStateToProps(state) {
   return { instagram: state.instagram };
 }
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(OurStory);

@@ -80,7 +80,7 @@ export default class Header extends React.Component {
             </li>
             <li>
               <NavLink
-                to="/about"
+                to="/our-story"
                 className="app__header__link"
                 activeClassName="is-active"
                 exact
