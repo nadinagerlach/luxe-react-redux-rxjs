@@ -6,3 +6,8 @@ dist/
 node_modules/
 reports/
 webpack.stats.json
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

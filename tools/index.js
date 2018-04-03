@@ -16,7 +16,7 @@ function publish() {
     .exclude('.DS_Store')
     .flags('az')
     .source(`${paths.destination}/`)
-    .destination('nadina@nadina.dygn.co:/home/nads/public_html/final-deploy');
+    .destination('nadinagerlach@gmail.com@<remote-hostname>:<remote-folder>');
 
   rsync.execute((error, code, cmd) => {
     if (error) {
