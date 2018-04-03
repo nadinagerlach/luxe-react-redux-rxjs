@@ -6,9 +6,9 @@ import { ActionTypes } from 'constants/index';
 import { fetchLatestPosts } from 'actions/index';
 
 import SVG from 'react-inlinesvg';
+import Carousel from '../components/Carousel';
 
-import Loader from 'components/Loader';
-import Slider from 'react-slick';
+import Loader from '../components/Loader';
 
 export class Home extends React.PureComponent {
   static propTypes = {
@@ -74,34 +74,66 @@ export class Home extends React.PureComponent {
         </div>
       );
     }
+
     return (
       <div key="Home" className="app__home app__route">
-        <div className="app__home__intro">
-          <div className="overlay">
-            <div className="app__container carousel slide" style={style_1} data-ride="carousel">
-              <h1>Your Daily Choice</h1>
-              <p>Our Cigars</p>
-              <a
-                href="https://instagram.com/gilbarbara/react-redux-observables-boilerplate"
-                className="app__home__download btn btn-lg btn-primary btn-icon"
-                target="_blank"
-              >
-                <i className="i-instagram" />
-                <span>Visit</span>
-              </a>
+        <Carousel dragging={true} speed={500} wrapAround={true} autoplay={true} 
+          className="app__home__intro"
+        >
+          <div className="carousel-slide">
+            <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545808/home-hero-1_eyejxg.jpg" alt="First slide" />
+            <div className="container">
+              <div className="carousel-caption">
+                <div className="text-center">
+                  <h1 className="headline-bottom-1">Your Daily Choice</h1>
+                </div>
+                <p>
+                  <a href="#" className="button">
+                    <div className="button-cell">
+                      <span className="button-text-wrapper">Our Cigars</span>
+                    </div>
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <Slider {...settings}>
-            <div><h3>1</h3></div>
-            <div><h3>2</h3></div>
-            <div><h3>3</h3></div>
-            <div><h3>4</h3></div>
-            <div><h3>5</h3></div>
-            <div><h3>6</h3></div>
-          </Slider>
-        </div>
+          <div className="carousel-slide">
+              <img className='d-block img-fluid image-size' src={`http://res.cloudinary.com/dygn/image/upload/v1513545808/home-hero-3_o7sds7.jpg`} alt='Second slide' />
+            <div className="container">
+              <div className="carousel-caption">
+                <div className="text-center">
+                  <h1 className="headline-bottom-1">Espanola Fine Cigars</h1>
+                </div>
+                <p>
+                  <a href="#" className="button">
+                    <div className="button-cell">
+                      <span className="button-text-wrapper">Our Story</span>
+                    </div>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="carousel-slide">
+            <img className="d-block img-fluid image-size" src={`http://res.cloudinary.com/dygn/image/upload/v1513545807/home-hero-2_cfkrph.jpg`} alt='Third slide' />
+            <div className="container">
+              <div className="carousel-caption">
+                <div className="text-center">
+                  <h1>Zoidian Cigars</h1>
+                  <h1 className='headline-bottom'>An Affordable Luxury</h1>
+                </div>
+                <p>
+                  <a href="#" className="button">
+                    <div className="button-cell">
+                      <span className="button-text-wrapper">Our Cigars</span>
+                    </div>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </Carousel>
+
         <div className="app__home__libraries">
           <div className="app__container">
             <h2>Find your blend</h2>

@@ -37,3 +37,37 @@
 @import 'routes/home';
 @import 'routes/private';
 @import 'routes/not-found';
+
+
+.jumbotron{
+    background: url(https://source.unsplash.com/1600x1050/?nature);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color:white !important;
+  margin-bottom: 0px!important;
+  }
+  
+  .lead{
+  z-index: 10;
+  bottom: 7rem;
+  font-family:  'acumin-pro-extra-condensed',sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: .065em;
+  text-transform: uppercase;
+  }
+  .title {
+  padding-top: 6rem;
+  }
+  .tagline{
+  z-index: 10;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  letter-spacing: .065em;
+  font-size: 1.5rem;
+  }
+  .phone {
+  padding-top: 0;
+  line-height:.01rem;
+  }
