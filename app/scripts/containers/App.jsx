@@ -36,7 +36,7 @@ export class App extends React.Component {
 
     /* istanbul ignore else */
     if (!user.isAuthenticated && nextUser.isAuthenticated) {
-      dispatch(showAlert('Hello!', { type: 'primary', icon: 'i-flash' }));
+      dispatch(showAlert('Thanks! Verfied 21 and older', { type: 'primary', icon: 'i-flash' }));
     }
   }
 

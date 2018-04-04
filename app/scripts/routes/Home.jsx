@@ -78,59 +78,8 @@ export class Home extends React.PureComponent {
     return (
       <div key="Home" className="app__home app__route">
         <div className="app__home__intro">
-          <Carousel dragging={true} speed={500} wrapAround={true} autoplay={true}>
-            <div className="app__container carousel slide" data-ride="carousel">
-              <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545808/home-hero-1_eyejxg.jpg" alt="First slide" />
-              <div className="container">
-                <div className="carousel-caption">
-                    <h1>Your Daily Choice</h1>
-                  <p>
-                    <a href="#" className="button">
-                      <div className="button-cell">
-                        <span className="button-text-wrapper">Our Cigars</span>
-                      </div>
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-slide">
-              <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545808/home-hero-3_o7sds7.jpg" alt="Second slide" />
-              <div className="container">
-                <div className="carousel-caption">
-                  <div className="text-center">
-                    <h1>Espanola Fine Cigars</h1>
-                  </div>
-                  <p>
-                    <a href="#" className="button">
-                      <div className="button-cell">
-                        <span className="button-text-wrapper">Our Story</span>
-                      </div>
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-slide">
-              <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545807/home-hero-2_cfkrph.jpg" alt="Third slide" />
-              <div className="container">
-                <div className="carousel-caption">
-                  <div className="text-center">
-                    <h1>Zoidian Cigars</h1>
-                    <h1 className="headline-bottom">An Affordable Luxury</h1>
-                  </div>
-                  <p>
-                    <a href="#" className="button">
-                      <div className="button-cell">
-                        <span className="button-text-wrapper">Our Cigars</span>
-                      </div>
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Carousel>
-          </div>
+          <Carousel />
+        </div>
         <div className="app__home__marketingblock">
           <div className="app__container2">
             <div className="app__home__find-your-blend">
