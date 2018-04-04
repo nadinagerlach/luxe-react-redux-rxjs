@@ -1,5 +1,6 @@
 .app__home {
   padding: 0;
+  background-color: black;
 
   &__intro .overlay {
       width: 100%;
@@ -11,7 +12,7 @@
   &__intro .app__container {
     align-items: center;
     background-color: $app-color-alt;
-    color: #fff;
+    color: $black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,8 +50,8 @@
     }
   }
 
-  &__libraries .app__container {
-    background-color: $white;
+  &__marketingblock .app__container {
+    background-color: $black;
     padding-bottom: $grid-gutter-width;
     padding-top: $grid-gutter-width * 2;
 
@@ -80,7 +81,59 @@
     }
   }
 
-  &__library {
+  &__marketingblock .app__container2 {
+    background-color: purple;
+    padding-bottom: $grid-gutter-width;
+    padding-top: $grid-gutter-width * 2;
+
+    @include lg {
+      padding-bottom: $grid-gutter-width * 2;
+      padding-top: $grid-gutter-width * 2;
+    }
+
+    h2 {
+      margin-bottom: $grid-gutter-width * 2;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+
+
+      > li {
+        width: percentage(3 / 4);
+
+        @include md {
+          width: percentage(3 / 4);
+        }
+      }
+    }
+  }
+
+  &__find-your-blend {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $grid-gutter-width;
+    text-align: left;
+    background-color: red;
+    margin: 0em 2em 0em 2em;
+
+
+    &__cell {
+      align-items: center;
+      margin: 0em 2em 0em 2em;
+      background-color:blue;
+      display: flex;
+      justify-content: center;
+      margin-bottom: $grid-gutter-width / 2;
+      min-height: 10rem;
+    
+    }
+  }
+  
+  &__instagram {
     display: flex;
     flex-direction: column;
     margin-bottom: $grid-gutter-width;

@@ -86,7 +86,7 @@ export class Private extends React.PureComponent {
           </div>
         </div>
        
-        <div className="app__home__libraries">
+        <div className="app__home__marketingblock">
           <div className="app__container">
             <h2>Provides</h2>
             <ul>
@@ -123,7 +123,7 @@ export class Private extends React.PureComponent {
             </ul>
           </div>
         </div>
-        <div className="app__home__libraries">
+        <div className="app__home__marketingblock">
           <div className="app__container">
             <h2>Provides</h2>
             <ul>

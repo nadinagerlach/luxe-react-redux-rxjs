@@ -8,7 +8,6 @@ import { fetchLatestPosts } from 'actions/index';
 import SVG from 'react-inlinesvg';
 
 import Loader from 'components/Loader';
-import Slider from 'react-slick';
 
 export class OurStory extends React.PureComponent {
   static propTypes = {
@@ -92,17 +91,7 @@ export class OurStory extends React.PureComponent {
             </div>
           </div>
         </div>
-        <div>
-          <Slider {...settings}>
-            <div><h3>1</h3></div>
-            <div><h3>2</h3></div>
-            <div><h3>3</h3></div>
-            <div><h3>4</h3></div>
-            <div><h3>5</h3></div>
-            <div><h3>6</h3></div>
-          </Slider>
-        </div>
-        <div className="app__home__libraries">
+        <div className="app__home__marketingblock">
           <div className="app__container">
             <h2>Find your blend</h2>
             <ul>
@@ -129,7 +118,7 @@ export class OurStory extends React.PureComponent {
             </ul>
           </div>
         </div>
-        <div className="app__home__libraries">
+        <div className="app__home__marketingblock">
           <div className="app__container">
             <h2>Share your bands to win</h2>
             <ul>

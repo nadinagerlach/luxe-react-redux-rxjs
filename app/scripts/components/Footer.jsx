@@ -15,17 +15,16 @@ const Footer = () => (
       <div className="col-md-6 col-sm-12 col-xs-12">
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSfYzqGriJLvrcGl1fsyNiijTRZZsPOuFfR3miNNh_XYefuGeA/formResponse" method="post" id="application-form" target="_blank">
           <div className="form-group">
-                <input
-type="text" name="entry.1045781291" value="" className="email"
-                            id="entry_1045781291" dir="auto" aria-label="Email  " aria-required="true"
-                            placeholder="Email" type="text"
+            <input
+              type="text" name="entry.1045781291" value="" className="email"
+              id="entry_1045781291" dir="auto" aria-label="Email  " aria-required="true"
+              placeholder="Email" type="text"
             />
             <input
-type="submit" id="submit" className="btn" name="submit"
-                                      value="Submit"
-                      />
-
-              </div>
+              type="submit" id="submit" className="btn" name="submit"
+              value="Submit"
+            />
+          </div>
         </form>
       </div>
     </div>
@@ -33,7 +32,7 @@ type="submit" id="submit" className="btn" name="submit"
       <div className="app__footer__menu">
         <ul className="app__header__menu">
           <li>
-          <NavLink
+            <NavLink
               to="/"
               className="app__header__link"
               activeClassName="is-active"
@@ -42,7 +41,7 @@ type="submit" id="submit" className="btn" name="submit"
             >
               <Logo />
             </NavLink>
-        </li>
+          </li>
           <li>
             <NavLink
               to="/our-story"
@@ -64,7 +63,7 @@ type="submit" id="submit" className="btn" name="submit"
             </NavLink>
           </li>
           <li>
-          <NavLink
+            <NavLink
               to="/find-your-blend"
               className="app__header__link"
               activeClassName="is-active"
@@ -72,7 +71,7 @@ type="submit" id="submit" className="btn" name="submit"
             >
                 Find Your Blend
             </NavLink>
-        </li>
+          </li>
           <li>
             <NavLink
               to="/locations"
@@ -81,6 +80,26 @@ type="submit" id="submit" className="btn" name="submit"
               exact
             >
                 Locations
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/locations"
+              className="app__header__link"
+              activeClassName="is-active"
+              exact
+            >
+                Contact
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/locations"
+              className="app__header__link"
+              activeClassName="is-active"
+              exact
+            >
+                Help and FAQ
             </NavLink>
           </li>
           <li>
