@@ -17,6 +17,10 @@
     min-height: calc(100vh - #{$header-height} - #{$footer-height});
     padding: $grid-gutter-width 0;
   }
+  &__slider {
+    height: auto;
+    margin: 0 auto;
+  }
 
   &__container {
     @include app-container();

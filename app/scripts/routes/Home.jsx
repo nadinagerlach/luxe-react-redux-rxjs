@@ -78,14 +78,12 @@ export class Home extends React.PureComponent {
     return (
       <div key="Home" className="app__home app__route">
         <div className="app__home__intro">
-          <Carousel dragging={true} speed={500} wrapAround={true} autoplay={true} >
-            <div className="carousel-slide">
+          <Carousel dragging={true} speed={500} wrapAround={true} autoplay={true}>
+            <div className="app__container carousel slide" data-ride="carousel">
               <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545808/home-hero-1_eyejxg.jpg" alt="First slide" />
               <div className="container">
                 <div className="carousel-caption">
-                  <div className="text-center">
-                    <h1 className="headline-bottom-1">Your Daily Choice</h1>
-                  </div>
+                    <h1>Your Daily Choice</h1>
                   <p>
                     <a href="#" className="button">
                       <div className="button-cell">
@@ -101,7 +99,7 @@ export class Home extends React.PureComponent {
               <div className="container">
                 <div className="carousel-caption">
                   <div className="text-center">
-                    <h1 className="headline-bottom-1">Espanola Fine Cigars</h1>
+                    <h1>Espanola Fine Cigars</h1>
                   </div>
                   <p>
                     <a href="#" className="button">
@@ -132,7 +130,7 @@ export class Home extends React.PureComponent {
               </div>
             </div>
           </Carousel>
-        </div>
+          </div>
         <div className="app__home__marketingblock">
           <div className="app__container2">
             <div className="app__home__find-your-blend">
