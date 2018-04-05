@@ -8,12 +8,14 @@ luxe-react-redux-rxjs
 
 
 **Live Demo**: [www.jmtobac.co](www.jmtobac.co)
+
 A consumer facing marketing template. This is the frontend config, currently under active development. Feel free to adapt for your own projects. 😮😎
 #### Contents
 
 1. [Prerequisites](#Prerequisites)
 1. [Getting Started](#Getting)
 1. [Development](#development)
+1. [Deployment](#deployment)
 1. [About](#about)
 
 Prerequisites
@@ -120,9 +122,9 @@ recommend using dotenv to protect your credentials from spammers.
 - Click **Update this Twitter's applications settings**
 - Copy and paste *Consumer Key* and *Consumer Secret* keys into `.env` file
 
-Easy Deploy with Heroku
+Deployment
 ------------------
-Finished ripping for your own purposes? Here's an easy build deploy pipeline with AWS. For the project to build correctly:
+Finished ripping for your own purposes? Here's an easy build & deploy pipeline with AWS. For the project to build correctly:
 
 * **These files must exist with exact filenames**: `dist/index.html` (page template) && `dist/scripts` (JavaScript entry point).
 * **Put any JS and CSS files inside `src`**, otherwise Webpack won’t see them.
@@ -143,8 +145,9 @@ npm run deploy
 # Then build, commit, & deploy ♻️
 ```
 
-List of Packages
+About
 ----------------
+### List of Packages
 
 | Package                         | Description                                                           |
 | ------------------------------- | --------------------------------------------------------------------- |
@@ -167,13 +170,8 @@ Other tools and technologies used include:
 * [Animate.css](https://daneden.github.io/animate.css/)
 * [WOW.js](http://mynameismatthieu.com/WOW/)
 * [NginX](https://google.com): TODO
-- react ^16.x
-- react-router ^4.x
-- redux ^3.x
-- redux-observable ^0.17
 - redux-persist ^5.x
 - react-helmet ^5.x
-- rxjs ^5.x
 - webpack ^3.x
 
 

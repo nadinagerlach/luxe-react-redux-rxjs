@@ -43,58 +43,50 @@ export default class ClientEntry extends React.Component {
         exact
         alt={config.title}
       >
-        <button
-          className="app__header__login btn btn-sm btn-primary btn-icon"
-          onClick={this.handleClickLogin}
-          >
-          <i
-            className={cx({
-              'i-circle-o-notch i-spin': user.isRunning,
-              'i-sign-in': !user.isRunning,
-            })}
-          />
-          <span>Thanks!</span>
-        </button>
+          <a className="button" onClick={this.handleClickLogin}>
+                <div className="button-cell">
+                  <span className="button-text-wrapper">Yes I am!</span>
+                </div>
+              </a>
       </NavLink>
     );
 
     const logoutBtn = (
-      <button
-        className="app__header__logout btn btn-sm btn-outline-primary btn-icon"
-        onClick={this.handleClickLogout}
-      >
-        <i className="i-sign-out" />
-        <span>Yes I am!</span>
-      </button>
+      <a className="button"  onClick={this.handleClickLogout}>
+      <div className="button-cell">
+        <span className="button-text-wrapper">Thanks!</span>
+      </div>
+    </a>
     );
 
     const underageBtn = (
-      <button
-        className="app__header__logout btn btn-sm btn-outline-primary btn-icon"
-        onClick={this.handleClickUnderage}
-      >
-        <i className="i-sign-out" />
-        <span>No I'm not</span>
-      </button>
+      <a className="button" onClick={this.handleClickUnderage}>
+      <div className="button-cell">
+        <span className="button-text-wrapper">No I'm not</span>
+      </div>
+    </a>
     );
 
     return (
       <div key="ClientEntry" className="app__splash app__route">
-        <div className="app__splash__marketingblock">
+        <div className="app__splash__intro">
           <div className="app__container">
-            <h2> Are you 18 or older? </h2>
+            <Logo />
+            <h2>THE ORIGIN OF CIGARS HAS ALWAYS BEEN A MYSTERY. HOPEFULLY YOURS ISN'T.</h2>
+            <h1> Are you 18 or older? </h1>
             <ul>
               <li>
                 <div className="app__splash__age">
+                  <div className="app__splash__age__cell">
+
                   {user.isAuthenticated ? logoutBtn : loginBtn}
                 </div>
-              </li>
-              <li>
-                <div className="app__splash__age">
-                  {underageBtn}
                 </div>
               </li>
             </ul>
+            <p>
+            This site uses cookies. Cookie Policy. I agree to the terms of use, and the privacy policy. This information will not be used for marketing purposes.
+              </p>
           </div>
         </div>
       </div>

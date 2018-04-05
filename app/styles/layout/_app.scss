@@ -13,7 +13,6 @@
   }
 
   &__route {
-    background-color: $white;
     min-height: calc(100vh - #{$header-height} - #{$footer-height});
     padding: $grid-gutter-width 0;
   }
