@@ -81,7 +81,7 @@ export class OurStory extends React.PureComponent {
               <h1>Your Daily Choice</h1>
               <p>Our Cigars</p>
               <a
-                href="https://instagram.com/gilbarbara/react-redux-observables-boilerplate"
+                href="https://instagram.com/"
                 className="app__home__download btn btn-lg btn-primary btn-icon"
                 target="_blank"
               >

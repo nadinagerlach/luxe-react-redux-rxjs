@@ -10,7 +10,7 @@ const RoutePrivate = ({ component: Component, isAuthenticated, ...rest }) => (
         ? (<Component {...props} />)
         : (<Redirect
           to={{
-            pathname: '/login',
+            pathname: '/underage',
             state: { from: props.location.pathname, isAuthenticated },
           }}
         />)

@@ -30,13 +30,13 @@ module.exports = {
     browser.click('.btn-primary');
   },
 
-  'should be able to navigate to /private': browser => {
-    browser.click('a[href="/private"]');
+  'should be able to navigate to /verified': browser => {
+    browser.click('a[href="/verified"]');
   },
 
-  'should have navigated to /private': browser => {
+  'should have navigated to /verified': browser => {
     browser.waitForElementVisible('.app__private', timer);
-    browser.assert.urlContains('/private');
+    browser.assert.urlContains('/verified');
 
     browser.assert.elementPresent('.app__header__logout');
     browser.assert.containsText('h2', 'Popular Repos');
@@ -45,12 +45,12 @@ module.exports = {
   'should be able to logout': browser => {
     browser.click('.app__header__logout');
     browser.pause(wait);
-    browser.assert.urlContains('/login');
+    browser.assert.urlContains('/underage');
   },
 
-  'should block navigation to /private if not logged': browser => {
-    browser.url('http://localhost:3000/private');
+  'should block navigation to /verified if not logged': browser => {
+    browser.url('http://localhost:3000/verified');
     browser.pause(wait);
-    browser.assert.urlEquals('http://localhost:3000/login');
+    browser.assert.urlEquals('http://localhost:3000/underage');
   },
 };

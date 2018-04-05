@@ -16,9 +16,9 @@ export default class Carousel extends Component {
         <Slider {...settings}>
           <div>
             <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545808/home-hero-1_eyejxg.jpg" alt="First slide" />
-            <h1>Your Daily Choice</h1>
+            <h1 id="carousel-caption">Your Daily Choice</h1>
             <p>
-              <a href="#" className="button">
+              <a href="#" className="button" id="carousel-button">
                 <div className="button-cell">
                   <span className="button-text-wrapper">Our Cigars</span>
                 </div>
@@ -27,9 +27,9 @@ export default class Carousel extends Component {
           </div>
           <div>
             <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545808/home-hero-3_o7sds7.jpg" alt="Second slide" />
-            <h1>Espanola Fine Cigars</h1>
+            <h1 id="carousel-caption">Espanola Fine Cigars</h1>
             <p>
-              <a href="#" className="button">
+            <a href="#" className="button" id="carousel-button">
                 <div className="button-cell">
                   <span className="button-text-wrapper">Our Story</span>
                 </div>
@@ -38,10 +38,10 @@ export default class Carousel extends Component {
           </div>
           <div>
             <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545807/home-hero-2_cfkrph.jpg" alt="Third slide" />
-            <h1>Zoidian Cigars</h1>
-            <h1 className="headline-bottom">An Affordable Luxury</h1>
+            <h1 id="carousel-caption">Zoidian Cigars</h1>
+            <h1 id="carousel-caption">An Affordable Luxury</h1>
             <p>
-              <a href="#" className="button">
+            <a href="#" className="button" id="carousel-button">
                 <div className="button-cell">
                   <span className="button-text-wrapper">Our Cigars</span>
                 </div>

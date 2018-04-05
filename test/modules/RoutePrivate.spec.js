@@ -6,10 +6,10 @@ import RoutePrivate from 'modules/RoutePrivate';
 describe('modules/RoutePrivate', () => {
   it('should redirect for unauthenticated access', () => {
     const render = renderToString(
-      <Router initialEntries={['/private']}>
+      <Router initialEntries={['/verified']}>
         <RoutePrivate
           exact
-          path="/private"
+          path="/verified"
           component={() => (<div>PRIVATE</div>)}
           isAuthenticated={false}
         />
@@ -20,10 +20,10 @@ describe('modules/RoutePrivate', () => {
 
   it('should allow navigation for authenticated access', () => {
     const render = renderToString(
-      <Router initialEntries={['/private']}>
+      <Router initialEntries={['/verified']}>
         <RoutePrivate
           exact
-          path="/private"
+          path="/verified"
           component={() => (<div>PRIVATE</div>)}
           isAuthenticated={true}
         />

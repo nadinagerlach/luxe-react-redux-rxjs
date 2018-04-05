@@ -7,7 +7,7 @@ const RoutePublic = ({ component: Component, isAuthenticated, ...rest }) => (
     {...rest}
     render={props => (
       isAuthenticated
-        ? (<Redirect to="/private" />)
+        ? (<Redirect to="/verified" />)
         : (<Component {...props} />)
     )}
   />

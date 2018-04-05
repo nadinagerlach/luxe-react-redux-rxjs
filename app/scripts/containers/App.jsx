@@ -8,10 +8,13 @@ import cx from 'classnames';
 import history from 'modules/history';
 import RoutePublic from 'modules/RoutePublic';
 import RoutePrivate from 'modules/RoutePrivate';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+
 
 import config from 'config';
 import { showAlert } from 'actions';
 
+import ClientEntry from 'routes/ClientEntry';
 import Home from 'routes/Home';
 import OurStory from 'routes/OurStory';
 import Instagram from 'routes/Instagram';
@@ -58,27 +61,68 @@ export class App extends React.Component {
             titleTemplate={`%s | ${config.name}`}
             titleAttributes={{ itemprop: 'name', lang: 'pt-br' }}
           />
-          <Header dispatch={dispatch} user={user} />
+          <Route
+            render={({ location }) => (
+              <Header />
+            )}
+          />
           <main className="app__main">
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/home" component={Home} />
-              <Route exact path="/our-story" component={OurStory} />
-              <Route exact path="/instagram" component={Instagram} />
-              <RoutePublic
-                component={Login}
-                isAuthenticated={user.isAuthenticated}
-                path="/login"
-                exact
-              />
-              <RoutePrivate
-                component={Private}
-                isAuthenticated={user.isAuthenticated}
-                path="/private"
-                exact
-              />
-              <Route component={NotFound} />
-            </Switch>
+            <TransitionGroup>
+              <CSSTransition
+                timeout={300}
+                classNames="fade"
+                key={location.key}
+              >
+                <Switch location={location}>
+                  <Route exact path="/">
+                    <ClientEntry dispatch={dispatch} user={user} />
+                  </Route>
+                  <RoutePrivate
+                    exact path="/home"
+                    component={Home}
+                    isAuthenticated={user.isAuthenticated}
+                    exact
+                  />
+                  <RoutePrivate
+                    exact path="/our-story"
+                    component={OurStory}
+                    isAuthenticated={user.isAuthenticated}
+                    exact
+                  />
+                  <RoutePrivate
+                    exact path="/our-cigars"
+                    component={OurStory}
+                    isAuthenticated={user.isAuthenticated}
+                    exact
+                  />
+                  <RoutePrivate
+                    exact path="/find-your-blend"
+                    component={OurStory}
+                    isAuthenticated={user.isAuthenticated}
+                    exact
+                  />
+                  <RoutePrivate
+                    exact path="/instagram"
+                    component={Instagram}
+                    isAuthenticated={user.isAuthenticated}
+                    exact
+                  />
+                  <RoutePublic
+                    component={Login}
+                    isAuthenticated={user.isAuthenticated}
+                    path="/underage"
+                    exact
+                  />
+                  <RoutePrivate
+                    component={Private}
+                    isAuthenticated={user.isAuthenticated}
+                    path="/verified"
+                    exact
+                  />
+                  <Route component={NotFound} />
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
           </main>
           <Footer />
           <SystemAlerts alerts={app.alerts} dispatch={dispatch} />

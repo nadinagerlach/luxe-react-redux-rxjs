@@ -25,7 +25,7 @@ describe('Login', () => {
   it('should render the redirect location', () => {
     wrapper.setProps({
       location: {
-        state: { from: '/private' },
+        state: { from: '/verified' },
       },
     });
 

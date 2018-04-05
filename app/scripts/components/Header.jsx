@@ -7,69 +7,15 @@ import config from 'config';
 import { login, logOut } from 'actions';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
-
 export default class Header extends React.Component {
-  static propTypes = {
-    dispatch: PropTypes.func.isRequired,
-    user: PropTypes.object.isRequired,
-  };
-
-  handleClickLogin = () => {
-    const { dispatch } = this.props;
-
-    dispatch(login());
-  };
-
-  handleClickLogout = () => {
-    const { dispatch } = this.props;
-
-    dispatch(logOut());
-  };
-
-  render() {
-    const { user } = this.props;
-
-    const loginBtn = (
-      <button
-        className="app__header__login btn btn-sm btn-primary btn-icon"
-        onClick={this.handleClickLogin}
-      >
-        <i
-          className={cx({
-            'i-circle-o-notch i-spin': user.isRunning,
-            'i-sign-in': !user.isRunning,
-          })}
-        />
-        <span>Login</span>
-      </button>
-    );
-
-    const logoutBtn = (
-      <button
-        className="app__header__logout btn btn-sm btn-outline-primary btn-icon"
-        onClick={this.handleClickLogout}
-      >
-        <i className="i-sign-out" />
-        <span>logout</span>
-      </button>
-    );
-
-    const menuBurger = (
-      <button
-        className="app__header__logout btn btn-sm btn-outline-primary btn-icon"
-        onClick={this.handleClickLogout}
-      >
-        <i className="i-bars" />
-      </button>
-    );
-
-    return (
+  render() {  
+  return (
       <header className="app__header">
         <div className="app__container">
           <ul className="app__header__menu">
             <li>
               <NavLink
-                to="/"
+                to="/home"
                 className="app__header__link"
                 activeClassName="is-active"
                 exact
@@ -108,7 +54,7 @@ export default class Header extends React.Component {
                 Find Your Blend
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/locations"
                 className="app__header__link"
@@ -117,14 +63,11 @@ export default class Header extends React.Component {
               >
                 Locations
               </NavLink>
-            </li>
+            </li> */}
             <li>
-              <a href="http://www.shop.jmtobacco.com" exact activeClassName="is-active" className="app__header__link" >
+              <a href="http://www.facebook.com" exact activeClassName="is-active" className="app__header__link" >
                 Shop
               </a>
-            </li>
-            <li>
-              {user.isAuthenticated ? menuBurger : loginBtn}
             </li>
           </ul>
         </div>

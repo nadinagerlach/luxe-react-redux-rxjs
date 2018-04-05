@@ -4,7 +4,7 @@ import cx from 'classnames';
 
 import config from 'config';
 
-import { login, logOut } from 'actions';
+import { login, logOut, underage } from 'actions';
 import Logo from '../components/Logo';
 import { NavLink } from 'react-router-dom';
 
@@ -25,6 +25,11 @@ export default class ClientEntry extends React.Component {
     const { dispatch } = this.props;
 
     dispatch(logOut());
+  };
+  handleClickUnderage = () => {
+    const { dispatch } = this.props;
+
+    dispatch(underage());
   };
 
   render() {
@@ -48,7 +53,7 @@ export default class ClientEntry extends React.Component {
               'i-sign-in': !user.isRunning,
             })}
           />
-          <span>Yes!</span>
+          <span>Thanks!</span>
         </button>
       </NavLink>
     );
@@ -59,16 +64,37 @@ export default class ClientEntry extends React.Component {
         onClick={this.handleClickLogout}
       >
         <i className="i-sign-out" />
-        <span>(JK I was lying)</span>
+        <span>Yes I am!</span>
+      </button>
+    );
+
+    const underageBtn = (
+      <button
+        className="app__header__logout btn btn-sm btn-outline-primary btn-icon"
+        onClick={this.handleClickUnderage}
+      >
+        <i className="i-sign-out" />
+        <span>No I'm not</span>
       </button>
     );
 
     return (
-      <div key="ClientEntry" className="app__home app__route">
-        <div className="app__home__intro">
+      <div key="ClientEntry" className="app__splash app__route">
+        <div className="app__splash__marketingblock">
           <div className="app__container">
-            <h1> Are you 18 or older? </h1>
-            {user.isAuthenticated ? logoutBtn : loginBtn}
+            <h2> Are you 18 or older? </h2>
+            <ul>
+              <li>
+                <div className="app__splash__age">
+                  {user.isAuthenticated ? logoutBtn : loginBtn}
+                </div>
+              </li>
+              <li>
+                <div className="app__splash__age">
+                  {underageBtn}
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

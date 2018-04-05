@@ -36,5 +36,17 @@ export default {
         isAuthenticated: { $set: false },
       });
     },
+    [ActionTypes.USER_UNDERAGE_SUCCESS](state) {
+      return immutable(state, {
+        status: { $set: 'idle' },
+        isAuthenticated: { $set: false },
+      });
+    },
+    [ActionTypes.USER_UNDERAGE_SUCCESS](state) {
+      return immutable(state, {
+        status: { $set: 'idle' },
+        isAuthenticated: { $set: false },
+      });
+    },
   }),
 };

@@ -29,3 +29,15 @@ export function logOut(): Object {
     payload: {},
   };
 }
+
+/**
+ * Underage
+ *
+ * @returns {Object}
+ */
+export function underage(): Object {
+  return {
+    type: ActionTypes.USER_UNDERAGE_REQUEST,
+    payload: {},
+  };
+}

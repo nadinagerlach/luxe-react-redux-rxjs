@@ -31,3 +31,15 @@ export function userLogout(action$) {
       error: true,
     }));
 }
+
+export function userUnderage(action$) {
+  return action$.ofType(ActionTypes.USER_UNDERAGE_REQUEST)
+    .mergeMap(() => Observable.merge(
+      Observable.of({ type: ActionTypes.USER_UNDERAGE_SUCCESS })
+    ))
+    .catch(/* istanbul ignore next  */ error => Observable.of({
+      type: ActionTypes.USER_UNDERAGE_FAILURE,
+      payload: { error },
+      error: true,
+    }));
+}

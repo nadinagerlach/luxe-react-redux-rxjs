@@ -6,10 +6,10 @@ import RoutePublic from 'modules/RoutePublic';
 describe('modules/RoutePublic', () => {
   it('should render the Login component for unauthenticated access', () => {
     const render = renderToString(
-      <Router initialEntries={['/login']}>
+      <Router initialEntries={['/underage']}>
         <RoutePublic
           exact
-          path="/login"
+          path="/underage"
           component={() => (<div>LOGIN</div>)}
           isAuthenticated={false}
         />
@@ -19,12 +19,12 @@ describe('modules/RoutePublic', () => {
     expect(render).toMatchSnapshot();
   });
 
-  it('should redirect to /private for authenticated access', () => {
+  it('should redirect to /verified for authenticated access', () => {
     const render = renderToString(
-      <Router initialEntries={['/login']}>
+      <Router initialEntries={['/underage']}>
         <RoutePublic
           exact
-          path="/login"
+          path="/underage"
           component={() => (<div>LOGIN</div>)}
           isAuthenticated={true}
         />
