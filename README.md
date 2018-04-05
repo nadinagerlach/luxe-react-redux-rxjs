@@ -1,9 +1,11 @@
 ![](https://lh3.googleusercontent.com/rVduSg1MkKOFJCTY2mzz1q30wSEk8VmhpH7_cJuz-Y9CX_JRuUvvtiFF79wKLNmbN1XNEj44JYe5dSE=w3200-h1746-rw)
 Espanola
 =======================
-[![Build Status](https://travis-ci.org/anfederico/Clairvoyant.svg?branch=master)](https://travis-ci.org/tbd)
-![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![Build Status](https://travis-ci.org/nadinagerlach/final-deploy.svg?branch=master)](https://travis-ci.org/tbd)
+![Jenkins](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)
+![License](https://img.shields.io/npm/l/express.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg)
+
 
 **Live Demo**: TBD
 A consumer facing marketing template website. This is the frontend config, currently under active development. Feel free to adapt for your own projects.😮😎
@@ -120,37 +122,22 @@ recommend using dotenv to protect your credentials from spammers.
 
 Easy Deploy with Heroku
 ------------------
-Finished ripping for your own purposes? Here's an easy build deploy pipeline with Heroku. 
-Per create-react-app docs, for the project to build correctly:
+Finished ripping for your own purposes? Here's an easy build deploy pipeline with AWS. For the project to build correctly:
 
-* **These files must exist with exact filenames**: `public/index.html` (page template) && `src/index.js` (JavaScript entry point).
+* **These files must exist with exact filenames**: `dist/index.html` (page template) && `dist/scripts` (JavaScript entry point).
 * **Put any JS and CSS files inside `src`**, otherwise Webpack won’t see them.
-* **Only files inside `public`** can be used from `public/index.html`
-
-Feel free to create more subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.
-
-You can, however, create more top-level directories outside src. They will not be included in the production build so you can use them for things like documentation or setting up your backend server
+* **Only files inside `dist`** can be used from `dist/index.html`
 
 ```sh
-# Create the Heroku app; requires free account at https://www.heroku.com/
-heroku create -b https://github.com/heroku/heroku-buildpack-static.git
+# Create the AWS S3; requires account at https://aws.amazon.com/free/
+# Install AWS command line; requires
 
-# Set the web root to the build/ directory
-echo '{ "root": "build/" }' > static.json
+# Deploy static files from dist/ directory
 
-# Allow JS bundle to be committed (removes `build` from ignores)
-sed '/build/d' .gitignore > .gitignore.new && mv .gitignore.new .gitignore
+# Optional: Add deploy script to package.json
 
 ## Build by bundling in production mode, optimizing for performance.  
-npm run build
-
-## Commit & deploy
-git add .
-git commit -m "Hay hay hay Heroku"
-git push heroku master
-
-## Visit the live app in your browser
-heroku open
+npm run deploy
 
 # Develop your app locally using `npm start`
 # Then build, commit, & deploy ♻️
