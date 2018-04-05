@@ -47,7 +47,7 @@ export class App extends React.Component {
     const { app, dispatch, user } = this.props;
 
     return (
-      <ConnectedRouter history={history}>
+      <ConnectedRouter history={history} outerContainerId={ "outer-container" }>
         <div
           className={cx('app', {
             'app--private': user.isAuthenticated,
@@ -66,7 +66,7 @@ export class App extends React.Component {
               <Header />
             )}
           />
-          <main className="app__main">
+          <main className="app__main page-wrap">
             <TransitionGroup>
               <CSSTransition
                 timeout={300}

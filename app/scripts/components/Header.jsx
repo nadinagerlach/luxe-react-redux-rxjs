@@ -7,6 +7,8 @@ import config from 'config';
 import { login, logOut } from 'actions';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
+import { BurgerMenu } from './Menu';
+
 export default class Header extends React.Component {
   render() {  
   return (
@@ -68,6 +70,9 @@ export default class Header extends React.Component {
               <a href="http://www.facebook.com" exact activeClassName="is-active" className="app__header__link" >
                 Shop
               </a>
+            </li>
+            <li>
+            <BurgerMenu />
             </li>
           </ul>
         </div>
