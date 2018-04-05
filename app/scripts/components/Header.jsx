@@ -19,7 +19,7 @@ export default class Header extends React.Component {
               <NavLink
                 to="/home"
                 className="app__header__link"
-                activeClassName="is-active"
+                activeclassname="is-active"
                 exact
                 alt={config.title}
               >
@@ -30,7 +30,7 @@ export default class Header extends React.Component {
               <NavLink
                 to="/our-story"
                 className="app__header__link"
-                activeClassName="is-active"
+                activeclassname="is-active"
                 exact
               >
                 Our Story
@@ -40,7 +40,7 @@ export default class Header extends React.Component {
               <NavLink
                 to="/our-cigars"
                 className="app__header__link"
-                activeClassName="is-active"
+                activeclassname="is-active"
                 exact
               >
                 Our Cigars
@@ -50,7 +50,7 @@ export default class Header extends React.Component {
               <NavLink
                 to="/find-your-blend"
                 className="app__header__link"
-                activeClassName="is-active"
+                activeclassname="is-active"
                 exact
               >
                 Find Your Blend
@@ -60,14 +60,14 @@ export default class Header extends React.Component {
               <NavLink
                 to="/locations"
                 className="app__header__link"
-                activeClassName="is-active"
+                activeclassname="is-active"
                 exact
               >
                 Locations
               </NavLink>
             </li> */}
             <li>
-              <a href="http://www.facebook.com" exact activeClassName="is-active" className="app__header__link" >
+              <a href="http://www.facebook.com" exact activeclassname="is-active" className="app__header__link" >
                 Shop
               </a>
             </li>

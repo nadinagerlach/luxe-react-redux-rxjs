@@ -39,7 +39,7 @@ export default class ClientEntry extends React.Component {
       <NavLink
         to="/home"
         className="app__header__link"
-        activeClassName="is-active"
+        activeclassname="is-active"
         exact
         alt={config.title}
       >

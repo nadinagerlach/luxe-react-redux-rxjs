@@ -1,14 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import PropTypes from 'prop-types';
 
 import { connect } from 'react-redux';
 import { ActionTypes } from 'constants/index';
 import { fetchLatestPosts } from 'actions/index';
 
+
 import SVG from 'react-inlinesvg';
 import Carousel from '../components/Carousel';
 
 import Loader from '../components/Loader';
+
+import { InstantSearch, RefinementList, ClearAll, Highlight, Configure, MenuSelect, SearchBox, CurrentFilters } from 'react-instantsearch/dom';
+import { connectSearchBox, connectRefinementList, connectInfiniteHits, connectStateResults } from 'react-instantsearch/connectors';
 
 export class Home extends React.PureComponent {
   static propTypes = {
@@ -83,16 +89,28 @@ export class Home extends React.PureComponent {
         <div className="app__home__marketingblock">
           <div className="app__container2">
             <div className="app__home__find-your-blend">
-                <ul>
-                  <li>
-                    <h2>Find Your Blend</h2>
-                    <h4>I'm having a</h4>
-                    <h4>and I need the perfect pairing for</h4>
-                  </li>
-                </ul>
+              <ul>
+                <li>
+                  <h2>Find Your Blend</h2>
+                </li>
+                <li>
+                  <h4>I'm having a<MenuSelect attributeName="cigar" /></h4>
+                </li>
+                <li>
+                  <h4>and I need the perfect pairing for<MenuSelect attributeName="timeOfDay" /></h4>
+                </li>
+                <li>
+                  <Link className="xola-button" to="/findyourblend">
+                    <div className="button-cell">
+                      <span className="button-text-wrapper">Find My Blend</span>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+
         <div className="app__home__marketingblock">
           <div className="app__container">
             <h2>Share your bands to win</h2>

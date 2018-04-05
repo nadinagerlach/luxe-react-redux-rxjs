@@ -35,7 +35,7 @@ const Footer = () => (
             <NavLink
               to="/"
               className="app__header__link"
-              activeClassName="is-active"
+              activeclassname="is-active"
               exact
               alt={config.title}
             >
@@ -46,7 +46,7 @@ const Footer = () => (
             <NavLink
               to="/our-story"
               className="app__header__link"
-              activeClassName="is-active"
+              activeclassname="is-active"
               exact
             >
                 Our Story
@@ -56,7 +56,7 @@ const Footer = () => (
             <NavLink
               to="/our-cigars"
               className="app__header__link"
-              activeClassName="is-active"
+              activeclassname="is-active"
               exact
             >
                 Our Cigars
@@ -66,7 +66,7 @@ const Footer = () => (
             <NavLink
               to="/find-your-blend"
               className="app__header__link"
-              activeClassName="is-active"
+              activeclassname="is-active"
               exact
             >
                 Find Your Blend
@@ -76,7 +76,7 @@ const Footer = () => (
             <NavLink
               to="/locations"
               className="app__header__link"
-              activeClassName="is-active"
+              activeclassname="is-active"
               exact
             >
                 Locations
@@ -86,7 +86,7 @@ const Footer = () => (
             <NavLink
               to="/locations"
               className="app__header__link"
-              activeClassName="is-active"
+              activeclassname="is-active"
               exact
             >
                 Contact
@@ -96,14 +96,14 @@ const Footer = () => (
             <NavLink
               to="/locations"
               className="app__header__link"
-              activeClassName="is-active"
+              activeclassname="is-active"
               exact
             >
                 Help and FAQ
             </NavLink>
           </li>
           <li>
-            <a href="http://www.shop.jmtobacco.com" exact activeClassName="is-active" className="app__header__link" >
+            <a href="http://www.shop.jmtobacco.com" exact activeclassname="is-active" className="app__header__link" >
                 Shop
             </a>
           </li>

@@ -42,7 +42,7 @@ export const NavLink = (props) => {
     style,
     activeStyle,
     className,
-    activeClassName,
+    activeclassname,
     isActive: getIsActive,
     ...rest
   } = props;
@@ -57,7 +57,7 @@ export const NavLink = (props) => {
   return (
     <Link
       to={to}
-      className={isActive ? [activeClassName, className].join(' ') : className}
+      className={isActive ? [activeclassname, className].join(' ') : className}
       style={isActive ? { ...style, ...activeStyle } : style}
       {...rest}
     />
