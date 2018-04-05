@@ -9,7 +9,7 @@ export default class SKU extends Component {
       customPaging(i) {
         return (
           <a>
-            <img src={`${baseCloudinaryUrl}/${sku}0${i + 1}.jpg`} />
+            <img src={`${baseCloudinaryUrl}/${sku}${wrapper}0${i + 1}.jpg`} />
           </a>
         );
       },
@@ -24,7 +24,7 @@ export default class SKU extends Component {
       <div>
         <Slider {...settings}>
           <div>
-            <img src={`${baseCloudinaryUrl}/maduro01.jpg`} />
+            <img src={`${baseCloudinaryUrl}/zmaduro01.jpg`} />
           </div>
           <div>
             <img src={`${baseCloudinaryUrl}/maduro02.jpg`} />

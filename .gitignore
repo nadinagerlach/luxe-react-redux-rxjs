@@ -11,3 +11,20 @@ webpack.stats.json
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# Visual Studio Code
+.vscode
+
+# Docker
+.dockerignore
+Dockerfile
+
+# Config
+.env
+.editorconfig
+.codeclimate.yml
+.babelrc
+.eslintrc
+.flowconfig
+.stylelintrc
+.travis.yml
