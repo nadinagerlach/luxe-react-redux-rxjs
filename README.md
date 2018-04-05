@@ -1,5 +1,5 @@
 ![](https://lh3.googleusercontent.com/rVduSg1MkKOFJCTY2mzz1q30wSEk8VmhpH7_cJuz-Y9CX_JRuUvvtiFF79wKLNmbN1XNEj44JYe5dSE=w3200-h1746-rw)
-Espanola
+luxe-react-redux-rxjs
 =======================
 [![Build Status](https://travis-ci.org/nadinagerlach/final-deploy.svg?branch=master)](https://travis-ci.org/tbd)
 ![Jenkins](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)
@@ -7,8 +7,8 @@ Espanola
 ![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg)
 
 
-**Live Demo**: TBD
-A consumer facing marketing template website. This is the frontend config, currently under active development. Feel free to adapt for your own projects.😮😎
+**Live Demo**: [www.jmtobac.co](www.jmtobac.co)
+A consumer facing marketing template. This is the frontend config, currently under active development. Feel free to adapt for your own projects. 😮😎
 #### Contents
 
 1. [Prerequisites](#Prerequisites)
