@@ -74,7 +74,7 @@ export class OurStory extends React.PureComponent {
       );
     }
     return (
-      <div key="OurStory" className="app__home app__route">
+      <div key="OurStory" className="">
         <div className="app__home__intro">
           <div className="overlay">
             <div className="app__container carousel slide" style={style_1} data-ride="carousel">

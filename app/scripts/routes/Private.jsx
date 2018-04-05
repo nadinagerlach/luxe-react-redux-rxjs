@@ -4,10 +4,14 @@ import { connect } from 'react-redux';
 
 import { ActionTypes } from 'constants/index';
 import { fetchPopularRepos } from 'actions/index';
+import { fetchLatestPosts } from 'actions/index';
+
 
 import SVG from 'react-inlinesvg';
 
 import Loader from 'components/Loader';
+
+import Carousel from '../components/Carousel';
 
 export class Private extends React.PureComponent {
   static propTypes = {
@@ -68,101 +72,60 @@ export class Private extends React.PureComponent {
     }
 
     return (
-      <div key="Private" className="app__private app__route">
+      <div key="Home" className="app__home app__route">
         <div className="app__home__intro">
-          <div className="overlay">
-            <div className="app__container carousel slide" style={style_1} data-ride="carousel">
-              <h1>Your Daily Choice</h1>
-              <p>Our Cigars</p>
-              <a
-                href="https://github.com/gilbarbara/react-redux-observables-boilerplate"
-                className="app__home__download btn btn-lg btn-primary btn-icon"
-                target="_blank"
-              >
-                <i className="i-instagram" />
-                <span>Visit</span>
-              </a>
+          <Carousel />
+        </div>
+        <div className="app__home__marketingblock">
+          <div className="app__container2">
+            <div className="app__home__find-your-blend">
+                <ul>
+                  <li>
+                    <h2>Find Your Blend</h2>
+                    <h4>I'm having a</h4>
+                    <h4>and I need the perfect pairing for</h4>
+                  </li>
+                </ul>
             </div>
           </div>
         </div>
-       
         <div className="app__home__marketingblock">
           <div className="app__container">
-            <h2>Provides</h2>
+            <h2>Share your bands to win</h2>
             <ul>
               <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
+                <div className="app__home__instagram">
+                  <div className="app__home__instagram__image">
                     <SVG src={require('assets/media/logos/react.svg')} />
                   </div>
-                  <div className="app__home__library__content">
-                    <h4>React</h4>
+                  <div className="app__home__instagram__content">
+                    <h4>Insta-1</h4>
                   </div>
                 </div>
               </li>
               <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
+                <div className="app__home__instagram">
+                  <div className="app__home__instagram__image">
                     <SVG src={require('assets/media/logos/redux.svg')} />
                   </div>
-                  <div className="app__home__library__content">
-                    <h4>Redux</h4>
+                  <div className="app__home__instagram__content">
+                    <h4>Insta-2</h4>
                   </div>
                 </div>
               </li>
               <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
+                <div className="app__home__instagram">
+                  <div className="app__home__instagram__image">
                     <SVG src={require('assets/media/logos/redux-observable.svg')} />
                   </div>
-                  <div className="app__home__library__content">
-                    <h4>Redux Observable</h4>
+                  <div className="app__home__instagram__content">
+                    <h4>Insta-3</h4>
                   </div>
                 </div>
               </li>
             </ul>
+            <h2>Share on instagram</h2>
           </div>
-        </div>
-        <div className="app__home__marketingblock">
-          <div className="app__container">
-            <h2>Provides</h2>
-            <ul>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/react.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>React</h4>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/redux.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>Redux</h4>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/redux-observable.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>Redux Observable</h4>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="app__container">
-          <h2>Popular Repos</h2>
-          {output.html}
         </div>
       </div>
     );
