@@ -31,6 +31,16 @@ export const ActionTypes: Object = keyMirror({
   CANCEL_FETCH: undefined,
   SHOW_ALERT: undefined,
   HIDE_ALERT: undefined,
+  MENU_SHOW: undefined,
+  MENU_HIDE: undefined,
+  MESSAGE_SHOW: undefined,
+  MESSAGE_HIDE: undefined,
+  RECIPE_GET_LIST_REQUEST: undefined,
+  RECIPE_GET_LIST_SUCCESS: undefined,
+  RECIPE_GET_LIST_FAILURE: undefined,
+  RECIPE_GET_REQUEST: undefined,
+  RECIPE_GET_SUCCESS: undefined,
+  RECIPE_GET_FAILURE: undefined,
 });
 
 /**
