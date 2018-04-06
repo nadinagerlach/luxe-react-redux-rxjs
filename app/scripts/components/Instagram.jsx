@@ -9,7 +9,7 @@ import { fetchPopularRepos } from 'actions/index';
 
 import Loader from 'components/Loader';
 
-export class Instagram extends React.PureComponent {
+export class Instagram extends React.Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
     instagram: PropTypes.object.isRequired,
@@ -54,23 +54,26 @@ export class Instagram extends React.PureComponent {
 
     if (latestPosts.status === 'loaded') {
       output.html = (
-        <div className="app__private__repos">
+        <ul>
           {latestPosts.res.slice(0, size).map(photo => (
-            <div key={photo.caption.text}>
+            <li key={photo.caption.text}>
+            <div className="app__home__instagram">
+                  <div className="app__home__instagram__image">
               <a href={photo.link} target="_blank">
-                <img src={photo.images.standard_resolution.url} alt="Instagram" />
-                {`${photo.id}`}
+                <img src={photo.images.thumbnail.url} alt="Instagram" />
               </a>
-            </div>
+              </div>
+              </div>
+            </li>
           ))}
-        </div>
+        </ul>
       );
     }
     console.log(latestPosts.status)
 
     return (
-      <div key="Instagram" className="app__private  app__route">
-        <div className="app__container">
+      <div key="Instagram" className="app__home__marketingblock">
+          <div className="app__container">
           <h2>Latest Posts</h2>
           {output.html}
         </div>

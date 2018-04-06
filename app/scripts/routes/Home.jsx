@@ -10,6 +10,7 @@ import { fetchLatestPosts } from 'actions/index';
 
 import SVG from 'react-inlinesvg';
 import Carousel from '../components/Carousel';
+import Instagram from '../components/Instagram';
 
 import Loader from '../components/Loader';
 
@@ -17,22 +18,6 @@ import { InstantSearch, RefinementList, ClearAll, Highlight, Configure, MenuSele
 import { connectSearchBox, connectRefinementList, connectInfiniteHits, connectStateResults } from 'react-instantsearch/connectors';
 
 export class Home extends React.PureComponent {
-  static propTypes = {
-    dispatch: PropTypes.func.isRequired,
-    instagram: PropTypes.object.isRequired,
-  };
-  componentWillMount() {
-    const { dispatch } = this.props;
-
-    dispatch(fetchLatestPosts());
-  }
-
-  handleClickCancel = (e) => {
-    e.preventDefault();
-    const { dispatch } = this.props;
-
-    dispatch({ type: ActionTypes.CANCEL_FETCH });
-  };
 
   render() {
     const settings = {
@@ -49,37 +34,7 @@ export class Home extends React.PureComponent {
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
     };
-    const { instagram: { latestPosts } } = this.props;
-    const size = 4;
-    const output = {
-      html: (
-        <div className="app__private__running">
-          <Loader />
-          <div className="app__cancel">
-            <button
-              className="btn btn-primary btn-sm btn-icon btn-icon--lg"
-              onClick={this.handleClickCancel}
-            >
-              <i className="i-times-circle" />
-              <span>Cancel</span>
-            </button>
-          </div>
-        </div>
-      ),
-    };
 
-    if (latestPosts.status === 'loaded') {
-      output.html = (
-        <div className="app__private__repos">
-          {latestPosts.data.slice(0, size).map(d => (
-            <div key={d.name}>
-              <a href={d.html_url} target="_blank">{`${d.owner.login}/${d.name}`}</a>
-              <div>{d.description}</div>
-            </div>
-          ))}
-        </div>
-      );
-    }
 
     return (
       <div key="Home" className="app__home app__route">
@@ -111,44 +66,7 @@ export class Home extends React.PureComponent {
           </div>
         </div>
 
-        <div className="app__home__marketingblock">
-          <div className="app__container">
-            <h2>Share your bands to win</h2>
-            <ul>
-              <li>
-                <div className="app__home__instagram">
-                  <div className="app__home__instagram__image">
-                    <SVG src={require('assets/media/logos/react.svg')} />
-                  </div>
-                  <div className="app__home__instagram__content">
-                    <h4>Insta-1</h4>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="app__home__instagram">
-                  <div className="app__home__instagram__image">
-                    <SVG src={require('assets/media/logos/redux.svg')} />
-                  </div>
-                  <div className="app__home__instagram__content">
-                    <h4>Insta-2</h4>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="app__home__instagram">
-                  <div className="app__home__instagram__image">
-                    <SVG src={require('assets/media/logos/redux-observable.svg')} />
-                  </div>
-                  <div className="app__home__instagram__content">
-                    <h4>Insta-3</h4>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <h2>Share on instagram</h2>
-          </div>
-        </div>
+        <Instagram />
       </div>
     );
   }

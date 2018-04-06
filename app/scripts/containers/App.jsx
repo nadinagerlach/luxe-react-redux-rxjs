@@ -21,12 +21,12 @@ import ClientEntry from 'routes/ClientEntry';
 import Home from 'routes/Home';
 import OurStory from 'routes/OurStory';
 import FindYourBlend from 'routes/FindYourBlend';
-import Instagram from 'routes/Instagram';
 import Private from 'routes/Private';
 import Login from 'routes/Login';
 import NotFound from 'routes/NotFound';
 
 import Header from 'components/Header';
+import Instagram from 'components/Instagram';
 import Footer from 'components/Footer';
 import SystemAlerts from 'components/SystemAlerts';
 
@@ -132,12 +132,6 @@ export class App extends React.Component {
                       isAuthenticated={user.isAuthenticated}
                       exact
                       search={this.onSearchStateChange} refresh={this.refresh}
-                    />
-                    <RoutePrivate
-                      exact path="/instagram"
-                      component={Instagram}
-                      isAuthenticated={user.isAuthenticated}
-                      exact
                     />
                     <RoutePublic
                       component={Login}
