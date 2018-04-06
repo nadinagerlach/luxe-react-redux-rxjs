@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import { ActionTypes } from 'constants/index';
 import { fetchLatestPosts } from 'actions/index';
+import { fetchPopularRepos } from 'actions/index';
+
 
 import Loader from 'components/Loader';
 
@@ -11,12 +13,15 @@ export class Instagram extends React.PureComponent {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
     instagram: PropTypes.object.isRequired,
+    github: PropTypes.object.isRequired,
   };
 
   componentWillMount() {
     const { dispatch } = this.props;
 
     dispatch(fetchLatestPosts());
+    dispatch(fetchPopularRepos());
+
   }
 
   handleClickCancel = (e) => {
@@ -46,26 +51,27 @@ export class Instagram extends React.PureComponent {
       ),
     };
 
+
     if (latestPosts.status === 'loaded') {
       output.html = (
         <div className="app__private__repos">
-          {latestPosts.data.slice(0, size).map(d => (
-            <div key={d.caption.text}>
-              <a href={d.link} target="_blank">
-                <img src={d.images.thumbnail.url} alt="Instagram" />
-                {`${d.id}`}
+          {latestPosts.res.slice(0, size).map(photo => (
+            <div key={photo.caption.text}>
+              <a href={photo.link} target="_blank">
+                <img src={photo.images.standard_resolution.url} alt="Instagram" />
+                {`${photo.id}`}
               </a>
             </div>
           ))}
         </div>
       );
     }
+    console.log(latestPosts.status)
 
     return (
       <div key="Instagram" className="app__private  app__route">
         <div className="app__container">
           <h2>Latest Posts</h2>
-          console.log(latestPosts.status)
           {output.html}
         </div>
       </div>

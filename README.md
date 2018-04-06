@@ -9,7 +9,7 @@ luxe-react-redux-rxjs
 
 **Live Demo**: [www.jmtobac.co](www.jmtobac.co)
 
-A consumer facing marketing template. This is the frontend config, currently under active development. Feel free to adapt for your own projects. 😮😎
+A consumer facing marketing template. Currently under active development. Feel free to rip for your own projects. 😮😎
 #### Contents
 
 1. [Prerequisites](#Prerequisites)
@@ -108,8 +108,6 @@ recommend using dotenv to protect your credentials from spammers.
 
 **Note:** After a successful sign in with Facebook, a user will be redirected back to home page with appended hash `#_=_` in the URL. It is *not* a bug. See this [Stack Overflow](https://stackoverflow.com/questions/7131909/facebook-callback-appends-to-return-url) discussion for ways to handle it.
 
-<hr>
-
 <img src="https://g.twimg.com/ios_homescreen_icon.png" width="90">
 
 - Sign in at <a href="https://apps.twitter.com/" target="_blank">https://apps.twitter.com</a>
@@ -152,8 +150,12 @@ About
 | Package                         | Description                                                           |
 | ------------------------------- | --------------------------------------------------------------------- |
 | instagram-node                  | Instagram API library.                                                |
-| request                         | Simplified HTTP request library.                                      |
-| lodash                          | Handy JavaScript utlities library.                                    |
+| express                         | Simplified HTTP request library.    |                           
+| node                             | Simplified HTTP request library.   |
+| graphQL                            | Simplified HTTP request library.   |
+| MySQL                             | Simplified HTTP request library.   |
+| sequelize                             | Simplified HTTP request library.   |
+| lodash                          | Handy JavaScript utlities library.     |                      
 | mocha                           | Test framework.                                                       |
 | chai                            | BDD/TDD assertion library.                                            |
 | supertest                       | HTTP assertion library.                                               |
@@ -161,19 +163,9 @@ About
 | react                           | frontendframework.                                                    |
 | redux                           | predictable state container for JavaScript apps.                      |
 |  rxjs                           | library for reactive programming using Observables.                   |
-
-Other tools and technologies used include:
-* [Bootstrap 4](https://v4-alpha.getbootstrap.com/)
-* [Font Awesome](http://fontawesome.io): icons
-* [TypeScript](https://www.typescriptlang.org): typed superset of JavaScript
-* [Adobe Creative Suite](https://cli.angular.io): frontend UI
-* [Animate.css](https://daneden.github.io/animate.css/)
-* [WOW.js](http://mynameismatthieu.com/WOW/)
-* [NginX](https://google.com): TODO
-- redux-persist ^5.x
-- react-helmet ^5.x
-- webpack ^3.x
-
+| webpack                          | Simplified HTTP request library.   |
+| react-helmet                          | Simplified HTTP request library.   |
+| Adobe Creative Suite                           | Simplified HTTP request library.   |
 
 ### Who made this?
 Made with :heart: by [Nadina Gerlach](https://github.com/nadinagerlach), [Stranger Social](https://google.com), and [Photographer](https://google.com). Licensed under the [MIT license](license.txt).

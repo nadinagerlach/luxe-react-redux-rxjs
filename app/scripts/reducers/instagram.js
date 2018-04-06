@@ -26,7 +26,7 @@ export default {
         },
       });
     },
-    [ActionTypes.FETCH_LATEST_POSTS_REQUEST_SUCCESS](state, { payload }) {
+    [ActionTypes.FETCH_LATEST_POSTS_SUCCESS](state, { payload }) {
       return immutable(state, {
         latestPosts: {
           res: { $set: payload.res },
@@ -34,7 +34,7 @@ export default {
         },
       });
     },
-    [ActionTypes.FETCH_LATEST_POSTS_REQUEST_FAILURE](state, { payload }) {
+    [ActionTypes.FETCH_LATEST_POSTS_FAILURE](state, { payload }) {
       return immutable(state, {
         latestPosts: {
           message: { $set: parseError(payload.message) },
