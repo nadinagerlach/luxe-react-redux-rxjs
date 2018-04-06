@@ -58,11 +58,9 @@ export class Instagram extends React.Component {
           {latestPosts.res.slice(0, size).map(photo => (
             <li key={photo.caption.text}>
             <div className="app__home__instagram">
-                  <div className="app__home__instagram__image">
               <a href={photo.link} target="_blank">
-                <img src={photo.images.thumbnail.url} alt="Instagram" />
+                <img src={photo.images.thumbnail.url} className="app__home__instagram__image" alt="Instagram" />
               </a>
-              </div>
               </div>
             </li>
           ))}
