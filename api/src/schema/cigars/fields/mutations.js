@@ -1,28 +1,28 @@
 import {GraphQLString, GraphQLInt} from 'graphql'
 
-import RecipeType from '../type'
+import CigarType from '../type'
 import {create, remove} from '../resolvers'
 
-// recipe create
-export const recipeCreate = {
-  type: RecipeType,
+// cigar create
+export const cigarCreate = {
+  type: CigarType,
   args: {
     name: {
       name: 'name',
       type: GraphQLString
     },
 
-    recipe: {
-      name: 'recipe',
+    cigar: {
+      name: 'cigar',
       type: GraphQLString
     }
   },
   resolve: create
 }
 
-// recipe remove
-export const recipeRemove = {
-  type: RecipeType,
+// cigar remove
+export const cigarRemove = {
+  type: CigarType,
   args: {
     id: {
       name: 'id',

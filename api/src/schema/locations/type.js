@@ -1,16 +1,16 @@
 import {GraphQLObjectType, GraphQLString, GraphQLInt} from 'graphql'
 
-const RecipeType = new GraphQLObjectType({
-  name: 'recipe',
+const LocationType = new GraphQLObjectType({
+  name: 'location',
   description: '...',
 
   fields: () => ({
     id: {type: GraphQLInt},
     name: {type: GraphQLString},
-    recipe: {type: GraphQLString},
+    location: {type: GraphQLString},
     createdAt: {type: GraphQLString},
     updatedAt: {type: GraphQLString}
   })
 })
 
-export default RecipeType
+export default LocationType

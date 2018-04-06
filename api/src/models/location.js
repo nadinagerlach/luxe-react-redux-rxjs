@@ -1,9 +1,9 @@
 export default (sequelize, DataTypes) => {
-  return sequelize.define('cigars', {
+  return sequelize.define('locations', {
     name: {
       type: DataTypes.STRING,
     },
-    cigar: {
+    location: {
       type: DataTypes.TEXT,
     },
   });

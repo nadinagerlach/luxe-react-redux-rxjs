@@ -1,17 +1,17 @@
 import {GraphQLInt, GraphQLList} from 'graphql'
 
-import RecipeType from '../type'
+import CigarType from '../type'
 import {getAll, getById} from '../resolvers'
 
-// recipes All
-export const recipes = {
-  type: new GraphQLList(RecipeType),
+// cigars All
+export const cigars = {
+  type: new GraphQLList(CigarType),
   resolve: getAll
 }
 
-// recipe By ID
-export const recipe = {
-  type: RecipeType,
+// cigar By ID
+export const cigar = {
+  type: CigarType,
   args: {
     id: {type: GraphQLInt}
   },

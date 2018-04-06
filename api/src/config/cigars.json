@@ -1,0 +1,1369 @@
+{
+    "hits": [
+      {
+        "name": "Cafe Cubano",
+        "image": "/Caffe-Cubano-Coffee-Cover_lb9jaa.jpg",
+        "imageDark": "/cubano_agzv5f.jpg",
+        "alternative_name": "Cafe Cubano",
+        "cigar": "JM's Nicaraguan Sumatra",
+        "timeOfDay": "After Dinner",
+        "ingredientString": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+        "ingredients": [
+          "Ground espresso",
+          "1/4 cup sugar"
+        ],
+        "recipe": "Prepare a 6-serving stove-top espresso maker according to manufacturer's directions and brew a pot of espresso. Put the sugar in a large glass measuring cup and add 1 tablespoon of the hot espresso. Using a small whisk, beat the sugar with the espresso until pale and thick and nearly dissolved, about 1 minute. Stir in the remaining hot espresso. Let the foam rise to the top, then pour into espresso cups and serve immediately.",
+        "_highlightResult": {
+          "name": {
+            "value": "Cafe Cubano",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "image": {
+            "value": "/Caffe-Cubano-Coffee-Cover_lb9jaa.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "imageDark": {
+            "value": "/cubano_agzv5f.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "alternative_name": {
+            "value": "Cafe Cubano",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "cigar": {
+            "value": "JM's Nicaraguan Sumatra",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "timeOfDay": {
+            "value": "After Dinner",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredientString": {
+            "value": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredients": [
+            {
+              "value": "Ground espresso",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1/4 cup sugar",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ],
+          "recipe": {
+            "value": "Prepare a 6-serving stove-top espresso maker according to manufacturer's directions and brew a pot of espresso. Put the sugar in a large glass measuring cup and add 1 tablespoon of the hot espresso. Using a small whisk, beat the sugar with the espresso until pale and thick and nearly dissolved, about 1 minute. Stir in the remaining hot espresso. Let the foam rise to the top, then pour into espresso cups and serve immediately.",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "_highlightResult": {
+            "name": {
+              "value": {
+                "value": "Cafe Cubano",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "image_path": {
+              "value": {
+                "value": "/fCSUC713QF3nslnap2C4j6TAaTd.jpg",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "alternative_name": {
+              "value": {
+                "value": "Cafe Cubano",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          }
+        },
+        "objectID": "99",
+        "_rankingInfo": {
+          "nbTypos": 0,
+          "firstMatchedWord": 0,
+          "proximityDistance": 0,
+          "userScore": 11,
+          "geoDistance": 0,
+          "geoPrecision": 0,
+          "nbExactWords": 0,
+          "words": 0,
+          "filters": 0
+        }
+      },
+      {
+        "name": "Wild Heart Cocktail",
+        "image": "/Wild-Heart_cocktail_id5fj7.jpg",
+        "imageDark": "/wild-heart_nh0dbq.jpg",
+        "alternative_name": "Wild Heart Cocktail",
+        "cigar": "JM's Dominican Maduro",
+        "timeOfDay": "After Lunch",
+        "ingredientString": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+        "ingredients": [
+          "1 1/4 ounces Aperol",
+          "1 1/4 ounces vermouth (such as Dolin Blanc)",
+          "3/4 ounce fresh lemon juice",
+          "2 dashes Angostura bitters",
+          "Bitter lemon soda (such as San Pellegrino Limonata or Fever-Tree Bitter Lemon)",
+          "1/2 orange wheel"
+        ],
+        "recipe": "Combine Aperol, vermouth, lemon juice, and bitters in a cocktail shaker. Fill shaker with ice and shake until outside of shaker is frosty, about 30 seconds. Strain into an ice-filled Old-Fashioned glass. Top with lemon soda and garnish with orange wheel.",
+        "_highlightResult": {
+          "name": {
+            "value": "Wild Heart Cocktail",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "image": {
+            "value": "/Wild-Heart_cocktail_id5fj7.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "imageDark": {
+            "value": "/wild-heart_nh0dbq.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "alternative_name": {
+            "value": "Wild Heart Cocktail",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "cigar": {
+            "value": "JM's Dominican Maduro",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "timeOfDay": {
+            "value": "After Lunch",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredientString": {
+            "value": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredients": [
+            {
+              "value": "1 1/4 ounces Aperol",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 1/4 ounces vermouth (such as Dolin Blanc)",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "3/4 ounce fresh lemon juice",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "2 dashes Angostura bitters",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "Bitter lemon soda (such as San Pellegrino Limonata or Fever-Tree Bitter Lemon)",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1/2 orange wheel",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ],
+          "recipe": {
+            "value": "Combine Aperol, vermouth, lemon juice, and bitters in a cocktail shaker. Fill shaker with ice and shake until outside of shaker is frosty, about 30 seconds. Strain into an ice-filled Old-Fashioned glass. Top with lemon soda and garnish with orange wheel.",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "_highlightResult": {
+            "name": {
+              "value": {
+                "value": "Wild Heart Cocktail",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "image_path": {
+              "value": {
+                "value": "/fCSUC713QF3nslnap2C4j6TAaTd.jpg",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "alternative_name": {
+              "value": {
+                "value": "Wild Heart Cocktail",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          }
+        },
+        "objectID": "98",
+        "_rankingInfo": {
+          "nbTypos": 0,
+          "firstMatchedWord": 0,
+          "proximityDistance": 0,
+          "userScore": 10,
+          "geoDistance": 0,
+          "geoPrecision": 0,
+          "nbExactWords": 0,
+          "words": 0,
+          "filters": 0
+        }
+      },
+      {
+        "name": "Strawberry Pineapple Mimosa",
+        "image": "/pineapple-strawberry-mimosa-3_s0gaeo.jpg",
+        "imageDark": "/pineapple-strawberry-mimosa_oef8pm.jpg",
+        "alternative_name": "Strawberry Pineapple Mimosa",
+        "cigar": "JM's Dominican Connecticut",
+        "timeOfDay": "Before Breakfast",
+        "ingredientString": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+        "ingredients": [
+          "1 1/2 cups orange juice",
+          "1 1/2 cups pineapple juice",
+          "1 (750 mL) bottle sparkling white wine, chilled",
+          "1/2 cup strawberries, thinly sliced"
+        ],
+        "recipe": "Using a pitcher, mix orange and pineapple juice. Pour orange-pineapple mixture into champagne flutes until half full. Fill glasses with white wine. Serve immediately, garnished with strawberries, if desired.",
+        "_highlightResult": {
+          "name": {
+            "value": "Strawberry Pineapple Mimosa",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "image": {
+            "value": "/pineapple-strawberry-mimosa-3_s0gaeo.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "imageDark": {
+            "value": "/pineapple-strawberry-mimosa_oef8pm.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "alternative_name": {
+            "value": "Strawberry Pineapple Mimosa",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "cigar": {
+            "value": "JM's Dominican Connecticut",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "timeOfDay": {
+            "value": "Before Breakfast",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredientString": {
+            "value": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredients": [
+            {
+              "value": "1 1/2 cups orange juice",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 1/2 cups pineapple juice",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 (750 mL) bottle sparkling white wine, chilled",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1/2 cup strawberries, thinly sliced",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ],
+          "recipe": {
+            "value": "Using a pitcher, mix orange and pineapple juice. Pour orange-pineapple mixture into champagne flutes until half full. Fill glasses with white wine. Serve immediately, garnished with strawberries, if desired.",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "_highlightResult": {
+            "name": {
+              "value": {
+                "value": "Strawberry Pineapple Mimosa",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "image_path": {
+              "value": {
+                "value": "/fCSUC713QF3nslnap2C4j6TAaTd.jpg",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "alternative_name": {
+              "value": {
+                "value": "Strawberry Pineapple Mimosa",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          }
+        },
+        "objectID": "97",
+        "_rankingInfo": {
+          "nbTypos": 0,
+          "firstMatchedWord": 0,
+          "proximityDistance": 0,
+          "userScore": 9,
+          "geoDistance": 0,
+          "geoPrecision": 0,
+          "nbExactWords": 0,
+          "words": 0,
+          "filters": 0
+        }
+      },
+      {
+        "name": "Old Fashioned",
+        "image": "/old_fashioned_zpclpz.jpg",
+        "imageDark": "/fashioned_tdr2z4.jpg",
+        "alternative_name": "Old Fashioned",
+        "cigar": "JM's Dominican Corojo",
+        "timeOfDay": "Before Dinner",
+        "ingredientString": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+        "ingredients": [
+          "2 oz. rye or bourbon",
+          "3 dashes Angostura Bitters",
+          "1 Sugar Cube",
+          "Club Soda",
+          "1 old fashioned glass"
+        ],
+        "recipe": "Place the sugar cube (or 1/2 teaspoon loose sugar) in an Old Fashioned glass. Wet it down with 2 or 3 dashes of Angostura bitters and a short splash of club soda. Crush the sugar with a wooden muddler, chopstick, strong spoon, lipstick, cartridge case, whatever. Rotate the glass so that the sugar grains and bitters give it a lining. Add a large ice cube. Pour in the rye (or bourbon). Serve with a stirring rod, and garnish with an orange slice if you're so inclined.",
+        "_highlightResult": {
+          "name": {
+            "value": "Old Fashioned",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "image": {
+            "value": "/old_fashioned_zpclpz.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "imageDark": {
+            "value": "/fashioned_tdr2z4.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "alternative_name": {
+            "value": "Old Fashioned",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "cigar": {
+            "value": "JM's Dominican Corojo",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "timeOfDay": {
+            "value": "Before Dinner",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredientString": {
+            "value": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredients": [
+            {
+              "value": "2 oz. rye or bourbon",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "3 dashes Angostura Bitters",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 Sugar Cube",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "Club Soda",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 old fashioned glass",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ],
+          "recipe": {
+            "value": "Place the sugar cube (or 1/2 teaspoon loose sugar) in an Old Fashioned glass. Wet it down with 2 or 3 dashes of Angostura bitters and a short splash of club soda. Crush the sugar with a wooden muddler, chopstick, strong spoon, lipstick, cartridge case, whatever. Rotate the glass so that the sugar grains and bitters give it a lining. Add a large ice cube. Pour in the rye (or bourbon). Serve with a stirring rod, and garnish with an orange slice if you're so inclined.",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "_highlightResult": {
+            "name": {
+              "value": {
+                "value": "Old Fashioned",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "image_path": {
+              "value": {
+                "value": "/fCSUC713QF3nslnap2C4j6TAaTd.jpg",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "alternative_name": {
+              "value": {
+                "value": "Old Fashioned",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          }
+        },
+        "objectID": "96",
+        "_rankingInfo": {
+          "nbTypos": 0,
+          "firstMatchedWord": 0,
+          "proximityDistance": 0,
+          "userScore": 8,
+          "geoDistance": 0,
+          "geoPrecision": 0,
+          "nbExactWords": 0,
+          "words": 0,
+          "filters": 0
+        }
+      },
+      {
+        "name": "Mojito",
+        "image": "/mojito_wthh5p.jpg",
+        "imageDark": "/mojito_uuauoc.jpg",
+        "alternative_name": "Mojito",
+        "cigar": "JM's Dominican Connecticut",
+        "timeOfDay": "After Breakfast",
+        "ingredientString": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+        "ingredients": [
+          "1 ounce (2 tablespoons) freshly squeezed lime juice",
+          "2 teaspoons sugar",
+          "8 fresh mint leaves, plus more for garnish",
+          "2 ounces (1/4 cup) white rum",
+          "1 cup ice",
+          "1 ounce (2 tablespoons) club soda",
+          "Lime slice for garnish"
+        ],
+        "recipe": "Add lime juice, sugar and eight mint leaves to a cocktail shaker. Use the end of a wooden spoon or cocktail muddler to bash (or muddle) the mint into the lime juice and sugar. This releases oils from the mint and helps the sugar dissolve into the lime juice. Add rum, stir well then pour into a glass filled with ice, leaving about an inch of room then top with club soda. Garnish with extra mint leaves and a lime slice.",
+        "_highlightResult": {
+          "name": {
+            "value": "Mojito",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "image": {
+            "value": "/mojito_wthh5p.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "imageDark": {
+            "value": "/mojito_uuauoc.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "alternative_name": {
+            "value": "Mojito",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "cigar": {
+            "value": "JM's Dominican Connecticut",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "timeOfDay": {
+            "value": "After Breakfast",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredientString": {
+            "value": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredients": [
+            {
+              "value": "1 ounce (2 tablespoons) freshly squeezed lime juice",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "2 teaspoons sugar",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "8 fresh mint leaves, plus more for garnish",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "2 ounces (1/4 cup) white rum",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 cup ice",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 ounce (2 tablespoons) club soda",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "Lime slice for garnish",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ],
+          "recipe": {
+            "value": "Add lime juice, sugar and eight mint leaves to a cocktail shaker. Use the end of a wooden spoon or cocktail muddler to bash (or muddle) the mint into the lime juice and sugar. This releases oils from the mint and helps the sugar dissolve into the lime juice. Add rum, stir well then pour into a glass filled with ice, leaving about an inch of room then top with club soda. Garnish with extra mint leaves and a lime slice.",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "_highlightResult": {
+            "name": {
+              "value": {
+                "value": "Mojito",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "image_path": {
+              "value": {
+                "value": "/fCSUC713QF3nslnap2C4j6TAaTd.jpg",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "alternative_name": {
+              "value": {
+                "value": "Mojito",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          }
+        },
+        "objectID": "94",
+        "_rankingInfo": {
+          "nbTypos": 0,
+          "firstMatchedWord": 0,
+          "proximityDistance": 0,
+          "userScore": 7,
+          "geoDistance": 0,
+          "geoPrecision": 0,
+          "nbExactWords": 0,
+          "words": 0,
+          "filters": 0
+        }
+      },
+      {
+        "name": "White Russian",
+        "image": "/white_russian_mibaxk.jpg",
+        "imageDark": "/white-russian_i5cxcd.jpg",
+        "alternative_name": "White Russian",
+        "cigar": "JM's Domincan Maduro",
+        "timeOfDay": "After Dinner",
+        "ingredientString": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+        "ingredients": [
+          "1 PART KAHLÚA",
+          "1 PART ABSOLUT VODKA",
+          "1 PART HEAVY CREAM"
+        ],
+        "recipe": "Fill a rocks glass with ice cubes. Add Kahlúa and Absolut Vodka, finish up with a cream layer. Tip: Ok, It’ll never be as pretty as the pictures. BUT, the layering is manageable at home – just pour the cream off the back of a spoon. Another tip: Serve with a straw and stir it up... little darling stir it up. *Want a less calorific version? Try it out with milk, skim milk or soymilk! ",
+        "_highlightResult": {
+          "name": {
+            "value": "White Russian",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "image": {
+            "value": "/white_russian_mibaxk.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "imageDark": {
+            "value": "/white-russian_i5cxcd.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "alternative_name": {
+            "value": "White Russian",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "cigar": {
+            "value": "JM's Domincan Maduro",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "timeOfDay": {
+            "value": "After Dinner",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredientString": {
+            "value": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredients": [
+            {
+              "value": "1 PART KAHLÚA",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 PART ABSOLUT VODKA",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 PART HEAVY CREAM",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ],
+          "recipe": {
+            "value": "Fill a rocks glass with ice cubes. Add Kahlúa and Absolut Vodka, finish up with a cream layer. Tip: Ok, It’ll never be as pretty as the pictures. BUT, the layering is manageable at home – just pour the cream off the back of a spoon. Another tip: Serve with a straw and stir it up... little darling stir it up. *Want a less calorific version? Try it out with milk, skim milk or soymilk! ",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "_highlightResult": {
+            "name": {
+              "value": {
+                "value": "White Russian",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "image_path": {
+              "value": {
+                "value": "/fCSUC713QF3nslnap2C4j6TAaTd.jpg",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "alternative_name": {
+              "value": {
+                "value": "White Russian",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          }
+        },
+        "objectID": "93",
+        "_rankingInfo": {
+          "nbTypos": 0,
+          "firstMatchedWord": 0,
+          "proximityDistance": 0,
+          "userScore": 6,
+          "geoDistance": 0,
+          "geoPrecision": 0,
+          "nbExactWords": 0,
+          "words": 0,
+          "filters": 0
+        }
+      },
+      {
+        "name": "Banker's Lunch Cocktail",
+        "image": "/Bankers-Lunch_qb7qpy.jpg",
+        "imageDark": "/Bankers-Lunch_zjqtct.jpg",
+        "alternative_name": "Banker's Lunch Cocktail",
+        "cigar": "JM's Nicaraguan Maduro",
+        "timeOfDay": "Before Lunch",
+        "ingredientString": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+        "ingredients": [
+          "1 1⁄2 oz Ketel One Vodka",
+          "1⁄2 oz Dry vermouth",
+          "1⁄2 oz Orange liqueur",
+          "1 1⁄2 oz Grapefruit juice"
+        ],
+        "recipe": "Add all the ingredients to a mixing glass and fill with ice. Stir, and strain into a rocks glass. Garnish with a grapefruit peel.",
+        "_highlightResult": {
+          "name": {
+            "value": "Banker's Lunch Cocktail",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "image": {
+            "value": "/Bankers-Lunch_qb7qpy.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "imageDark": {
+            "value": "/Bankers-Lunch_zjqtct.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "alternative_name": {
+            "value": "Banker's Lunch Cocktail",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "cigar": {
+            "value": "JM's Nicaraguan Maduro",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "timeOfDay": {
+            "value": "Before Lunch",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredientString": {
+            "value": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredients": [
+            {
+              "value": "1 1⁄2 oz Ketel One Vodka",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1⁄2 oz Dry vermouth",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1⁄2 oz Orange liqueur",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 1⁄2 oz Grapefruit juice",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ],
+          "recipe": {
+            "value": "Add all the ingredients to a mixing glass and fill with ice. Stir, and strain into a rocks glass. Garnish with a grapefruit peel.",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "_highlightResult": {
+            "name": {
+              "value": {
+                "value": "Banker's Lunch Cocktail",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "image_path": {
+              "value": {
+                "value": "/fCSUC713QF3nslnap2C4j6TAaTd.jpg",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "alternative_name": {
+              "value": {
+                "value": "Banker's Lunch Cocktail",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          }
+        },
+        "objectID": "92",
+        "_rankingInfo": {
+          "nbTypos": 0,
+          "firstMatchedWord": 0,
+          "proximityDistance": 0,
+          "userScore": 5,
+          "geoDistance": 0,
+          "geoPrecision": 0,
+          "nbExactWords": 0,
+          "words": 0,
+          "filters": 0
+        }
+      },
+      {
+        "name": "Cardamom + Vanilla Coffee Cocktail",
+        "image": "/Cardamom_Vanilla_Coffee_cnu6ia.jpg",
+        "imageDark": "/vanilla-coffee_kwelgp.jpg",
+        "alternative_name": "Cardamom + Vanilla Coffee Cocktail",
+        "cigar": "JM's Dominican Honey",
+        "timeOfDay": "After Dinner",
+        "ingredientString": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+        "ingredients": [
+          "2 ounces cardamom coffee concentrate*",
+          "1 ounce vodka",
+          "¾ ounce triple sec",
+          "½ ounce vanilla simple syrup",
+          "1 ounce heavy cream",
+          "A few ice cubes"
+        ],
+        "recipe": "Add all ingredients to a cocktail shaker. Shake well for about 15 seconds. Pour into a glass and serve.",
+        "_highlightResult": {
+          "name": {
+            "value": "Cardamom + Vanilla Coffee Cocktail",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "image": {
+            "value": "/Cardamom_Vanilla_Coffee_cnu6ia.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "imageDark": {
+            "value": "/vanilla-coffee_kwelgp.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "alternative_name": {
+            "value": "Cardamom + Vanilla Coffee Cocktail",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "cigar": {
+            "value": "JM's Dominican Honey",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "timeOfDay": {
+            "value": "After Dinner",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredientString": {
+            "value": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredients": [
+            {
+              "value": "2 ounces cardamom coffee concentrate*",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 ounce vodka",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "¾ ounce triple sec",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "½ ounce vanilla simple syrup",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 ounce heavy cream",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "A few ice cubes",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ],
+          "recipe": {
+            "value": "Add all ingredients to a cocktail shaker. Shake well for about 15 seconds. Pour into a glass and serve.",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "_highlightResult": {
+            "name": {
+              "value": {
+                "value": "Cardamom + Vanilla Coffee Cocktail",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "image_path": {
+              "value": {
+                "value": "/fCSUC713QF3nslnap2C4j6TAaTd.jpg",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "alternative_name": {
+              "value": {
+                "value": "Cardamom + Vanilla Coffee Cocktail",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          }
+        },
+        "objectID": "91",
+        "_rankingInfo": {
+          "nbTypos": 0,
+          "firstMatchedWord": 0,
+          "proximityDistance": 0,
+          "userScore": 4,
+          "geoDistance": 0,
+          "geoPrecision": 0,
+          "nbExactWords": 0,
+          "words": 0,
+          "filters": 0
+        }
+      },
+      {
+        "name": "Dirty Martini",
+        "image": "/Classic_Dirty_Martini-023_eqhbm8.jpg",
+        "imageDark": "/martini_tptmus.jpg",
+        "alternative_name": "Dirty Martini",
+        "cigar": "JM's Nicarguan Maduro",
+        "timeOfDay": "Before Dinner",
+        "ingredientString": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+        "ingredients": [
+          "Cracked ice",
+          "2 1/2 ounces London dry gin, such as Beefeater",
+          "1/2 ounce dry vermouth, preferably Noilly Prat",
+          "Green olive for garnish"
+        ],
+        "recipe": "In mixing glass or cocktail shaker filled with ice, combine gin and vermouth. Stir well, about 20 seconds, then strain into martini glass. Garnish with olive and serve.",
+        "_highlightResult": {
+          "name": {
+            "value": "Dirty Martini",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "image": {
+            "value": "/Classic_Dirty_Martini-023_eqhbm8.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "imageDark": {
+            "value": "/martini_tptmus.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "alternative_name": {
+            "value": "Dirty Martini",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "cigar": {
+            "value": "JM's Nicarguan Maduro",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "timeOfDay": {
+            "value": "Before Dinner",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredientString": {
+            "value": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredients": [
+            {
+              "value": "Cracked ice",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "2 1/2 ounces London dry gin, such as Beefeater",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1/2 ounce dry vermouth, preferably Noilly Prat",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "Green olive for garnish",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ],
+          "recipe": {
+            "value": "In mixing glass or cocktail shaker filled with ice, combine gin and vermouth. Stir well, about 20 seconds, then strain into martini glass. Garnish with olive and serve.",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "_highlightResult": {
+            "name": {
+              "value": {
+                "value": "Dirty Martini",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "image_path": {
+              "value": {
+                "value": "/fCSUC713QF3nslnap2C4j6TAaTd.jpg",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "alternative_name": {
+              "value": {
+                "value": "Dirty Martini",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          }
+        },
+        "objectID": "89",
+        "_rankingInfo": {
+          "nbTypos": 0,
+          "firstMatchedWord": 0,
+          "proximityDistance": 0,
+          "userScore": 3,
+          "geoDistance": 0,
+          "geoPrecision": 0,
+          "nbExactWords": 0,
+          "words": 0,
+          "filters": 0
+        }
+      },
+      {
+        "name": "Brandy Alexander",
+        "image": "/ARARAT-BRANDY_xeakbk.jpg",
+        "imageDark": "/ARARAT-BRANDY_nblrgs.jpg",
+        "alternative_name": "Brandy",
+        "cigar": "JM's Dominican Maduro",
+        "timeOfDay": "After Dinner",
+        "ingredientString": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+        "ingredients": [
+          "1 ounce brandy",
+          "1 ounce dark crème de cacao",
+          "1 ounce heavy cream",
+          "Pinch of freshly grated nutmeg"
+        ],
+        "recipe": "Shake the brandy, crème de cacao, and cream with ice; then strain into a chilled cocktail glass. Garnish with a pinch of nutmeg.",
+        "_highlightResult": {
+          "name": {
+            "value": "Brandy Alexander",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "image": {
+            "value": "/ARARAT-BRANDY_xeakbk.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "imageDark": {
+            "value": "/ARARAT-BRANDY_nblrgs.jpg",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "alternative_name": {
+            "value": "Brandy",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "cigar": {
+            "value": "JM's Dominican Maduro",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "timeOfDay": {
+            "value": "After Dinner",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredientString": {
+            "value": "4 ounces freshly squeezed lemon juice (2 lemons) <br>4 ounces Cointreau liqueur<br>7 ounces cranberry juice cocktail, such as Ocean Spray",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "ingredients": [
+            {
+              "value": "1 ounce brandy",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 ounce dark crème de cacao",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "1 ounce heavy cream",
+              "matchLevel": "none",
+              "matchedWords": []
+            },
+            {
+              "value": "Pinch of freshly grated nutmeg",
+              "matchLevel": "none",
+              "matchedWords": []
+            }
+          ],
+          "recipe": {
+            "value": "Shake the brandy, crème de cacao, and cream with ice; then strain into a chilled cocktail glass. Garnish with a pinch of nutmeg.",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "_highlightResult": {
+            "name": {
+              "value": {
+                "value": "Brandy",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "image_path": {
+              "value": {
+                "value": "/fCSUC713QF3nslnap2C4j6TAaTd.jpg",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            },
+            "alternative_name": {
+              "value": {
+                "value": "Brandy",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "matchLevel": {
+                "value": "none",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          }
+        },
+        "objectID": "79",
+        "_rankingInfo": {
+          "nbTypos": 0,
+          "firstMatchedWord": 0,
+          "proximityDistance": 0,
+          "userScore": 2,
+          "geoDistance": 0,
+          "geoPrecision": 0,
+          "nbExactWords": 0,
+          "words": 0,
+          "filters": 0
+        }
+      }
+    ],
+    "nbHits": 12,
+    "page": 0,
+    "nbPages": 2,
+    "hitsPerPage": 10,
+    "processingTimeMS": 1,
+    "facets": {
+      "cigar": {
+        "JM's Dominican Connecticut": 2,
+        "JM's Dominican Maduro": 2,
+        "JM's Nicaraguan Maduro": 2,
+        "JM's Domincan Maduro": 1,
+        "JM's Dominican Corojo": 1,
+        "JM's Dominican Honey": 1,
+        "JM's Dominican Sumatra": 1,
+        "JM's Nicaraguan Sumatra": 1,
+        "JM's Nicarguan Maduro": 1
+      },
+      "timeOfDay": {
+        "After Dinner": 4,
+        "After Lunch": 2,
+        "Before Dinner": 2,
+        "Before Lunch": 2,
+        "After Breakfast": 1,
+        "Before Breakfast": 1
+      }
+    },
+    "exhaustiveFacetsCount": true,
+    "exhaustiveNbHits": true,
+    "query": "",
+    "params": "query=&hitsPerPage=10&page=0&analytics=false&attributesToRetrieve=*&highlightPreTag=%3Cais-highlight-0000000000%3E&highlightPostTag=%3C%2Fais-highlight-0000000000%3E&getRankingInfo=1&facets=%5B%22cigar%22%2C%22timeOfDay%22%5D&tagFilters=",
+    "index": "jmtobacco",
+    "serverUsed": "c5-usw-2.algolia.net",
+    "parsedQuery": "",
+    "timeoutCounts": false,
+    "timeoutHits": false
+  }

@@ -1,13 +1,13 @@
 import express from 'express';
 
 import setupLoadModules from './setup/loadModules';
-//GraphQL
+import setupGraphQL from './setup/graphql';
 import setupStartServer from './setup/startServer';
 
 const server = express();
 
 setupLoadModules(server);
 
-//GraphQL
+setupGraphQL(server);
 
 setupStartServer(server);

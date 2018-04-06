@@ -1,10 +1,12 @@
 import Sequelize from 'sequelize';
 
-import dbConnection from '../setup/dbConnection';
+import databaseConnection from '../setup/databaseConnection';
 
 const models = {
-  Recipe: dbConnection.import('./recipe'),
-  Cigar: dbConnection.import('./cigar'),
+  Recipe: databaseConnection.import('./recipe'),
+  Cigar: databaseConnection.import('./cigar'),
+  Location: databaseConnection.import('./location'),
+
 };
 
 Object.keys(models).forEach((modelName) => {
@@ -13,7 +15,7 @@ Object.keys(models).forEach((modelName) => {
   }
 });
 
-models.Sequelize = dbConnection;
+models.sequelize = databaseConnection;
 models.Sequelize = Sequelize;
 
 export default models;

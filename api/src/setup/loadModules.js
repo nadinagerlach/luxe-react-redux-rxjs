@@ -8,7 +8,7 @@ export default function (server) {
 
   server.use(cors());
 
-  server.use(bodyParser.json());
+  server.use(bodyParser.json())
   server.use(bodyParser.urlencoded({extended: false}));
 
   server.use(cookieParser());

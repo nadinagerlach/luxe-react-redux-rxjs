@@ -1,28 +1,28 @@
 import {GraphQLString, GraphQLInt} from 'graphql'
 
-import RecipeType from '../type'
+import LocationType from '../type'
 import {create, remove} from '../resolvers'
 
-// recipe create
-export const recipeCreate = {
-  type: RecipeType,
+// location create
+export const locationCreate = {
+  type: LocationType,
   args: {
     name: {
       name: 'name',
       type: GraphQLString
     },
 
-    recipe: {
-      name: 'recipe',
+    location: {
+      name: 'location',
       type: GraphQLString
     }
   },
   resolve: create
 }
 
-// recipe remove
-export const recipeRemove = {
-  type: RecipeType,
+// location remove
+export const locationRemove = {
+  type: LocationType,
   args: {
     id: {
       name: 'id',
