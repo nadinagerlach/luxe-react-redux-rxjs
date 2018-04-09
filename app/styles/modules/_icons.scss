@@ -20,6 +20,8 @@
   line-height: 1;
   speak: none;
   text-transform: none;
+  font-size: 2.65rem;
+  color: $app-color;
 }
 
 // *** Animations *** //
@@ -602,10 +604,17 @@
 
 .i-envelope:before {
   content: '\f077';
+  color: $app-color-muted;
+  font-size: 1.4rem;
+
 }
 
 .i-envelope-o:before {
   content: '\f078';
+  color: $app-color-muted;
+  font-size: 1.4rem;
+
+
 }
 
 .i-eraser:before {
@@ -826,6 +835,8 @@
 
 .i-headphones:before {
   content: '\f0a7';
+
+
 }
 
 .i-heart:before {
@@ -902,7 +913,6 @@
 
 .i-instagram:before {
   content: '\f0b5';
-  color: white;
 }
 
 .i-key:before {
@@ -1127,6 +1137,11 @@
 
 .i-phone:before {
   content: '\f0e8';
+  color: $app-color-muted;
+  font-size: 1.4rem;
+  line-height: .2rem;
+
+
 }
 
 .i-phone-square:before {

@@ -1,4 +1,6 @@
 import React from 'react';
+// import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import { connect } from 'react-redux';
@@ -28,132 +30,82 @@ export class OurStory extends React.PureComponent {
   };
 
   render() {
-    const settings = {
-      dots: false,
-      arrows: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    };
     const imgUrl_1 = 'https://res.cloudinary.com/dygn/image/upload/b_rgb:000000,e_brightness:6,o_40/v1513545808/home-hero-1_eyejxg.jpg';
     const style_1 = {
       backgroundImage: `url("${imgUrl_1}")`,
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
     };
-    const { instagram: { latestPosts } } = this.props;
-    const size = 4;
-    const output = {
-      html: (
-        <div className="app__private__running">
-          <Loader />
-          <div className="app__cancel">
-            <button
-              className="btn btn-primary btn-sm btn-icon btn-icon--lg"
-              onClick={this.handleClickCancel}
-            >
-              <i className="i-times-circle" />
-              <span>Cancel</span>
-            </button>
-          </div>
-        </div>
-      ),
-    };
 
-    if (latestPosts.status === 'loaded') {
-      output.html = (
-        <div className="app__private__repos">
-          {latestPosts.data.slice(0, size).map(d => (
-            <div key={d.name}>
-              <a href={d.html_url} target="_blank">{`${d.owner.login}/${d.name}`}</a>
-              <div>{d.description}</div>
-            </div>
-          ))}
-        </div>
-      );
-    }
     return (
       <div key="OurStory" className="">
         <div className="app__home__intro">
           <div className="overlay">
             <div className="app__container carousel slide" style={style_1} data-ride="carousel">
-              <h1>Your Daily Choice</h1>
-              <p>Our Cigars</p>
-              <a
-                href="https://instagram.com/"
-                className="app__home__download btn btn-lg btn-primary btn-icon"
-                target="_blank"
-              >
-                <i className="i-instagram" />
-                <span>Visit</span>
-              </a>
+              <h1>Born to make cigars</h1>
+              <p className="tagline">The story of JM Tobacco, Inc.</p>
+              <div className="d-flex justify-content-around align-content-center flex-wrap">
+                <div><Link to="/ourstory/#1977" className="button"><div className="button-cell"><span className="button-text-wrapper">1975-1985</span></div></Link></div>
+                <div><Link to="/ourstory/#1995" className="button"><div className="button-cell"><span className="button-text-wrapper">1986-1995</span></div></Link></div>
+                <div><Link to="/ourstory/#Espanola" className="button"><div className="button-cell"><span className="button-text-wrapper">1996-2005</span></div></Link></div>
+                <div><Link to="/ourstory/#2006" className="button"><div className="button-cell"><span className="button-text-wrapper">2006-Present</span></div></Link></div>
+              </div>
             </div>
           </div>
         </div>
         <div className="app__home__marketingblock">
           <div className="app__container">
-            <h2>Find your blend</h2>
-            <ul>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/react.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>I'm having a</h4>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/react.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <p>and I need the perfect pairing for</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+          div className="full-width-image-2">
+          <div className="blend-wrapper">
+            <div className="row">
+              <div className="col-md-6 col-sm-10 col-xs-10">
+                <p>Crafting something that endures takes time and character. You’ll find plenty of both in the people and history that make JM Tobacco.</p>
+              </div>
+              <div className="col-md-6">
+              </div>
           </div>
         </div>
-        <div className="app__home__marketingblock">
-          <div className="app__container">
-            <h2>Share your bands to win</h2>
-            <ul>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/react.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>Insta-1</h4>
-                  </div>
+      </div>
+          <div className="container cont-margin">
+              <div className="row our-story">
+                <div className="col-md-7 order-md-2">
+                  <h2 className="our-story-heading"  id="1977" >1977</h2>
+                  <p className="lead">Anto Mahroukian, current President of JM Tobacco, was born.</p>
                 </div>
-              </li>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/redux.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>Insta-2</h4>
-                  </div>
+                <div className="col-md-5 order-md-1">
+                {/* <img className="our-story-image img-fluid mx-auto wow fadeInLeft animated" src={require("../../../assets/media/images/our-story/1977.jpg")} alt="Generic placeholder image"></img> */}
                 </div>
-              </li>
-              <li>
-                <div className="app__home__library">
-                  <div className="app__home__library__image">
-                    <SVG src={require('assets/media/logos/redux-observable.svg')} />
-                  </div>
-                  <div className="app__home__library__content">
-                    <h4>Insta-3</h4>
-                  </div>
+              </div>
+
+              <div className="row our-story">
+                <div className="col-md-7">
+                <h2 className="our-story-heading" id="1995" >1995</h2>            
+                <p className="lead">It all began with an expensive birthday gift; a pricey cigar from Anto Mahroukian to his father, John Mahroukian. This led to the birth of JM Tobacco, Inc.</p>
                 </div>
-              </li>
-            </ul>
-            <h2>Share on instagram</h2>
+                <div className="col-md-5">
+                {/* <img className="our-story-image img-fluid mx-auto wow fadeInRight animated" src={require("../../../assets/media/images/our-story/1995.jpg")} alt="Generic placeholder image"></img> */}
+                </div>
+              </div>
+
+              <div className="row our-story">
+                <div className="col-md-7 order-md-2">
+                <h2 className="our-story-heading" id="Espanola" >DATE</h2>            
+                <p className="lead">JM Tobacco Releases it"s first cigar: Espanola Gold Label.</p>
+                </div>
+                <div className="col-md-5 order-md-1">
+                  {/* <img className="our-story-image img-fluid mx-auto wow fadeInRight animated" src={require("../../../assets/media/images/our-story/espanola.jpg")} alt="Generic placeholder image"></img> */}
+                </div>
+              </div>
+
+              <div className="row our-story">
+                <div className="col-md-7">
+                <h2 className="our-story-heading" id="2006" >2006</h2>            
+                <p className="lead">Anto Mahroukian takes over as President of JM Tobacco, Inc.</p>
+                </div>
+                <div className="col-md-5">
+                  {/* <img className="our-story-image img-fluid mx-auto wow fadeInLeft animated" src={require("../../../assets/media/images/our-story/2006.jpg")} alt="Generic placeholder image"></img> */}
+                </div>
+              </div>
           </div>
         </div>
       </div>

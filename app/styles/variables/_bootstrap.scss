@@ -69,6 +69,10 @@ $font-size-h6: 1.6rem;
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+ .uppercase {
+   text-transform: uppercase;
+   letter-spacing: .09rem;
+ }
 
  input[type="submit"] {
   -webkit-appearance: button;
@@ -811,7 +815,7 @@ output {
   display: block;
   width: 100%;
   height: 32px;
-  padding: 6px 12px;
+  padding: 12px 12px;
   font-size: 13px;
   line-height: 1.42857143;
   color: #7f7f7f;

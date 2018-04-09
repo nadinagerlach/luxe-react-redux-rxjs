@@ -16,6 +16,17 @@
   &__menu {
     display: flex;
     justify-content: space-between;
+
+    &__title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .105em;
+      position: relative;
+      font-family: 'acumin-pro-extra-condensed',Sans-Serif;
+
+    }
     a {
       font-size: 1.6rem;
       font-weight: 700;
@@ -33,7 +44,7 @@
   }
 
   &__link {
-    color: #fff;
+    color: $app-color-muted;
 
     &.is-active {
       color: $app-color;
@@ -44,7 +55,6 @@
   }
   
 // =============== FOOTER ====================
-/* scss/modules/_footer-module.scss */
 footer{
   overflow: hidden;
   & ul > li {
@@ -52,11 +62,22 @@ footer{
   }
 }
 
-/* desktop - tablet small legal content  */
 .legal-title, .legal-content{
     color: $dark-grey;
-    font-size: 10px;
-    font-weight: bold;
+    padding: 0rem 10rem;
+    a {
+      color: $dark-grey;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .105em;
+      position: relative;
+      font-family: 'acumin-pro-extra-condensed',Sans-Serif;
+      font-weight: bold;
+      text-decoration: none;
+      
+    }
 }
 .legal-content{
     font-weight: normal;
@@ -69,19 +90,20 @@ footer{
 	    margin: 0 5px 5px 0;
     }
 }
-footer .subscribe-container,
+
 footer .mid-section-container,
 footer .legal-copyright-container{
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10px;
 }
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px){
 	footer .connect-with-us{
 		text-align:center;
-		border-bottom: 1px solid $light-cool-grey;
+		border-bottom: 1px solid $dark-grey;
 		padding-bottom: 20px;
 		margin-bottom: 20px;
 	}
@@ -90,9 +112,17 @@ footer .legal-copyright-container{
 	    margin-top: 10px;
 	}
 	.legal-mobile{
-	    border-bottom: 1px solid $light-cool-grey;
+	    border-bottom: 1px solid $dark-grey;
 	    padding-bottom: 20px;
-		margin-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .105em;
+      position: relative;
+      font-family: 'acumin-pro-extra-condensed',Sans-Serif;
+      font-weight: bold;
 		& ul{
 		    list-style: none;
 		}
@@ -114,7 +144,7 @@ footer .legal-copyright-container{
 		text-align:right;
 	}
 	.mid-section-container{
-        border-bottom: 1px solid $light-cool-grey;
+        border-bottom: 1px solid $dark-grey;
         margin-bottom: 30px;
         padding-bottom: 20px;
     }
@@ -131,7 +161,7 @@ footer .legal-copyright-container{
 		margin: 0 auto;
 	}
 	.mid-section-container{
-        border-bottom: 1px solid $light-cool-grey;
+        border-bottom: 1px solid $dark-grey;
         margin-bottom: 30px;
         padding-bottom: 20px;
     }
@@ -165,7 +195,7 @@ footer .legal-copyright-container{
       font-size: 14px;
   }
   & input{
-      height: 34px;
+      height: 46px;
   }
 }
 @media only screen and (min-width: 1200px){
@@ -176,7 +206,7 @@ footer .legal-copyright-container{
 }
 .contact-us-mobile{
     padding: 20px;
-    border-bottom: 1px solid $light-cool-grey;
+    border-bottom: 1px solid $dark-grey;
 }
 .contact-us-buttons > button{
     margin-right: 13px;
@@ -285,4 +315,23 @@ fieldset[disabled] a.btn {
   align-items: center;
   justify-content: center;
   
+}
+
+.margin-top {
+  margin-top: 1.25rem;
+}
+.social-footer {
+  margin-top: 1rem;
+  margin-right: 30px;
+
+  li {
+    float: right;
+
+  }
+}
+#pad {
+  margin-left:1rem;
+  padding-top:.5rem;
+  color: #212529;
+  font-size: 2rem;
 }

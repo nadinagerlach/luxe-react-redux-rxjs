@@ -20,6 +20,7 @@ import { connectSearchBox, connectInfiniteHits, connectStateResults } from 'reac
 import ClientEntry from 'routes/ClientEntry';
 import Home from 'routes/Home';
 import OurStory from 'routes/OurStory';
+import OurCigars from 'routes/OurCigars';
 import FindYourBlend from 'routes/FindYourBlend';
 import Private from 'routes/Private';
 import Login from 'routes/Login';
@@ -122,7 +123,7 @@ export class App extends React.Component {
                     />
                     <RoutePrivate
                       exact path="/our-cigars"
-                      component={OurStory}
+                      component={OurCigars}
                       isAuthenticated={user.isAuthenticated}
                       exact
                     />

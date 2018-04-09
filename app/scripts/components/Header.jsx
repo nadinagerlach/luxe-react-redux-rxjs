@@ -71,9 +71,11 @@ export default class Header extends React.Component {
                 Shop
               </a>
             </li>
-            <li>
-            <BurgerMenu />
+            <li id="invisible">
+              Invii
             </li>
+            <BurgerMenu />
+
           </ul>
         </div>
       </header>

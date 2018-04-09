@@ -1,5 +1,5 @@
 .app__header {
-  background-color: $app-color-alt;
+  background-color: rgba(0, 0, 0, .8);
   height: $header-height;
   left: 0;
   position: fixed;
@@ -114,18 +114,24 @@
 .bm-cross-button {
   height: 24px;
   width: 24px;
+  top: 28px !important;
+  right: 28px !important;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: $dark-grey;
 }
 
 /* General sidebar styles */
 .bm-menu {
   background: black;
-  padding: 2.5em 1.5em 0;
+  padding-top: 7rem;
   font-size: 1.15em;
+}
+
+.bm-menu-wrap {
+  top: 0px;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -136,10 +142,63 @@
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em;
+  padding: 0em;
+  display: block;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0);
+  width: 0px !important;
+}
+
+#invisible {
+  color: rgba(0, 0, 0, 0);
+  cursor: default;
+}
+.app__bm {
+  padding-left: 2.25rem;
+
+  &__nav {
+    right: 0;
+    padding-left: 0rem;
+    list-style-type: none;
+
+  a {
+    color: $app-color-muted;
+
+  }
+  
+  li {
+    &:not(:last-child) {
+      display: block;
+      padding-bottom: .85rem;
+      padding-top: .85rem;  
+      padding-right:10px;
+      justify-content: left;
+
+
+    }
+
+    &:last-child {
+      justify-content: left;
+    }
+  }
+
+  #sub {
+    color: $med-grey;
+  }
+
+  #social {
+    display: inline-block;
+    font-size: 2.65rem;
+  }
+  .separator {
+    border-top: 1px solid $med-grey;
+    display: block;
+    margin: 10px 0;
+    width: 240px
+  }
+
+}
 }

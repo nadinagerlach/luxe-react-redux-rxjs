@@ -37,6 +37,7 @@ button {
   line-height: 1;
   padding: 3;
   font-weight: 700;
+  
 
   &:active,
   &:focus,
@@ -285,4 +286,8 @@ a div.button-table .button-cell span.svg-wrap{
 	display: table-cell;
 	padding-left: 10px;
 	vertical-align: middle;
+}
+
+#subscribe2 {
+	padding: 12px 25px;
 }
