@@ -37,8 +37,8 @@ export class Home extends React.PureComponent {
 
 
     return (
-      <div key="Home" className="app__home app__route">
-        <div className="app__home__intro">
+      <div key="Home" className="app__home app__route" >
+        <div className="app__home__intro" id="overlay">
           <Carousel />
         </div>
         <div className="app__home__marketingblock">
@@ -55,7 +55,7 @@ export class Home extends React.PureComponent {
                   <h4>and I need the perfect pairing for<MenuSelect attributeName="timeOfDay" /></h4>
                 </li>
                 <li>
-                  <Link className="xola-button" to="/findyourblend">
+                  <Link className="button" to="/findyourblend">
                     <div className="button-cell">
                       <span className="button-text-wrapper">Find My Blend</span>
                     </div>

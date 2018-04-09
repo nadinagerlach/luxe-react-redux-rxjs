@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 
 export default class Carousel extends Component {
   render() {
@@ -12,44 +13,47 @@ export default class Carousel extends Component {
       lazyLoad: true,
     };
     return (
-      <div>
-        <Slider {...settings}>
-          <div>
-            <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545808/home-hero-1_eyejxg.jpg" alt="First slide" />
-            <h1 id="carousel-caption">Your Daily Choice</h1>
-            <p>
-              <a href="#" className="button" id="carousel-button">
-                <div className="button-cell">
-                  <span className="button-text-wrapper">Our Cigars</span>
-                </div>
-              </a>
-            </p>
-          </div>
-          <div>
-            <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545808/home-hero-3_o7sds7.jpg" alt="Second slide" />
-            <h1 id="carousel-caption">Espanola Fine Cigars</h1>
-            <p>
-            <a href="#" className="button" id="carousel-button">
-                <div className="button-cell">
-                  <span className="button-text-wrapper">Our Story</span>
-                </div>
-              </a>
-            </p>
-          </div>
-          <div>
-            <img className="d-block img-fluid image-size" src="http://res.cloudinary.com/dygn/image/upload/v1513545807/home-hero-2_cfkrph.jpg" alt="Third slide" />
-            <h1 id="carousel-caption">Zoidian Cigars</h1>
-            <h1 id="carousel-caption">An Affordable Luxury</h1>
-            <p>
-            <a href="#" className="button" id="carousel-button">
-                <div className="button-cell">
-                  <span className="button-text-wrapper">Our Cigars</span>
-                </div>
-              </a>
-            </p>
-          </div>
-        </Slider>
-      </div>
+      <Slider {...settings} className="app__carousel">
+        <div>
+          <img src="https://res.cloudinary.com/dygn/image/upload/b_rgb:000000,o_30/v1513545808/home-hero-1_eyejxg.jpg" alt="First slide" />
+          <p className="app__carousel__caption">
+          <h1 className="app__carousel__title">Your Daily Choice</h1>
+            <a href="#" className="button" >
+              <div className="button-cell">
+                <span className="button-text-wrapper">Our Cigars</span>
+              </div>
+            </a>
+          </p>
+        </div>
+        <div>
+          <img src="https://res.cloudinary.com/dygn/image/upload/b_rgb:000000,o_30/v1513545808/home-hero-3_o7sds7.jpg" alt="Second slide" />
+          <p className="app__carousel__caption">
+          <h1 className="app__carousel__title">Espanola Fine Cigars</h1>
+          <Link
+          to="/home"
+          className="button"
+          activeclassname="is-active"
+          exact
+          >
+                        <div className="button-cell">
+                <span className="button-text-wrapper">Our Story</span>
+              </div>
+          </Link>
+          </p>
+        </div>
+        <div>
+          <img src="https://res.cloudinary.com/dygn/image/upload/b_rgb:000000,o_29/v1513545807/home-hero-2_cfkrph.jpg" alt="Third slide" />
+          <p className="app__carousel__caption">
+
+          <h1 className="app__carousel__title">Zoidian Cigars</h1>
+              <a href="#" className="button" >
+              <div className="button-cell">
+                <span className="button-text-wrapper">An Affordable Luxury</span>
+              </div>
+            </a>
+          </p>
+        </div>
+      </Slider>
     );
   }
 }

@@ -12,7 +12,7 @@ const Footer = () => (
       <div className="row subscribe text-center">
         <div className="subscribe-container">
           <div className="col-xs-12 col-md-6 col-sm-6">
-            <h2 className="uppercase">Your Daily Choice. Join Our Mailing List.</h2>
+            <h4 className="uppercase">Your Daily Choice. Join Our Mailing List.</h4>
           </div>
           <div className="col-xs-12 col-md-6 col-sm-6">
             <div className="input-group">

@@ -21,7 +21,6 @@ export class Instagram extends React.Component {
 
     dispatch(fetchLatestPosts());
     dispatch(fetchPopularRepos());
-
   }
 
   handleClickCancel = (e) => {
@@ -57,23 +56,30 @@ export class Instagram extends React.Component {
         <ul>
           {latestPosts.res.slice(0, size).map(photo => (
             <li key={photo.caption.text}>
-            <div className="app__home__instagram">
-              <a href={photo.link} target="_blank">
-                <img src={photo.images.thumbnail.url} className="app__home__instagram__image" alt="Instagram" />
-              </a>
+              <div className="app__home__instagram">
+                <a href={photo.link} target="_blank">
+                  <img src={photo.images.thumbnail.url} className="app__home__instagram__image" alt="Instagram" />
+                </a>
               </div>
             </li>
           ))}
         </ul>
       );
     }
-    console.log(latestPosts.status)
+    console.log(latestPosts.status);
 
     return (
       <div key="Instagram" className="app__home__marketingblock">
-          <div className="app__container">
-          <h2>Latest Posts</h2>
+        <div className="app__container">
+          <h2 id="center">Share your bands to win</h2>
           {output.html}
+          <p className="text-center">
+            <a href="https://www.instagram.com/jmtobacco/" className="button">
+              <div className="button-cell">
+                <span className="button-text-wrapper">Share on instagram</span>
+              </div>
+            </a>
+          </p>
         </div>
       </div>
     );

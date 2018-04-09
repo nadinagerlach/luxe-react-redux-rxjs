@@ -2,13 +2,6 @@
   padding: 0;
   background-color: black;
 
-  &__intro .overlay {
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      background-color: $app-color-alt-faded;
-  }
-
   &__intro .app__container {
     align-items: center;
     background-color: $app-color-alt;
@@ -17,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: calc(100vh - 33rem);
+    
 
     h1 {
       color: #fff;
@@ -52,6 +46,7 @@
 
   &__marketingblock .app__container {
     background-color: $black;
+    
     padding-bottom: $grid-gutter-width;
     padding-top: $grid-gutter-width * 2;
 
@@ -60,7 +55,7 @@
       padding-top: $grid-gutter-width * 2;
     }
 
-    h2 {
+    h4 {
       margin-bottom: $grid-gutter-width * 2;
       text-align: center;
     }
@@ -82,7 +77,9 @@
   }
 
   &__marketingblock .app__container2 {
-    background-color: purple;
+    background: url('http://res.cloudinary.com/dygn/image/upload/v1513545807/home-fw1_v3wbsk.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: left;
     padding-bottom: $grid-gutter-width;
     padding-top: $grid-gutter-width * 2;
 
@@ -91,7 +88,7 @@
       padding-top: $grid-gutter-width * 2;
     }
 
-    h2 {
+    h4 {
       margin-bottom: $grid-gutter-width * 2;
     }
 
@@ -117,7 +114,6 @@
     flex-direction: column;
     margin-bottom: $grid-gutter-width;
     text-align: left;
-    background-color: red;
     margin: 0em 2em 0em 2em;
 
 
@@ -149,4 +145,31 @@
     }
   }
   
+}
+
+h2 {
+  font-size: 48px;
+  font-family: 'acumin-pro-extra-condensed',Sans-Serif;
+  font-weight: bold;
+  padding-bottom: 10px;
+  letter-spacing: .065em;
+  padding-top: 30px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width : 480px) {
+  h2 {
+    font-size: 32px;
+    padding: 20px 0 20px 0;
+  }
+}
+
+html.wf-inactive h2 {
+	font-size: 28px;
+}
+#center {
+  text-align:center;
+
 }

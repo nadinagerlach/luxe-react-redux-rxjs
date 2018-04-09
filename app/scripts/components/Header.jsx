@@ -66,11 +66,11 @@ export default class Header extends React.Component {
                 Locations
               </NavLink>
             </li> */}
-            <li>
+            {/* <li>
               <a href="http://www.facebook.com" exact activeclassname="is-active" className="app__header__link" >
                 Shop
               </a>
-            </li>
+            </li> */}
             <li id="invisible">
               Invii
             </li>

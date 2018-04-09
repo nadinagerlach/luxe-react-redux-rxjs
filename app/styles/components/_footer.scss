@@ -196,6 +196,14 @@ footer .legal-copyright-container{
   }
   & input{
       height: 46px;
+      border-top: 3px solid #ffd72c;
+      border-bottom: 3px solid #ffd72c;
+      border-left: 3px solid #ffd72c;
+      border-radius: 0;
+      text-align: center;
+      letter-spacing: .05rem;
+
+
   }
 }
 @media only screen and (min-width: 1200px){
