@@ -13,12 +13,8 @@ import Carousel from '../components/Carousel';
 import Instagram from '../components/Instagram';
 
 import Loader from '../components/Loader';
-
-import { InstantSearch, RefinementList, ClearAll, Highlight, Configure, MenuSelect, SearchBox, CurrentFilters } from 'react-instantsearch/dom';
-import { connectSearchBox, connectRefinementList, connectInfiniteHits, connectStateResults } from 'react-instantsearch/connectors';
-
-export class Home extends React.PureComponent {
-
+import Search from '../components/Search';
+export class Home extends React.Component {
   render() {
     const settings = {
       dots: false,
@@ -41,31 +37,7 @@ export class Home extends React.PureComponent {
         <div className="app__home__intro" id="overlay">
           <Carousel />
         </div>
-        <div className="app__home__marketingblock">
-          <div className="app__container2">
-            <div className="app__home__find-your-blend">
-              <ul>
-                <li>
-                  <h2>Find Your Blend</h2>
-                </li>
-                <li>
-                  <h4>I'm having a<MenuSelect attributeName="cigar" /></h4>
-                </li>
-                <li>
-                  <h4>and I need the perfect pairing for<MenuSelect attributeName="timeOfDay" /></h4>
-                </li>
-                <li>
-                  <Link className="button" to="/findyourblend">
-                    <div className="button-cell">
-                      <span className="button-text-wrapper">Find My Blend</span>
-                    </div>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
+        <Search />
         <Instagram />
       </div>
     );

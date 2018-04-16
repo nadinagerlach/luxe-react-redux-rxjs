@@ -89,7 +89,7 @@
     }
 
     h4 {
-      margin-bottom: $grid-gutter-width * 2;
+      margin-bottom: $grid-gutter-width;
     }
 
     ul {
@@ -100,10 +100,10 @@
 
 
       > li {
-        width: percentage(3 / 4);
+        width: percentage(4 / 4);
 
         @include md {
-          width: percentage(3 / 4);
+          width: percentage(4 / 4);
         }
       }
     }
@@ -172,4 +172,23 @@ html.wf-inactive h2 {
 #center {
   text-align:center;
 
+}
+
+.ais-MenuSelect__select {
+  font-family: 'ff-tisa-web-pro',Slab-Serif,Sans-Serif;
+  font-size: 24px;
+  padding: 10px 0px;
+  padding-right: 30px;
+  position: relative;
+  border-bottom: 1px dashed #baab8f;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  text-align: left;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 200px;
+  position: relative;
+  color: #baab8f;
+  background: none;
 }

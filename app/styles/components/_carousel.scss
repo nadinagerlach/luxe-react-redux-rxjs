@@ -1,7 +1,7 @@
 .app__carousel {
     
     &__caption {
-        top: 30%;
+        top: 40%;
         z-index:10;
         position:absolute;
         margin-left: auto;
@@ -9,6 +9,7 @@
         left: 0;
         right: 0;
         bottom: auto;
+        text-align:center;
 
     }
 
@@ -19,8 +20,8 @@
         font-weight: bold;
         font-size: $font-size-h1 !important;
         line-height: .95;
-        max-width: 52rem;
         text-align: center;
+        margin-bottom:.25em;
     }
 }
 
@@ -115,6 +116,7 @@
     border: none;
     outline: none;
     background: transparent;
+
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -181,11 +183,11 @@
 }
 .slick-next:before
 {
-    content: '>';
+    content: '\f017';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '>';
+    content: '<i';
 }
 
 .slick-dotted.slick-slider

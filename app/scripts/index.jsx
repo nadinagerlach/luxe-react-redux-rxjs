@@ -112,16 +112,16 @@ export const init = {
     /* istanbul ignore next */
     if (root) {
       ReactDOM.render(
-        <AppContainer>
-          <Provider store={store}>
-            <PersistGate
-              loading={<Loader />}
-              persistor={persistor}
-            >
-              <Component />
-            </PersistGate>
-          </Provider>
-        </AppContainer>,
+          <AppContainer>
+            <Provider store={store}>
+              <PersistGate
+                loading={<Loader />}
+                persistor={persistor}
+              >
+                <Component />
+              </PersistGate>
+            </Provider>
+          </AppContainer>,
         root
       );
     }

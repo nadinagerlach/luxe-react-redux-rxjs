@@ -141,17 +141,17 @@ const Footer = () => (
       <div className="row legal-copyright-container">
         <div className="col-xs-12 visible-xs legal-mobile">
           <ul className="text-center padding-none navigational-links">
-            <li><a href="http://www.mouser.com/privacypolicy/">Privacy Policy</a></li>
-            <li><a href="http://www.mouser.com/saleterms/">Terms &amp; Conditions</a></li>
+            <li><a href="http://www.jmtobac.co/privacypolicy/">Privacy Policy</a></li>
+            <li><a href="http://www.jmtobac.co/saleterms/">Terms &amp; Conditions</a></li>
             <li><a href="http://www.dygn.co">Site by Dygn</a></li>
           </ul>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-12 legal">
           <small>
             <p className="hidden-xs legal-content text-center">
-              <a href="http://www.mouser.com/privacypolicy/">Privacy Policy</a> |
-              <a href="http://www.mouser.com/saleterms/">Terms &amp; Conditions</a> |
-              <a href="http://www.dygn.co">Site By Dygn</a>
+              <a href="http://www.jmtobac.co/privacypolicy/">Privacy Policy</a> |
+              <a href="http://www.jmtobac.co/saleterms/">Terms &amp; Conditions</a> |
+              <a href="http://www.dygn.co"> Site By Dygn</a>
             </p>
             <p className="legal-title text-center">
                         Copyright &copy;2017 JM Tobacco, Inc.
