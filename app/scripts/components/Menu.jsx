@@ -53,21 +53,21 @@ export class BurgerMenu extends React.Component {
                 Locations
               </NavLink>
             </li> */}
-            <li>
+            {/* <li>
               <a href="http://www.facebook.com" exact activeclassname="is-active" className="app__header__link" >
                 Shop
               </a>
-            </li>
+            </li> */}
             <li className="separator social">
               <ul className="app__bm__nav">
                 <li id="social">
-                  <i className="i-facebook" />
+                  <a href="https://facebook.com/JMTobacco" alt="Facebook"><i className="i-facebook" /></a>
                 </li>
                 <li id="social">
-                  <i className="i-instagram" />
+                  <a href="https://instagram.com/JMTobacco" alt="Instagram"><i className="i-instagram" /></a>
                 </li>
                 <li id="social">
-                  <i className="i-twitter" />
+                  <a href="https://twitter.com/JMTobacco" alt="Twitter"><i className="i-twitter" /></a>
                 </li>
               </ul>
             </li>
@@ -77,10 +77,10 @@ export class BurgerMenu extends React.Component {
                   <a id="sub" href="/">Contact us</a>
                 </li>
                 <li id="sub">
-                  <a id="sub" href="/">Help and FAQ</a>
+                  <a id="sub" href="/">Help &#38; FAQ</a>
                 </li>
                 <li id="sub">
-                  <a id="sub" href="/">Terms of Service</a>
+                  <a id="sub" href="/">Terms &#38; Conditions</a>
                 </li>
                 <li id="sub">
                   <a id="sub" href="/">Privacy Policy</a>

@@ -38,22 +38,19 @@ export default class ClientEntry extends React.Component {
     const loginBtn = (
       <NavLink
         to="/home"
-        className="app__header__link"
-        activeclassname="is-active"
+        className="button"
         exact
         alt={config.title}
       >
-          <a className="button" onClick={this.handleClickLogin}>
-                <div className="button-cell">
+                <div className="button-cell" onClick={this.handleClickLogin}>
                   <span className="button-text-wrapper">Yes I am!</span>
                 </div>
-              </a>
       </NavLink>
     );
 
     const logoutBtn = (
       <a className="button"  onClick={this.handleClickLogout}>
-      <div className="button-cell">
+      <div className="button-cell" onClick={this.handleClickLogout}>
         <span className="button-text-wrapper">Thanks!</span>
       </div>
     </a>
@@ -72,7 +69,7 @@ export default class ClientEntry extends React.Component {
         <div className="app__splash__intro">
           <div className="app__container">
             <Logo />
-            <h2>THE ORIGIN OF CIGARS HAS ALWAYS BEEN A MYSTERY. HOPEFULLY YOURS ISN'T.</h2>
+            <h4 className="verification__subtitle">Just one thing...</h4>
             <h1> Are you 18 or older? </h1>
             <ul>
               <li>
@@ -84,9 +81,11 @@ export default class ClientEntry extends React.Component {
                 </div>
               </li>
             </ul>
-            <p>
-            This site uses cookies. Cookie Policy. I agree to the terms of use, and the privacy policy. This information will not be used for marketing purposes.
+            <small className="col-md-6 col-sm-6">
+            <p className="legal-title text-center">
+            This site uses cookies. I agree to the terms of use, and the privacy policy. This information will not be used for marketing purposes.
               </p>
+              </small>
           </div>
         </div>
       </div>

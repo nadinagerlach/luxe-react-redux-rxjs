@@ -32,12 +32,12 @@ const Footer = () => (
           </div>
           <p className="col-xs-12 contact-us-title text-center">
             <NavLink
-            to="/"
-            className="app__footer__link"
+              to="/"
+              className="app__footer__link"
               activeclassname="is-active"
-            exact
-            alt={config.title}
-          >
+              exact
+              alt={config.title}
+            >
               <Logo />
             </NavLink>
           </p>
@@ -93,7 +93,7 @@ const Footer = () => (
                 Find Your Blend
                   </NavLink>
                 </li>
-                <li >
+                {/* <li >
                   <NavLink
                     to="/locations"
                     activeclassname="is-active"
@@ -101,26 +101,34 @@ const Footer = () => (
                   >
                 Locations
                   </NavLink>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="http://www.shop.jmtobacco.com" exact activeclassname="is-active" className="app__footer__link" >
                 Shop
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="hidden-xs col-sm-3 col-md-3 ">
               <p className="app__footer__menu__title margin-top">Support</p>
               <ul className=" padding-none">
-                <li><a href="#">Contact</a></li>
                 <li>
                   <NavLink
-                    to="/locations"
+                    to="/contact"
+                    className="app__footer__link"
+                    activeclassname="is-active"
+                    exact
+                  >Contact
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/contact"
                     className="app__footer__link"
                     activeclassname="is-active"
                     exact
                   >
-                Help and FAQ
+                Help &#38; FAQ
                   </NavLink>
                 </li>
               </ul>
@@ -131,9 +139,9 @@ const Footer = () => (
           {/* <p className="app__footer__menu__title margin-top">Connect</p> */}
           <ul className="social-footer">
             <li id="social">
-              <i className="i-facebook" id="pad" />
-              <i className="i-instagram" id="pad" />
-              <i className="i-twitter" id="pad" />
+              <a href="https://facebook.com/JMTobacco" alt="Facebook"><i className="i-facebook" id="pad" /></a>
+              <a href="https://instagram.com/JMTobacco" alt="Instagram"><i className="i-instagram" id="pad" /></a>
+              <a href="https://twitter.com/JMTobacco" alt="Twitter"><i className="i-twitter" id="pad" /></a>
             </li>
           </ul>
         </div>
@@ -141,20 +149,41 @@ const Footer = () => (
       <div className="row legal-copyright-container">
         <div className="col-xs-12 visible-xs legal-mobile">
           <ul className="text-center padding-none navigational-links">
-            <li><a href="http://www.jmtobac.co/privacypolicy/">Privacy Policy</a></li>
-            <li><a href="http://www.jmtobac.co/saleterms/">Terms &amp; Conditions</a></li>
+            <li>
+              <NavLink
+                to="/privacy"
+                exact
+              >Privacy Policy
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/terms"
+                exact
+              >Terms &amp; Conditions
+              </NavLink>
+            </li>
             <li><a href="http://www.dygn.co">Site by Dygn</a></li>
           </ul>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-12 legal">
           <small>
             <p className="hidden-xs legal-content text-center">
-              <a href="http://www.jmtobac.co/privacypolicy/">Privacy Policy</a> |
-              <a href="http://www.jmtobac.co/saleterms/">Terms &amp; Conditions</a> |
+              <NavLink
+                to="/privacy"
+                exact
+              >
+                Privacy Policy
+              </NavLink> |
+              <NavLink
+                to="/terms"
+                exact
+              > Terms &amp; Conditions
+              </NavLink> |
               <a href="http://www.dygn.co"> Site By Dygn</a>
             </p>
             <p className="legal-title text-center">
-                        Copyright &copy;2017 JM Tobacco, Inc.
+                        Copyright &copy;2018 JM Tobacco, Inc.
             </p>
           </small>
         </div>

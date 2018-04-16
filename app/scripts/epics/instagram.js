@@ -11,9 +11,8 @@ import fetchJsonp from 'fetch-jsonp';
 import { ActionTypes } from 'constants/index';
 
 // get instagram data
-const ACCESS_TOKEN = '230642980.857aba3.ec6367a366284c51844e04e3e7a429e4';
+const ACCESS_TOKEN = '285323378.8ad973f.5dd332e91f0043178e0e2693c3b80fc7';
 const URL = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${ACCESS_TOKEN}&callback=?`
-const URL2=`https://www.instagram.com/mamfotografo/?__a=1`
 
 // TODO refactor to not use ajax
 export function fetchLatestPosts(action$) {

@@ -41,6 +41,12 @@
 @import 'routes/private';
 @import 'routes/not-found';
 
+
+.dark{
+  color: $dark-grey;
+  text-transform: uppercase;
+  padding: 1em;
+}
 // Vendor Prefixes
 //
 // All vendor mixins are deprecated as of v3.2.0 due to the introduction of
@@ -888,4 +894,18 @@
   color: #6b6b76;
   text-transform: uppercase;
   outline: none;
+}
+
+select {
+  background: none;
+  color: white;
+  border: none;
+}
+select > option {
+  background: blue !important;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+.ais-MenuSelect-option {
+  background:red;
 }
