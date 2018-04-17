@@ -130,19 +130,25 @@
   }
   
   &__instagram {
-    display: flex;
-    flex-direction: column;
     margin-bottom: $grid-gutter-width;
     text-align: center;
-
-    &__image {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      margin-bottom: $grid-gutter-width / 3;
-      min-height: 10rem;
-
+    width: 200px!important;
+    display: inline-block;
+      float: left;
+    height: 200px!important; 
+    background-color: $dark-grey;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom:10px;
+    opacity:0.5;
+    
+    &:hover {
+      opacity:1;
     }
+    .object-cover { 
+      object-fit: cover ;
+    }
+
   }
   
 }

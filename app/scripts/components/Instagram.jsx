@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 
 import { ActionTypes } from 'constants/index';
 import { fetchLatestPosts } from 'actions/index';
-import { fetchPopularRepos } from 'actions/index';
 
 
 import Loader from 'components/Loader';
@@ -13,14 +12,12 @@ export class Instagram extends React.Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
     instagram: PropTypes.object.isRequired,
-    github: PropTypes.object.isRequired,
   };
 
   componentWillMount() {
     const { dispatch } = this.props;
 
     dispatch(fetchLatestPosts());
-    dispatch(fetchPopularRepos());
   }
 
   handleClickCancel = (e) => {
@@ -53,14 +50,12 @@ export class Instagram extends React.Component {
 
     if (latestPosts.status === 'loaded') {
       output.html = (
-        <ul>
+        <ul className-="center">
           {latestPosts.res.slice(0, size).map(photo => (
-            <li key={photo.caption.text}>
-              <div className="app__home__instagram">
-                <a href={photo.link} target="_blank">
-                  <img src={photo.images.thumbnail.url} className="app__home__instagram__image" alt="Instagram" />
-                </a>
-              </div>
+            <li key={photo.caption.text} className="app__home__instagram">
+              <a href={photo.link} target="_blank">
+                <img src={photo.images.standard_resolution.url} alt="Instagram" className="object-cover" />
+              </a>
             </li>
           ))}
         </ul>
