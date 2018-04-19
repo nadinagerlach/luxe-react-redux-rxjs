@@ -49,11 +49,16 @@ export default class ClientEntry extends React.Component {
     );
 
     const logoutBtn = (
-      <a className="button"  onClick={this.handleClickLogout}>
-      <div className="button-cell" onClick={this.handleClickLogout}>
+      <NavLink
+      to="/home"
+      className="button"
+      exact
+      alt={config.title}
+    >
+      <div className="button-cell">
         <span className="button-text-wrapper">Thanks!</span>
       </div>
-    </a>
+      </NavLink>
     );
 
     const underageBtn = (
@@ -81,11 +86,7 @@ export default class ClientEntry extends React.Component {
                 </div>
               </li>
             </ul>
-            <small className="col-md-6 col-sm-6">
-            <p className="legal-title text-center">
-            This site uses cookies. I agree to the terms of use, and the privacy policy. This information will not be used for marketing purposes.
-              </p>
-              </small>
+
           </div>
         </div>
       </div>

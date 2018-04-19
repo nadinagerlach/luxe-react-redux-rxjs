@@ -50,7 +50,7 @@ export class Instagram extends React.Component {
 
     if (latestPosts.status === 'loaded') {
       output.html = (
-        <ul className-="center">
+        <ul>
           {latestPosts.res.slice(0, size).map(photo => (
             <li key={photo.caption.text} className="app__home__instagram">
               <a href={photo.link} target="_blank">
@@ -68,7 +68,7 @@ export class Instagram extends React.Component {
         <div className="app__container">
           <h2 id="center">Share your bands to win</h2>
           {output.html}
-          <p className="text-center">
+          <p className="text-center pad-top">
             <a href="https://www.instagram.com/jmtobacco/" className="button">
               <div className="button-cell">
                 <span className="button-text-wrapper">Share on instagram</span>

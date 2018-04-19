@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import Slider from 'react-slick';
 // import { HashLink as Link } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-
 // import classnames from 'classnames';
+import Dominican from '../components/Sku';
 
 export default class OurCigars extends Component {
   constructor(props) {
@@ -34,6 +35,7 @@ export default class OurCigars extends Component {
             </div>
           </div>
         </div>
+        <Dominican />
         <div className="dom-image">
           <div className="blend-wrapper">
             <div className="row">
@@ -91,22 +93,22 @@ export default class OurCigars extends Component {
         <div className="container cont-margin">
           <div className="row our-story">
             <div className="col-md-3 col-sm-3 col-3">
-              <img className="our-story-image img-fluid mx-auto wow fadeInUp animated" src={require('../../../assets/media/images/our-cigars/cigars/dominican/dh.png')} alt="JM" />
+              {/* <img className="our-story-image img-fluid mx-auto wow fadeInUp animated" src={require('../../../assets/media/images/our-cigars/cigars/dominican/dh.png')} alt="JM" /> */}
               <h6 className="caption">Honey</h6>
 
             </div>
             <div className="col-md-3 col-sm-3 col-3">
-              <img className="our-story-image img-fluid mx-auto wow fadeInUp animated" src={require('../../../assets/media/images/our-cigars/cigars/dominican/dhberry.png')} alt="JM" />
+              {/* <img className="our-story-image img-fluid mx-auto wow fadeInUp animated" src={require('../../../assets/media/images/our-cigars/cigars/dominican/dhberry.png')} alt="JM" /> */}
               <h6 className="caption">Berry</h6>
 
             </div>
             <div className="col-md-3 col-sm-3 col-3">
-              <img className="our-story-image img-fluid mx-auto wow fadeInUp animated" src={require('../../../assets/media/images/our-cigars/cigars/dominican/dhrum.png')} alt="JM" />
+              {/* <img className="our-story-image img-fluid mx-auto wow fadeInUp animated" src={require('../../../assets/media/images/our-cigars/cigars/dominican/dhrum.png')} alt="JM" /> */}
               <h6 className="caption">Rum</h6>
 
             </div>
             <div className="col-md-3 col-sm-3 col-3">
-              <img className="our-story-image img-fluid mx-auto wow fadeInUp animated" src={require('../../../assets/media/images/our-cigars/cigars/dominican/dhvanilla.png')} alt="JM" />
+              {/* <img className="our-story-image img-fluid mx-auto wow fadeInUp animated" src={require('../../../assets/media/images/our-cigars/cigars/dominican/dhvanilla.png')} alt="JM" /> */}
               <h6 className="caption">Vanilla</h6>
 
             </div>
@@ -127,12 +129,12 @@ export default class OurCigars extends Component {
           <div className="row our-story justify-content-center align-items-center">
 
             <div className="col-md-3 col-sm-3 col-3">
-              <img className="our-story-image img-fluid mx-auto wow fadeInUp animated" src={require('../../../assets/media/images/our-cigars/cigars/dominican/diab.png')} alt="JM" />
+              {/* <img className="our-story-image img-fluid mx-auto wow fadeInUp animated" src={require('../../../assets/media/images/our-cigars/cigars/dominican/diab.png')} alt="JM" /> */}
               <h6 className="caption">It's a Boy</h6>
 
             </div>
             <div className="col-md-3 col-sm-3 col-3">
-              <img className="our-story-image img-fluid mx-auto wow fadeInUp animated" src={require('../../../assets/media/images/our-cigars/cigars/dominican/diag.png')} alt="JM" />
+              {/* <img className="our-story-image img-fluid mx-auto wow fadeInUp animated" src={require('../../../assets/media/images/our-cigars/cigars/dominican/diag.png')} alt="JM" /> */}
               <h6 className="caption">It's a Girl</h6>
 
             </div>
@@ -175,5 +177,4 @@ export default class OurCigars extends Component {
     );
   }
 }
-
 

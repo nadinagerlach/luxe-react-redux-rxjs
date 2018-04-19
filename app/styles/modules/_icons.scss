@@ -412,10 +412,17 @@
 
 .i-chevron-circle-left:before {
   content: '\f04d';
+  opacity: .25;
+  color: white;
+}
+.i-chevron-circle-left:hover { 
+  color: yellow;
 }
 
 .i-chevron-circle-right:before {
   content: '\f04e';
+  opacity: .25;
+  color: white;
 }
 
 .i-chevron-circle-up:before {

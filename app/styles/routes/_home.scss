@@ -58,6 +58,7 @@
     h4 {
       margin-bottom: $grid-gutter-width * 2;
       text-align: center;
+      color: white;
     }
 
     ul {
@@ -128,6 +129,8 @@
     
     }
   }
+
+
   
   &__instagram {
     margin-bottom: $grid-gutter-width;
@@ -139,11 +142,11 @@
     background-color: $dark-grey;
     overflow: hidden;
     margin: 0 auto;
-    padding-bottom:10px;
     opacity:0.5;
+
     
     &:hover {
-      opacity:1;
+      opacity:.85;
     }
     .object-cover { 
       object-fit: cover ;
@@ -180,21 +183,12 @@ html.wf-inactive h2 {
 
 }
 
-.ais-MenuSelect__select {
+
+h3 {
+  color: white;
   font-family: 'ff-tisa-web-pro',Slab-Serif,Sans-Serif;
   font-size: 24px;
-  padding: 10px 0px;
-  padding-right: 30px;
-  position: relative;
-  border-bottom: 1px dashed #baab8f;
-  border-top: transparent;
-  border-right: transparent;
-  border-left: transparent;
-  text-align: left;
-  cursor: pointer;
-  display: inline-block;
-  min-width: 200px;
-  position: relative;
-  color: #baab8f;
-  background: none;
+  font-weight: 300;
 }
+
+

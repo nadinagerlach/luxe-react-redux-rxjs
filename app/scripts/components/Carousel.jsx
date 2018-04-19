@@ -2,6 +2,31 @@ import React, { Component } from 'react';
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 
+function NextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'block' }}
+      onClick={onClick}
+    >
+          <i className="i-chevron-circle-right"/>
+    </div>
+  );
+}
+
+function PrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'block' }}
+      onClick={onClick}
+    >
+      <i className="i-chevron-circle-left"/>
+    </div>
+  );
+}
 export default class Carousel extends Component {
   render() {
     const settings = {
@@ -11,13 +36,15 @@ export default class Carousel extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       lazyLoad: true,
+      nextArrow: <NextArrow />,
+      prevArrow: <PrevArrow />,
     };
     return (
       <Slider {...settings} className="app__carousel">
         <div>
           <img src="https://res.cloudinary.com/dygn/image/upload/b_rgb:000000,o_30/v1513545808/home-hero-1_eyejxg.jpg" alt="First slide" />
           <p className="app__carousel__caption">
-          <h1 className="app__carousel__title">Your Daily Choice</h1>
+            <h1 className="app__carousel__title">Your Daily Choice</h1>
             <a href="#" className="button" >
               <div className="button-cell">
                 <span className="button-text-wrapper">Our Cigars</span>
@@ -28,28 +55,28 @@ export default class Carousel extends Component {
         <div>
           <img src="https://res.cloudinary.com/dygn/image/upload/b_rgb:000000,o_30/v1513545808/home-hero-3_o7sds7.jpg" alt="Second slide" />
           <p className="app__carousel__caption">
-          <h1 className="app__carousel__title">Espanola Fine Cigars</h1>
-          <Link
-          to="/home"
-          className="button"
-          activeclassname="is-active"
-          exact
-          >
-                        <div className="button-cell">
+            <h1 className="app__carousel__title">Espanola Fine Cigars</h1>
+            <Link
+              to="/home"
+              className="button"
+              activeclassname="is-active"
+              exact
+            >
+              <div className="button-cell">
                 <span className="button-text-wrapper">Our Story</span>
               </div>
-          </Link>
+            </Link>
           </p>
         </div>
         <div>
           <img src="https://res.cloudinary.com/dygn/image/upload/b_rgb:000000,o_29/v1513545807/home-hero-2_cfkrph.jpg" alt="Third slide" />
           <p className="app__carousel__caption">
 
-          <h1 className="app__carousel__title">Zoidian Cigars</h1>
-              <a href="#" className="button" >
+            <h1 className="app__carousel__title">Zoidian Cigars</h1>
+            <a href="#" className="button" >
               <div className="button-cell">
-                <span className="button-text-wrapper">An Affordable Luxury</span>
-              </div>
+                  <span className="button-text-wrapper">An Affordable Luxury</span>
+                </div>
             </a>
           </p>
         </div>

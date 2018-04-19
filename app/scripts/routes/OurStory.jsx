@@ -42,7 +42,14 @@ export class OurStory extends React.PureComponent {
         <div className="app__home__intro">
           <div className="overlay">
             <div className="app__container carousel slide" style={style_1} data-ride="carousel">
-              <h1>Born to make cigars</h1>
+              <div className="app__carousel__caption">
+                <h1 className="app__carousel__title">Born to make cigars</h1>
+                <a href="#" className="button" >
+                  <div className="button-cell">
+                    <span className="button-text-wrapper">Our Cigars</span>
+                  </div>
+                </a>
+              </div>
               <p className="tagline">The story of JM Tobacco, Inc.</p>
               <div className="d-flex justify-content-around align-content-center flex-wrap">
                 <div><Link to="/ourstory/#1977" className="button"><div className="button-cell"><span className="button-text-wrapper">1975-1985</span></div></Link></div>
@@ -56,56 +63,55 @@ export class OurStory extends React.PureComponent {
         <div className="app__home__marketingblock">
           <div className="app__container">
           div className="full-width-image-2">
-          <div className="blend-wrapper">
-            <div className="row">
-              <div className="col-md-6 col-sm-10 col-xs-10">
-                <p>Crafting something that endures takes time and character. You’ll find plenty of both in the people and history that make JM Tobacco.</p>
+            <div className="blend-wrapper">
+              <div className="row">
+                <div className="col-md-6 col-sm-10 col-xs-10">
+                  <p>Crafting something that endures takes time and character. You’ll find plenty of both in the people and history that make JM Tobacco.</p>
+                </div>
+                <div className="col-md-6" />
               </div>
-              <div className="col-md-6">
-              </div>
+            </div>
           </div>
-        </div>
-      </div>
           <div className="container cont-margin">
-              <div className="row our-story">
-                <div className="col-md-7 order-md-2">
-                  <h2 className="our-story-heading"  id="1977" >1977</h2>
-                  <p className="lead">Anto Mahroukian, current President of JM Tobacco, was born.</p>
-                </div>
-                <div className="col-md-5 order-md-1">
+            <div className="row our-story">
+              <div className="col-md-7 order-md-2">
+                <h2 className="our-story-heading" id="1977" >1977</h2>
+                <p className="lead">Anto Mahroukian, current President of JM Tobacco, was born.</p>
+              </div>
+              <div className="col-md-5 order-md-1">
                 {/* <img className="our-story-image img-fluid mx-auto wow fadeInLeft animated" src={require("../../../assets/media/images/our-story/1977.jpg")} alt="Generic placeholder image"></img> */}
-                </div>
               </div>
+            </div>
 
-              <div className="row our-story">
-                <div className="col-md-7">
-                <h2 className="our-story-heading" id="1995" >1995</h2>            
+            <div className="row our-story">
+              <div className="col-md-7">
+                <h2 className="our-story-heading" id="1995" >1995</h2>
                 <p className="lead">It all began with an expensive birthday gift; a pricey cigar from Anto Mahroukian to his father, John Mahroukian. This led to the birth of JM Tobacco, Inc.</p>
-                </div>
-                <div className="col-md-5">
+              </div>
+              <div className="col-md-5">
                 {/* <img className="our-story-image img-fluid mx-auto wow fadeInRight animated" src={require("../../../assets/media/images/our-story/1995.jpg")} alt="Generic placeholder image"></img> */}
-                </div>
               </div>
+            </div>
 
-              <div className="row our-story">
-                <div className="col-md-7 order-md-2">
-                <h2 className="our-story-heading" id="Espanola" >DATE</h2>            
+            <div className="row our-story">
+              <div className="col-md-7 order-md-2">
+                <h2 className="our-story-heading" id="Espanola" >DATE</h2>
                 <p className="lead">JM Tobacco Releases it"s first cigar: Espanola Gold Label.</p>
-                </div>
-                <div className="col-md-5 order-md-1">
-                  {/* <img className="our-story-image img-fluid mx-auto wow fadeInRight animated" src={require("../../../assets/media/images/our-story/espanola.jpg")} alt="Generic placeholder image"></img> */}
-                </div>
               </div>
+              <div className="col-md-5 order-md-1">
+                {/* <img className="our-story-image img-fluid mx-auto wow fadeInRight animated" src={require("../../../assets/media/images/our-story/espanola.jpg")} alt="Generic placeholder image"></img> */}
+              </div>
+            </div>
 
-              <div className="row our-story">
-                <div className="col-md-7">
-                <h2 className="our-story-heading" id="2006" >2006</h2>            
+            <div className="row our-story">
+              <div className="col-md-7">
+                <h2 className="our-story-heading" id="2006" >2006</h2>
                 <p className="lead">Anto Mahroukian takes over as President of JM Tobacco, Inc.</p>
-                </div>
-                <div className="col-md-5">
-                  {/* <img className="our-story-image img-fluid mx-auto wow fadeInLeft animated" src={require("../../../assets/media/images/our-story/2006.jpg")} alt="Generic placeholder image"></img> */}
-                </div>
               </div>
+              <div className="col-md-5">
+                {/* <img className="our-story-image img-fluid mx-auto wow fadeInLeft animated" src={require("../../../assets/media/images/our-story/2006.jpg")} alt="Generic placeholder image"></img> */}
+              </div>
+            </div>
           </div>
         </div>
       </div>
