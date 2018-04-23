@@ -35,8 +35,16 @@ const Footer = () => (
       <div className="mid-section-container col-sm-12 col-md-12 col-lg-12">
         <div className="col-xs-12 visible-xs contact-us-mobile">
           <div className="col-xs-12 contact-us-buttons">
-            <button className="button col-xs-12"><i className="i-phone" />&nbsp;&nbsp;Find a Store Near You</button>
-            <button className="button col-xs-12"><i className="i-envelope" />&nbsp;&nbsp;Email Us</button>
+            <button className="button col-xs-12"><i className="i-phone" />&nbsp;&nbsp;<NavLink
+              to="contact"
+              activeclassname="is-active"
+              exact
+            >Call us</NavLink></button>
+            <button className="button col-xs-12"><i className="i-envelope" />&nbsp;&nbsp;<NavLink
+              to="contact"
+              activeclassname="is-active"
+              exact
+            >Email Us</NavLink></button>
           </div>
           <p className="col-xs-12 contact-us-title text-center">
             <NavLink

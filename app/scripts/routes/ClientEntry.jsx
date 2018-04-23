@@ -42,31 +42,41 @@ export default class ClientEntry extends React.Component {
         exact
         alt={config.title}
       >
-                <div className="button-cell" onClick={this.handleClickLogin}>
-                  <span className="button-text-wrapper">Yes I am!</span>
-                </div>
+        <div className="button-cell" onClick={this.handleClickLogin}>
+          <span className="button-text-wrapper">Yes I am!</span>
+        </div>
       </NavLink>
     );
 
     const logoutBtn = (
-      <NavLink
-      to="/home"
-      className="button"
-      exact
-      alt={config.title}
-    >
-      <div className="button-cell">
-        <span className="button-text-wrapper">Thanks!</span>
+      <div>
+        <NavLink
+          to="/home"
+          className="button"
+          exact
+          alt={config.title}
+        >
+          <div className="button-cell">
+            <span className="button-text-wrapper">Thanks!</span>
+          </div>
+        </NavLink>
+        <NavLink
+          to="/home"
+          exact
+          className="verification__subtitle"
+          alt={config.title}
+        >
+          <h5>Visit our homepage</h5>
+        </NavLink>
       </div>
-      </NavLink>
     );
 
     const underageBtn = (
       <a className="button" onClick={this.handleClickUnderage}>
-      <div className="button-cell">
-        <span className="button-text-wrapper">No I'm not</span>
-      </div>
-    </a>
+        <div className="button-cell">
+          <span className="button-text-wrapper">No I'm not</span>
+        </div>
+      </a>
     );
 
     return (
@@ -81,8 +91,8 @@ export default class ClientEntry extends React.Component {
                 <div className="app__splash__age">
                   <div className="app__splash__age__cell">
 
-                  {user.isAuthenticated ? logoutBtn : loginBtn}
-                </div>
+                    {user.isAuthenticated ? logoutBtn : loginBtn}
+                  </div>
                 </div>
               </li>
             </ul>

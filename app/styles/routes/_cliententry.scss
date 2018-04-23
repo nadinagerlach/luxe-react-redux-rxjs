@@ -67,7 +67,15 @@
   .verification__subtitle {
     padding-top: 1em;
     text-transform: uppercase;
+    text-decoration: none !important;
+    &a{
+    &:hover {
+      text-decoration: none;
   }
+  }
+}
+
+
   #thanks {
     color: $app-color;
   }
