@@ -185,6 +185,7 @@ footer .legal-copyright-container{
   width: 100%;
   margin: 0 auto;
   padding: 19px 0 26px;
+  min-height: 83px;
   & .subscribe-title{
       font-size: 18px;
       font-weight: bold;
@@ -342,4 +343,9 @@ fieldset[disabled] a.btn {
   padding-top:.5rem;
   color: #212529;
   font-size: 2rem;
+}
+
+#larger {
+  font-size: 22px;
+  padding-top:9px;
 }

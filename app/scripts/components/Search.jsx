@@ -43,7 +43,7 @@ const ConnectedHits = connectInfiniteHits(PairingHits);
 
 export default function Search() {
   return (
-    <div className="container">
+    <div className="app__container" id="negative-pad-top">
       <div className="app__home__marketingblock">
         <div className="app__container2">
           <div className="app__home__find-your-blend">
@@ -106,7 +106,7 @@ export default function Search() {
                 </form>
               </li> */}
               <li>
-                <h3>I'm having a<MenuSelect attribute="cigar" className="ais-MenuSelect" /><i className="i-caret-down" /></h3>
+                <h3>I'm having a<MenuSelect attribute="cigar" className="ais-MenuSelect" /></h3>
 
               </li>
               <li>

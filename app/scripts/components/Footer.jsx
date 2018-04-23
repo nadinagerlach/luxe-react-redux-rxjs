@@ -8,13 +8,14 @@ import Logo from './Logo';
 
 const Footer = () => (
   <footer className="app__footer">
+
     <div className="app__container padding-none">
-      <div className="row subscribe text-center">
+      <div className="subscribe text-center hidden-xs">
         <div className="subscribe-container">
-          <div className="col-xs-12 col-md-6 col-sm-6">
-            <h4 className="uppercase">Your Daily Choice. Join Our Mailing List.</h4>
+          <div className="col-sm-6 col-md-6 col-xs-12">
+            <h5 className="uppercase" id="larger" >Your Daily Choice. Join Our Mailing List.</h5>
           </div>
-          <div className="col-xs-12 col-md-6 col-sm-6">
+          <div className="col-sm-3 col-md-3 col-xs-12">
             <div className="input-group">
               <input type="text" className="form-control" placeholder="Enter your Email" />
               <span className="input-group-btn">
@@ -24,7 +25,14 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <div className="row mid-section-container">
+      <div className="subscribe text-center visible-xs">
+        <div className="subscribe-container">
+          <div className="col-sm-6 col-md-6 col-xs-12">
+            <h5 className="uppercase" id="larger" >Your Daily Choice.</h5>
+          </div>
+        </div>
+      </div>
+      <div className="mid-section-container col-sm-12 col-md-12 col-lg-12">
         <div className="col-xs-12 visible-xs contact-us-mobile">
           <div className="col-xs-12 contact-us-buttons">
             <button className="button col-xs-12"><i className="i-phone" />&nbsp;&nbsp;Find a Store Near You</button>
@@ -146,7 +154,7 @@ const Footer = () => (
           </ul>
         </div>
       </div>
-      <div className="row legal-copyright-container">
+      <div className="legal-copyright-container row col-md-12 col-sm-12 col-lg-12">
         <div className="col-xs-12 visible-xs legal-mobile">
           <ul className="text-center padding-none navigational-links">
             <li>

@@ -61,7 +61,6 @@ export class Instagram extends React.Component {
         </ul>
       );
     }
-    console.log(latestPosts.status);
 
     return (
       <div key="Instagram" className="app__home__marketingblock">

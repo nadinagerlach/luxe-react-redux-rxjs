@@ -112,27 +112,7 @@ export default class SearchResults extends Component {
   render() {
     return (
       <div>
-        <div className="container-fluid cont-no-margin">
-          <div className="d-md-block text-center">
-            <div className="xola-button">
-              <div className="button-cell">
-                <span className="button-text-wrapper">I'm having a ...</span>
-              </div>
-              <MenuSelect attribute="cigar" />
-            </div>
-            <div className="xola-button">
-              <div className="button-cell">
-                <span className="button-text-wrapper">I need the perfect drink for ...</span>
-              </div>
-              <MenuSelect attribute="timeOfDay" />
-            </div>
-            <div className="xola-button">
-              <div className="button-cell">
-                {/* <ClearAll clearsQuery translations={{ reset: 'Reset filters'  }} className="button-text-wrapper" /> */}
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div className="container-fluid cont-no-margin">
         <Configure hitsPerPage={12} />
           <FindYourBlendResults />

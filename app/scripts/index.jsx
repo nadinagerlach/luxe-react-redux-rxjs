@@ -78,7 +78,7 @@ export const init = {
       onUpdated: () => {
         store.dispatch(showAlert((
           <div className="app__cache-reload">
-            <p>There's a new version of this app!</p>
+            <p>There's a new version of JM Tobacco!</p>
             <button className="btn btn-sm btn-outline-primary" onClick={() => window.location.reload()}>
               Reload
             </button>

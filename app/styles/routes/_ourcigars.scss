@@ -1,0 +1,85 @@
+/* Thin out the our-story headings */
+.our-cigars-heading {
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: .065em;
+    color: white!important;
+  }
+.background {
+  &__Dominican {
+    background: url('https://res.cloudinary.com/dygn/image/upload/v1516763319/about-dom_rsboes.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: left;
+  }
+  @media only screen and (max-width : 1024px) {
+    &__Dominican > img {
+      max-width: 100%;
+      min-width: 50rem;
+    }
+    }
+    &__Dominican-Honey {
+       background: url('https://res.cloudinary.com/dygn/image/upload/v1516763341/about-honey_kucrd8.jpg') no-repeat center center; 
+      background-size: cover;
+      text-align: left;
+    }
+    @media only screen and (max-width : 1024px) {
+      &__Dominican-Honey > img {
+        max-width: 100%;
+        min-width: 50rem;
+      }
+      }
+&__Dominicand-Boy-Girl {
+    background: url('https://res.cloudinary.com/dygn/image/upload/v1516763319/about-dom_rsboes.jpg') no-repeat center center;
+      background-size: cover;
+      text-align: left;
+    }
+    @media only screen and (max-width : 1024px) {
+      &__Dominican-Boy-Girl > img {
+        max-width: 100%;
+        min-width: 50rem;
+      }
+    }
+    &__Dominican-Honey {
+        background: url('https://res.cloudinary.com/dygn/image/upload/v1516763341/about-honey_kucrd8.jpg') no-repeat center center; 
+        background-size: cover;
+      text-align: left;
+    }
+    @media only screen and (max-width : 1024px) {
+      &__Dominican-Honey > img {
+        max-width: 100%;
+        min-width: 50rem;
+      }
+      }
+    &__Espanola {
+         background: url('https://res.cloudinary.com/dygn/image/upload/v1516763342/about-espan_f2uxh4.jpg') no-repeat center center; 
+        background-size: cover;
+        text-align: left;
+      }
+      @media only screen and (max-width : 1024px) {
+      &__Espanola > img {
+          max-width: 100%;
+          min-width: 50rem;
+        }
+        }
+        &__Zoidian {
+           background: url('https://res.cloudinary.com/dygn/image/upload/v1516763343/about-zoid_slt4zc.jpg') no-repeat center center; 
+          background-size: cover;
+          text-align: left;
+        }
+        @media only screen and (max-width : 1024px) {
+          &__Zoidian > img {
+            max-width: 100%;
+            min-width: 50rem;
+          }
+          }
+        }
+  .cigars-jumbotron {
+    background: url('https://res.cloudinary.com/dygn/image/upload/v1516077484/cigars-hero_whoajk.jpg') no-repeat center center;
+    background-size: cover;
+    color:white !important;
+    margin-bottom: 0px!important;
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+    padding: 2rem 1rem;
+  }

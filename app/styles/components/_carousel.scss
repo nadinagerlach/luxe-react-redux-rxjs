@@ -1,7 +1,6 @@
 .app__carousel {
     
     &__caption {
-        top: 40%;
         z-index:10;
         position:absolute;
         margin-left: auto;
@@ -10,6 +9,19 @@
         right: 0;
         bottom: auto;
         text-align:center;
+
+        &__home {
+            top: 40%;
+            z-index:10;
+            position:absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            bottom: auto;
+            text-align:center;
+
+        }
 
     }
 
@@ -283,7 +295,6 @@
     position: relative;
     z-index: 2;
     display: block;
-    height: 35em;
     box-sizing: border-box;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -297,6 +308,21 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+.home__height {
+    min-height: 35em !important;
+}
+.home__height img {
+    min-height: 35em !important;
+}
+
+//ADJUST HEIGHT 
+
+// .our-cigars__height {
+//     max-height: 200px !important;
+// }
+// .our-cigars__height img {
+//     height: 200px !important;
+// }
 .slick-list
 {
     position: relative;
@@ -369,9 +395,12 @@
     display: block;
     display: 100%;
     margin-bottom: 10px;
-    max-height:22em;
-    max-width:20em;
     overflow: hidden;
+}
+//NOTE THIS FOR HEADER PROBLEM
+#skuimg {
+    max-height:22em !important;
+    max-width:20em !important;
 }
 .slick-slide.slick-loading img
 {
@@ -487,3 +516,72 @@
 }
 .slick-slide { will-change: transform; }
 
+.tagline{
+    z-index: 10;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: .065em;
+    line-height: 23px;
+    font-weight: 100;
+    color: white;
+    }
+
+
+// Edits
+
+//   .slick-slide img {
+//     border: none;
+//     display: block;
+//     margin: auto;
+//   }
+//   .slick-slide img.slick-loading {
+//     border: 0;
+//   }
+//   .slick-thumb {
+//     bottom: -45px;
+//   }
+//   .slick-thumb li {
+//     width: 60px;
+//     height: 45px;
+//   }
+// .slick-dots li
+// {
+//     position: relative;
+
+//     display: inline-block;
+
+//     width: 20px;
+//     height: 20px;
+//     margin: 0 5px;
+//     padding: 0;
+
+//     cursor: pointer;
+// }
+// .slick-slider
+// {
+//     position: relative;
+//     z-index: 2;
+//     display: block;
+//     height: 35em;
+//     box-sizing: border-box;
+//     -webkit-user-select: none;
+//        -moz-user-select: none;
+//         -ms-user-select: none;
+//             user-select: none;
+
+//     -webkit-touch-callout: none;
+//     -khtml-user-select: none;
+//     -ms-touch-action: pan-y;
+//         touch-action: pan-y;
+//     -webkit-tap-highlight-color: transparent;
+// }
+
+// .slick-list
+// {
+//     position: relative;
+
+//     overflow: hidden;
+
+//     margin: 0;
+//     padding: 0;
+// }

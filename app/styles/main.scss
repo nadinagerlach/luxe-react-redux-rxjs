@@ -33,14 +33,21 @@
 @import 'components/jumbotron';
 @import 'components/loader';
 @import 'components/logo';
+@import 'components/search';
+@import 'components/slider';
 @import 'components/system-alerts';
+
 
 // *** Routes
 @import 'routes/home';
 @import 'routes/cliententry';
 @import 'routes/private';
 @import 'routes/not-found';
-
+@import 'routes/contact';
+@import 'routes/findyourblend';
+@import 'routes/ourcigars';
+@import 'routes/ourstory';
+@import 'routes/storelocator';
 
 .dark{
   color: $dark-grey;
@@ -269,164 +276,164 @@
         -ms-user-select: $select; // IE10+
             user-select: $select;
   }
-//
-// Modals
-// --------------------------------------------------
+// //
+// // Modals
+// // --------------------------------------------------
 
-// .modal-open      - body class for killing the scroll
-// .modal           - container to scroll within
-// .modal-dialog    - positioning shell for the actual modal
-// .modal-content   - actual modal w/ bg and corners and shit
+// // .modal-open      - body class for killing the scroll
+// // .modal           - container to scroll within
+// // .modal-dialog    - positioning shell for the actual modal
+// // .modal-content   - actual modal w/ bg and corners and shit
 
-// Kill the scroll on the body
-.modal-open {
-    overflow: hidden;
-  }
+// // Kill the scroll on the body
+// .modal-open {
+//     overflow: hidden;
+//   }
   
-  // Container that the modal scrolls within
-  .modal {
-    display: none;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: $zindex-modal;
-    -webkit-overflow-scrolling: touch;
+//   // Container that the modal scrolls within
+//   .modal {
+//     display: none;
+//     overflow: hidden;
+//     position: fixed;
+//     top: 10%;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     z-index: $zindex-modal;
+//     -webkit-overflow-scrolling: touch;
   
-    // Prevent Chrome on Windows from adding a focus outline. For details, see
-    // https://github.com/twbs/bootstrap/pull/10951.
-    outline: 0;
+//     // Prevent Chrome on Windows from adding a focus outline. For details, see
+//     // https://github.com/twbs/bootstrap/pull/10951.
+//     outline: 0;
   
-    // When fading in the modal, animate it to slide down
-    &.fade .modal-dialog {
-      @include translate(0, -25%);
-      @include transition-transform(0.3s ease-out);
-    }
-    &.in .modal-dialog { @include translate(0, 0) }
-  }
-  .modal-open .modal {
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
+//     // When fading in the modal, animate it to slide down
+//     &.fade .modal-dialog {
+//       @include translate(0, -25%);
+//       @include transition-transform(0.3s ease-out);
+//     }
+//     &.in .modal-dialog { @include translate(0, 0) }
+//   }
+//   .modal-open .modal {
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//   }
   
-  // Shell div to position the modal with bottom padding
-  .modal-dialog {
-    position: relative;
-    width: auto;
-    margin: 10px;
-  }
+//   // Shell div to position the modal with bottom padding
+//   .modal-dialog {
+//     position: relative;
+//     width: auto;
+//     margin: 10px;
+//   }
   
-  // Actual modal
-  .modal-content {
-    position: relative;
-    background-color: $modal-content-bg;
-    border: 1px solid red; //old browsers fallback (ie8 etc)
-    border: 1px solid $modal-content-border-color;
-    border-radius: 0px;
-    @include box-shadow(0 3px 9px rgba(0,0,0,.5));
-    background-clip: padding-box;
-    // Remove focus outline from opened modal
-    outline: 0;
-  }
+//   // Actual modal
+//   .modal-content {
+//     position: relative;
+//     background-color: $modal-content-bg;
+//     border: 1px solid red; //old browsers fallback (ie8 etc)
+//     border: 1px solid $modal-content-border-color;
+//     border-radius: 0px;
+//     @include box-shadow(0 3px 9px rgba(0,0,0,.5));
+//     background-clip: padding-box;
+//     // Remove focus outline from opened modal
+//     outline: 0;
+//   }
   
-  @mixin opacity($opacity) {
-    opacity: $opacity;
-    // IE8 filter
-    $opacity-ie: ($opacity * 100);
-    filter: alpha(opacity=$opacity-ie);
-  }
+//   @mixin opacity($opacity) {
+//     opacity: $opacity;
+//     // IE8 filter
+//     $opacity-ie: ($opacity * 100);
+//     filter: alpha(opacity=$opacity-ie);
+//   }
 
-  // Modal background
-  .modal-backdrop {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -3;
-    background-color: $modal-backdrop-bg;
-    // Fade for backdrop
-    &.fade { @include opacity(0); }
-    &.in { @include opacity($modal-backdrop-opacity); }
-  }
+//   // Modal background
+//   .modal-backdrop {
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     z-index: -3;
+//     background-color: $modal-backdrop-bg;
+//     // Fade for backdrop
+//     &.fade { @include opacity(0); }
+//     &.in { @include opacity($modal-backdrop-opacity); }
+//   }
   
-  // Modal header
-  // Top section of the modal w/ title and dismiss
-  .modal-header {
-    padding: 1rem;
-    border-bottom: 1px solid $modal-header-border-color;
-    @include clearfix;
-  }
-  // Close icon
-  .modal-header .close {
-    margin-top: -2px;
-  }
+//   // Modal header
+//   // Top section of the modal w/ title and dismiss
+//   .modal-header {
+//     padding: 1rem;
+//     border-bottom: 1px solid $modal-header-border-color;
+//     @include clearfix;
+//   }
+//   // Close icon
+//   .modal-header .close {
+//     margin-top: -2px;
+//   }
   
-  // Title text within header
-  .modal-title {
-    margin: 0;
-    line-height: $modal-title-line-height;
-  }
+//   // Title text within header
+//   .modal-title {
+//     margin: 0;
+//     line-height: $modal-title-line-height;
+//   }
   
-  // Modal body
-  // Where all modal content resides (sibling of .modal-header and .modal-footer)
-  .modal-body {
-    position: relative;
-    padding: $modal-inner-padding;
-  }
+//   // Modal body
+//   // Where all modal content resides (sibling of .modal-header and .modal-footer)
+//   .modal-body {
+//     position: relative;
+//     padding: $modal-inner-padding;
+//   }
   
-  // Footer (for actions)
-  .modal-footer {
-    padding: $modal-inner-padding;
-    text-align: right; // right align buttons
-    border-top: 1px solid $modal-footer-border-color;
-    @include clearfix; // clear it in case folks use .pull-* classes on buttons
+//   // Footer (for actions)
+//   .modal-footer {
+//     padding: $modal-inner-padding;
+//     text-align: right; // right align buttons
+//     border-top: 1px solid $modal-footer-border-color;
+//     @include clearfix; // clear it in case folks use .pull-* classes on buttons
   
-    // Properly space out buttons
-    .btn + .btn {
-      margin-left: 5px;
-      margin-bottom: 0; // account for input[type="submit"] which gets the bottom margin like all other inputs
-    }
-    // but override that for button groups
-    .btn-group .btn + .btn {
-      margin-left: -1px;
-    }
-    // and override it for block buttons as well
-    .btn-block + .btn-block {
-      margin-left: 0;
-    }
-  }
+//     // Properly space out buttons
+//     .btn + .btn {
+//       margin-left: 5px;
+//       margin-bottom: 0; // account for input[type="submit"] which gets the bottom margin like all other inputs
+//     }
+//     // but override that for button groups
+//     .btn-group .btn + .btn {
+//       margin-left: -1px;
+//     }
+//     // and override it for block buttons as well
+//     .btn-block + .btn-block {
+//       margin-left: 0;
+//     }
+//   }
   
-  // Measure scrollbar width for padding body during modal show/hide
-  .modal-scrollbar-measure {
-    position: absolute;
-    top: -9999px;
-    width: 50px;
-    height: 50px;
-    overflow: scroll;
-  }
+//   // Measure scrollbar width for padding body during modal show/hide
+//   .modal-scrollbar-measure {
+//     position: absolute;
+//     top: -9999px;
+//     width: 50px;
+//     height: 50px;
+//     overflow: scroll;
+//   }
 
   
-  // Scale up the modal
-  @media (min-width: 750px) {
-    // Automatically set modal's width for larger viewports
-    .modal-dialog {
-      width: $modal-md;
-      margin: 30px auto;
-    }
-    .modal-content {
-      @include box-shadow(0 5px 15px rgba(0,0,0,.5));
-    }
+//   // Scale up the modal
+//   @media (min-width: 750px) {
+//     // Automatically set modal's width for larger viewports
+//     .modal-dialog {
+//       width: $modal-md;
+//       margin: 30px auto;
+//     }
+//     .modal-content {
+//       @include box-shadow(0 5px 15px rgba(0,0,0,.5));
+//     }
   
-    // Modal sizes
-    .modal-sm { width: $modal-sm; }
-  }
+//     // Modal sizes
+//     .modal-sm { width: $modal-sm; }
+//   }
   
-  @media (min-width: 850px) {
-    .modal-lg { width: $modal-lg; }
-  }
+//   @media (min-width: 850px) {
+//     .modal-lg { width: $modal-lg; }
+//   }
 
 .ais-ClearAll__root {
     display: block;
@@ -650,6 +657,7 @@
   .ais-MenuSelect {
     font-family: 'ff-tisa-web-pro',Slab-Serif,Sans-Serif;
     font-size: 24px;
+    margin-left: 10px;
     padding: 10px 0px;
     padding-right: 30px;
     position: relative;
@@ -668,16 +676,10 @@
   .ais-MenuSelect--count {
     display: none;
   }
-  .ais-MenuSelect__option {
-    color:blue;
-  
-  }
   .ais-MenuSelect__option--count {
     display:none;
   }
-  .ais-MenuSelect__itemCount {
-    color:red;
-  }
+
   
   
   .control-panel {
@@ -903,14 +905,6 @@ select {
   background: none;
   color: $app-color-muted !important;  
   border: none;
-}
-select > option {
-  background: blue !important;
-  color: #fff;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-}
-.ais-MenuSelect-option {
-  background:red;
 }
 select {
   -webkit-appearance: none;
@@ -1320,11 +1314,9 @@ html.wf-inactive h3{
 }
 h4{
 	font-size:24px;
-	font-family: "acumin-pro-extra-condensed",Sans-Serif;
-	font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 	letter-spacing: .065em;
 	padding-bottom: 10px;
-	text-transform: uppercase;
 }
 html.wf-inactive h4{
 	font-size:16px;
@@ -2002,18 +1994,67 @@ body.toolbar-fixed.toolbar-tray-open article header .revision-title {
 	top: 139px;
 }
 /* Revision Viewer End */
-.tagline{
-  z-index: 10;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  letter-spacing: .065em;
-  font-size: 1.5rem;
-  }
+
 .background {
   background-size: cover;
   text-align: left;
 
   &__Dominican {
-    background: url(http://www.inthehumidor.com/wp-content/uploads/2013/02/JMs-Dominican-Lines-Lo.jpg) no-repeat center center;
+	background: url(https://res.cloudinary.com/dygn/image/upload/v1516763319/about-dom_rsboes.jpg) no-repeat center center;
   }
+//   @media only screen and (max-width : 1024px) {
+// 	&__Dominican > img {
+// 	  max-width: 100%;
+// 	  min-width: 50rem;
+// 	}
+// 	}
+	&__Dominican-Honey {
+	   background: url('https://res.cloudinary.com/dygn/image/upload/v1516763341/about-honey_kucrd8.jpg') no-repeat center center; 
+	}
+	// @media only screen and (max-width : 1024px) {
+	//   &__Dominican-Honey > img {
+	// 	max-width: 100%;
+	// 	min-width: 50rem;
+	//   }
+	//   }
+&__Dominicand-Boy-Girl {
+	background: url('https://res.cloudinary.com/dygn/image/upload/v1516763319/about-dom_rsboes.jpg') no-repeat center center;
+	  
+	}
+	// @media only screen and (max-width : 1024px) {
+	//   &__Dominican-Boy-Girl > img {
+	// 	max-width: 100%;
+	// 	min-width: 50rem;
+	//   }
+	// }
+	&__Dominican-Honey {
+		background: url('https://res.cloudinary.com/dygn/image/upload/v1516763341/about-honey_kucrd8.jpg') no-repeat center center; 
+	  
+	}
+	// @media only screen and (max-width : 1024px) {
+	//   &__Dominican-Honey > img {
+	// 	max-width: 100%;
+	// 	min-width: 50rem;
+	//   }
+	//   }
+	&__Espanola {
+		 background: url('https://res.cloudinary.com/dygn/image/upload/v1516763342/about-espan_f2uxh4.jpg') no-repeat center center; 
+
+		
+	  }
+	//   @media only screen and (max-width : 1024px) {
+	//   &__Espanola > img {
+	// 	  max-width: 100%;
+	// 	  min-width: 50rem;
+	// 	}
+	// 	}
+		&__Zoidian {
+		   background: url('https://res.cloudinary.com/dygn/image/upload/v1516763343/about-zoid_slt4zc.jpg') no-repeat center center; 
+		}
+		// @media only screen and (max-width : 1024px) {
+		//   &__Zoidian > img {
+		// 	max-width: 100%;
+		// 	min-width: 50rem;
+		//   }
+		//   }
 }

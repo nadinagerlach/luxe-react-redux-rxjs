@@ -74,16 +74,36 @@ export class BurgerMenu extends React.Component {
             <li className="separator social">
               <ul className="app__bm__nav">
                 <li id="sub">
-                  <a id="sub" href="/">Contact us</a>
+                  <NavLink
+                    to="/contact"
+                    id="sub"
+                    exact
+                  >Contact Us
+                  </NavLink>
                 </li>
                 <li id="sub">
-                  <a id="sub" href="/">Help &#38; FAQ</a>
+                  <NavLink
+                    to="/contact"
+                    id="sub"
+                    exact
+                  >Help &amp; FAQ
+                  </NavLink>
                 </li>
                 <li id="sub">
-                  <a id="sub" href="/">Terms &#38; Conditions</a>
+                  <NavLink
+                    to="/terms"
+                    id="sub"
+                    exact
+                  >Terms &amp; Conditions
+                  </NavLink>
                 </li>
                 <li id="sub">
-                  <a id="sub" href="/">Privacy Policy</a>
+                  <NavLink
+                    to="/privacy"
+                    id="sub"
+                    exact
+                  >Privacy Policy
+                  </NavLink>
                 </li>
               </ul>
             </li>

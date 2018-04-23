@@ -74,7 +74,7 @@ export default class ClientEntry extends React.Component {
         <div className="app__splash__intro">
           <div className="app__container">
             <Logo />
-            <h4 className="verification__subtitle">Just one thing...</h4>
+            <h5 className="verification__subtitle">Just one thing...</h5>
             <h1> Are you 18 or older? </h1>
             <ul>
               <li>
