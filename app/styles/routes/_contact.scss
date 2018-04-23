@@ -205,16 +205,171 @@
 /* CONTACT HELP FAQ
 -------------------------------------------------- */
 .card {
-  padding-top: 1rem;
-  background-color: #151515;
+  background-color: transparent;
+  border: 0px;
 }
 .card-block {
-  background-color:black;
+  background-color:transparent;
+  border: 0px;
+
 }
 .card-header {
-  background-color:black;
+  background-color: transparent;
+  padding-left: 0px;
+  border: 0px;
+
 }
 #accordion {
   padding-top: 1 rem;
   padding-bottom: 1 rem;
+}
+
+.mb-0 a:hover{
+  text-decoration: none;
+}
+
+// CONTACT FORM
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+  padding: 2vw 2vw 2vh 2vw;
+	width: 40vw;
+float:left;
+  margin-top:30px;
+}
+#accordion-div {
+	background-color:rgba(72,72,72,0.4);
+  padding: 2vw 2vw 2vh 2vw;
+	width: 40vw;
+  float:left;
+  margin-left: 5vw;
+  margin-top:30px;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px){
+	#form-div {
+    padding: 2vw 2vw 2vh 2vw;
+    width: 80vw;
+	}
+	#accordion-div{
+	  padding: 2vw 2vw 2vh 2vw;
+    width: 80vw;
+    margin-left: 0px;
+  }
+}
+
+
+.feedback-input {
+	// color:#3c3c3c;
+	// font-family: 'acumin-pro-extra-condensed';
+  // font-weight: bold;
+	// font-size: 16px;
+	border-radius: 0;
+	// line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	// width:100%;
+	// -webkit-box-sizing: border-box;
+	// -moz-box-sizing: border-box;
+	// -ms-box-sizing: border-box;
+	box-sizing: border-box;
+  // -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  // box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.075);
+  border: 3px solid #ffd72c;
+  zoom: 1;
+  // z-index: 2;
+
+  
+}
+
+.feedback-input:focus{
+	// background: #fff;
+	// box-shadow: 0;
+	border: 3px solid $app-color;
+	color: black;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(217, 217, 217, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(217, 217, 217, 0.6);
+  // padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	// color: black;
+	// border:$app-color solid 3px;
+
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+#min-height {
+  min-height: 100vh;
 }

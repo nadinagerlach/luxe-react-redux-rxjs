@@ -35,154 +35,178 @@ export default class Contact extends Component {
             </div>
           </div>
         </div>
-            
-            <div id="contact" className="s-contact">
-
-              <div className="row contact-content" data-aos="fade-up">
-
-                <div className="contact-primary">
-                <h3 className="h6" id="no-space-contact">Frequently Asked Questions</h3>
-            <div id="accordion" role="tablist" aria-multiselectable="true">
-              <div className="card">
-                <div className="card-header" role="tab" id="headingOne">
-                  <h5 className="mb-0">
-                    <a
-                      data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
-                      aria-controls="collapseOne"
-                    >
-                        How many wrappers do JM's Dominicans come in? <i className="i-caret-down" />
-                    </a>
-                  </h5>
-                </div>
-
-                <div id="collapseOne" className="collapse" role="tabpanel" aria-labelledby="headingOne">
-                  <div className="card-block">
-                    JM's Dominicans are rolled with 4 different wrappers, Sumatra (Mild - Medium) Connecticut (Medium), Maduro (Medium - Full), and Corojo (Full) creating 4 unique blends that are sure to please.
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header" role="tab" id="headingTwo">
-                  <h5 className="mb-0">
-                    <a
-                      className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
-                      aria-expanded="false" aria-controls="collapseTwo"
-                    >
-                      How do I keep my JM's Cigars fresh?
-                    </a>
-                  </h5>
-                </div>
-                <div id="collapseTwo" className="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                  <div className="card-block">
-                    Once you find your perfect JM cigar, you want to do everything possible to ensure that it’s ready to smoke when you are. To retain freshness, cigars need to be stored properly in a controlled environment, usually a humidor.
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header" role="tab" id="headingThree">
-                  <h5 className="mb-0">
-                    <a
-                      className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
-                      aria-expanded="false" aria-controls="collapseThree"
-                    >
-                        What is a humidor?
-                    </a>
-                  </h5>
-                </div>
-                <div id="collapseThree" className="collapse" role="tabpanel" aria-labelledby="headingThree">
-                  <div className="card-block">
-                    By definition, the term ‘humidor’ can be applied to any box or container utilizing a device that increases the levels of moisture or humidity within. Usually, the preferred box choice is spanish cedar because of its moisture retention. Keeping your humidor near the optimal 70 degree/70% humidity levels, will keep your JM cigars fresh for a very long time.
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-header" role="tab" id="headingFour">
-                  <h5 className="mb-0">
-                    <a
-                      className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
-                      aria-expanded="false" aria-controls="collapseFour"
-                    >
-                      What do the two numbers mean when applied to JM's Cigar sizes?
-                    </a>
-                  </h5>
-                </div>
-                <div id="collapseFour" className="collapse" role="tabpanel" aria-labelledby="headingFour">
-                  <div className="card-block">
-                    The two numbers are the length and ring gauge (diameter) of the cigar. The length is measured in inches. The ring gauge is measured in units of 1/64ths of an inch. For example, a cigar that is called 6.75 x 50 is 6.75 inches long and 50/64ths of an inch in diameter.
-                  </div>
-                </div>
-              </div>
-            </div>
-
+        <div className="app__home__marketingblock" id="min-height">
+          <div className="app__container2">
+            <div className="app__home__find-your-blend">
+              <div id="form-main">
+                <div id="form-div">
                   <h3 className="h6">Send Us A Message</h3>
-                  <form method="POST" action="https://formspree.io/jmtobaccosite@gmail.com">
+                  <form className="form" id="form1" method="POST" action="https://formspree.io/jmtobaccosite@gmail.com">
                     <fieldset>
-                      <div className="form-field">
-                        <input type="text" name="name" placeholder="Your name" />
-                      </div>
-                      <div className="form-field">
+                      <p className="name">
+                        <input
+                          name="name" type="text" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input form-control" placeholder="Your Name"
+                          id="name"
+                        />
+                      </p>
 
-                        <input type="email" name="_replyto" placeholder="Your email" />
-                      </div>
-                      <div className="form-field">
-                        <textarea name="message" placeholder="Your message" className="full-width" />
-                      </div>
-                      <div className="form-field">
-                      <span className="input-group-btn">
-                <button className="button" type="submit"  value="Send">Send</button>
-              </span>
+                      <p className="email">
+                        <input
+                          name="email" type="text" className="validate[required,custom[email]] feedback-input form-control" id="email"
+                          placeholder="Your Email"
+                        />
+                      </p>
+
+                      <p className="text">
+                        <textarea name="text" className="validate[required,length[6,300]] feedback-input form-control" id="comment" placeholder="Your Message" />
+                      </p>
+
+
+                      <div className="submit">
+                        <span className="input-group-btn">
+                          <button className="button" type="submit" value="Send">Send</button>
+                        </span>
                       </div>
                     </fieldset>
-
                   </form>
-
                 </div>
+                <div id="accordion-div">
+                  <h3 className="h6" id="no-space-contact">Frequently Asked Questions</h3>
+                  <div id="accordion" role="tablist" aria-multiselectable="true">
+                    <div className="card">
+                      <div className="card-header" role="tab" id="headingOne">
+                        <h5 className="mb-0">
+                          <a
+                            data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne"
+                          >
+                        <i className="i-plus" /> How many wrappers do JM's Dominicans come in?
+                          </a>
+                        </h5>
+                      </div>
 
-                <div className="contact-secondary">
-                  <div className="contact-info">
-
-                    <h3 className="h6 hide-on-fullwidth">Contact Info</h3>
-
-                    <div className="cinfo">
-                      <h5>Where to Find Us</h5>
-                      <p>
-                  3018 N Coolidge Ave<br />
-                  Los Angeles, CA<br />
-                  90039 US
-                      </p>
+                      <div id="collapseOne" className="collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div className="card-block">
+                        <p>JM's Dominicans are rolled with 4 different wrappers, Sumatra (Mild - Medium) Connecticut (Medium), Maduro (Medium - Full), and Corojo (Full) creating 4 unique blends that are sure to please.</p>
+                        </div>
+                      </div>
                     </div>
-
-                    <div className="cinfo">
-                      <h5>Email Us At</h5>
-                      <p>
-                            info@jmtobacc.co
-                      </p>
+                    <div className="card">
+                      <div className="card-header" role="tab" id="headingTwo">
+                        <h5 className="mb-0">
+                          <a
+                            className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo"
+                          >
+                      <i className="i-plus" /> How do I keep my JM's Cigars fresh? 
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" className="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div className="card-block">
+                        <p>Once you find your perfect JM cigar, you want to do everything possible to ensure that it’s ready to smoke when you are. To retain freshness, cigars need to be stored properly in a controlled environment, usually a humidor.</p>
+                        </div>
+                      </div>
                     </div>
-
-                    <div className="cinfo">
-                      <h5>Call Us At</h5>
-                      <p>
-                            Phone:  1.800.736.5354
-                      </p>
+                    <div className="card">
+                      <div className="card-header" role="tab" id="headingThree">
+                        <h5 className="mb-0">
+                          <a
+                            className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree"
+                          >
+                        <i className="i-plus" /> What is a humidor? 
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" className="collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div className="card-block">
+                        <p>By definition, the term ‘humidor’ can be applied to any box or container utilizing a device that increases the levels of moisture or humidity within. Usually, the preferred box choice is spanish cedar because of its moisture retention. Keeping your humidor near the optimal 70 degree/70% humidity levels, will keep your JM cigars fresh for a very long time.</p>
+                        </div>
+                      </div>
                     </div>
-
-                    <ul className="contact-social">
-                      <li>
-                        <a href="mailto:jmtobaccosite@gmail.com"><i className="fa fa-envelope" /></a>
-                      </li>
-                      <li>
-                        <a href="tel:1-800-736-5354"><i className="fa fa-phone" /></a>
-                      </li>
-                    </ul>
-
+                    <div className="card">
+                      <div className="card-header" role="tab" id="headingFour">
+                        <h5 className="mb-0">
+                          <a
+                            className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour"
+                          >
+                      <i className="i-plus" /> What do the two numbers mean when applied to JM's Cigar sizes? 
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseFour" className="collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div className="card-block">
+                        <p>The two numbers are the length and ring gauge (diameter) of the cigar. The length is measured in inches. The ring gauge is measured in units of 1/64ths of an inch. For example, a cigar that is called 6.75 x 50 is 6.75 inches long and 50/64ths of an inch in diameter.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div id="accordion-div">
+                  <h3 className="h6" id="no-space-contact">Contact Us</h3>
+                  <div id="accordion" role="tablist" aria-multiselectable="true">
+                    <div className="card">
+                      <div className="card-header" role="tab" id="headingTwo">
+                        <h5 className="mb-0">
+                          <a
+                            data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseFive"
+                          >
+                        <i className="i-plus" /> Press Inquiries
+                          </a>
+                        </h5>
+                      </div>
 
+                      <div id="collapseFive" className="collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div className="card-block">
+                    <p>Anto</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card">
+                      <div className="card-header" role="tab" id="headingSix">
+                        <h5 className="mb-0">
+                          <a
+                            className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseSix"
+                          >
+                      <i className="i-plus" /> Social Media
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseSix" className="collapse" role="tabpanel" aria-labelledby="headingSix">
+                        <div className="card-block">
+                    <p>Stranger Social</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card">
+                      <div className="card-header" role="tab" id="headingSix">
+                        <h5 className="mb-0">
+                          <a
+                            className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseSix"
+                          >
+                        <i className="i-envelope" /> Customer Support &amp; Other Requests
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseSix" className="collapse" role="tabpanel" aria-labelledby="headingSix">
+                        <div className="card-block">
+                        <p> 3018 N Coolidge Ave<br />Los Angeles, CA<br />90039 US</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-
             </div>
-
           </div>
+        </div>
+
+      </div>
 
     );
   }
