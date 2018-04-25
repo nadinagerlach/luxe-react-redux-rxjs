@@ -66,6 +66,7 @@
 }
 #no-space-contact {
   margin-bottom: 1rem;
+  padding-top: 0rem;
   color: #FFFFFF;
 }
 
@@ -284,8 +285,6 @@ float:left;
 	// -moz-box-sizing: border-box;
 	// -ms-box-sizing: border-box;
 	box-sizing: border-box;
-  // -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  // box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.075);
   border: 3px solid #ffd72c;
   zoom: 1;
   // z-index: 2;
@@ -299,8 +298,6 @@ float:left;
 	border: 3px solid $app-color;
 	color: black;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(217, 217, 217, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(217, 217, 217, 0.6);
   // padding: 13px 13px 13px 54px;
 }
 

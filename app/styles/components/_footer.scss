@@ -35,6 +35,8 @@
       letter-spacing: .105em;
       position: relative;
       font-family: 'acumin-pro-extra-condensed',Sans-Serif;
+      text-decoration: none;
+
 
 
       @include lg {
@@ -288,8 +290,7 @@ footer .legal-copyright-container{
 .btn.active {
   outline: 0;
   background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+
 }
 .btn.disabled,
 .btn[disabled],

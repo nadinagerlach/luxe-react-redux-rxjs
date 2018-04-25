@@ -473,12 +473,14 @@
   }
   
   .hit {
-    width: 33.3%;
+	width: calc(33.3vw);
+	overflow: hidden;
     float: left;
     position: relative;
     background: no-repeat center center;
     background-size: cover;
-    height: 350px;
+	height: calc(40vh);
+
   
   }
   /* .hit-
@@ -491,13 +493,14 @@
   
   @media (max-width: 960px) {
     .hit {
-      width: 50%;
-      margin-left: 0px !important;
+      width: calc(100vw);
+	  margin-left: 0px !important;
+	  height: calc(40vh);
       
     }
   }
   
-  .hit .product-picture-wrapper {
+  .product-picture-wrapper {
     display: flex;
     width: 100%;
     padding: 10%;
@@ -505,8 +508,15 @@
     margin-bottom: 5px;
     position: absolute;
     height: 100%;
-    z-index: 2;
-    background-color: rgba(5, 7, 10, 0.76);
+	z-index: 2;
+	color: $app-color;
+	background-color: rgba(5, 7, 10, 0.863);
+	
+
+	&:hover {
+		background-color: rgba(10, 5, 5, 0.356);
+		text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	}
     
   }
   
@@ -520,7 +530,8 @@
     -webkit-transition: opacity 500ms cubic-bezier(0.19, 1, 0.22, 1);
     transition: opacity 500ms cubic-bezier(0.19, 1, 0.22, 1);
     /* height: 150px; */
-    max-width: 100%;
+	max-width: 100%;
+	
   }
   
   @media (min-width: 1400px) {
@@ -566,7 +577,7 @@
   
   .modal-content {
     background-color: black;
-    border: 1px solid #baab8f;
+    border: 1px solid $app-color;
     margin: 0 auto;
     max-width: 760px;
     width: 100%;
@@ -613,8 +624,8 @@
     font-weight: bold;
     letter-spacing: .105em;
     font-size: 18px;
-    border-top: 2px solid #baab8f;
-    border-bottom: 2px solid #baab8f;
+    border-top: 2px solid $app-color;
+    border-bottom: 2px solid $app-color;
     padding: 20px 0px;
     text-align: center;
   }
@@ -661,18 +672,24 @@
     padding: 10px 0px;
     padding-right: 30px;
     position: relative;
-    border-bottom: 1px dashed #baab8f;
+    border-bottom: 1px dashed $app-color;
     border-top: transparent;
     border-right: transparent;
     border-left: transparent;
     text-align: left;
     cursor: pointer;
     display: inline-block;
-    min-width: 200px;
     position: relative;
-    color: #baab8f;
-    background: none;
+    color: $app-color;
+	background: none;
+	@media only screen and (max-width : 480px) {
+		padding: 5px 0px;
+		padding-right: 0px;
+		margin-left: 0px;
+		font-size: 18px;
+		min-width:20px;
   }
+}
   .ais-MenuSelect--count {
     display: none;
   }
@@ -698,18 +715,7 @@
     outline: none;
   }
 
-.hit .product-picture-wrapper {
-  display: flex;
-  width: 100%;
-  padding: 10%;
-  text-align: center;
-  margin-bottom: 5px;
-  position: absolute;
-  height: 100%;
-  z-index: 2;
-  background-color: rgba(5, 7, 10, 0.76);
-  
-}
+
 
 .hit .product-picture {
   display: table-cell;
@@ -767,7 +773,7 @@
 
 .modal-content {
   background-color: black;
-  border: 1px solid #baab8f;
+  border: 1px solid $app-color;
   margin: 0 auto;
   max-width: 760px;
   width: 100%;
@@ -814,8 +820,8 @@
   font-weight: bold;
   letter-spacing: .105em;
   font-size: 18px;
-  border-top: 2px solid #baab8f;
-  border-bottom: 2px solid #baab8f;
+  border-top: 2px solid $app-color;
+  border-bottom: 2px solid $app-color;
   padding: 20px 0px;
   text-align: center;
 }
@@ -861,7 +867,7 @@
   padding: 10px 0px;
   padding-right: 30px;
   position: relative;
-  border-bottom: 1px dashed #baab8f;
+  border-bottom: 1px dashed $app-color;
   border-top: transparent;
   border-right: transparent;
   border-left: transparent;
@@ -870,7 +876,7 @@
   display: inline-block;
   min-width: 200px;
   position: relative;
-  color: #baab8f;
+  color: $app-color;
   background: none;
 }
 .ais-MenuSelect__option {
@@ -991,7 +997,7 @@ select {
 
 .side-aligned-content.distillery .hotspot .distill-btn {
 	background-color: #fff;
-	border: 6px solid #baab8f;
+	border: 6px solid $app-color;
 	border-radius: 50%;
 	color: #000;
 	font-size: 12px;
@@ -1009,7 +1015,7 @@ select {
 }
 .side-aligned-content.distillery .hotspot .hover-box {
 	background-color: #000000;
-	border: 2px solid #baab8f;
+	border: 2px solid $app-color;
 	display: none;
 	font-family: 'ff-tisa-web-pro',Slab-Serif,Sans-Serif;
 	height: 120px;
@@ -1029,7 +1035,7 @@ select {
 .side-aligned-content.distillery .hotspot .arrow-down {
 	border-left: 16px solid transparent;
 	border-right: 16px solid transparent;
-	border-top: 16px solid #baab8f;
+	border-top: 16px solid $app-color;
 	display: none;
 	height: 0;
 	left: 4px;
@@ -1051,7 +1057,7 @@ select {
 }
 
 .side-aligned-content.history .history-super {
-	color: #baab8f;
+	color: $app-color;
 	font-family: 'ff-tisa-web-pro',Slab-Serif,Sans-Serif;
 	font-size: 16px;
 	font-style: italic;
@@ -1062,7 +1068,7 @@ select {
 	margin-left: 5px;
 }
 .side-aligned-content.history .history-super .svg-wrap svg {
-	fill: #baab8f;
+	fill: $app-color;
 	height: 100%;
 	max-height: 28px;
 	max-width: 100%;
@@ -1133,8 +1139,8 @@ select {
 }
 
 .side-aligned-content .history-bars-div {
-	border-right: 1px solid #baab8f;
-	border-left: 1px solid #baab8f;
+	border-right: 1px solid $app-color;
+	border-left: 1px solid $app-color;
 	height: 75px;
 	margin: 25px 0px 20px 2px;
 	width: 2px;
@@ -1161,11 +1167,11 @@ select {
 
 @media (max-width: 480px) {
 	.side-aligned-content {
-		border-bottom: 1px solid #baab8f;
+		border-bottom: 1px solid $app-color;
 		min-height: 520px;
 	}
 	.component.side-aligned-content.mobile-collapse {
-		border-top: 1px solid #baab8f;
+		border-top: 1px solid $app-color;
 		min-height: 235px;
 	}
 
@@ -1339,6 +1345,12 @@ a{
 	font-family: "acumin-pro-extra-condensed",Sans-Serif;
 	letter-spacing: .065em;
 	font-weight:bold;
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+
+	}
+
 }
 li{
 	font-family: "ff-tisa-web-pro",Slab-Serif,Sans-Serif;
@@ -1352,7 +1364,7 @@ img{
 .option.focus,
 a:focus {
 	outline: -webkit-focus-ring-color auto 8px;
-	outline-color: #baab8f;
+	outline-color: $app-color;
 	outline-style: auto;
 	outline-width: 8px;
 	-moz-outline-radius: 4px;
@@ -1378,16 +1390,6 @@ input[type=number] {
 	-moz-appearance: textfield;
 }
 
-.row-wrap {
-	display:-webkit-flex;
-	display:-webkit-box;
-	display:-moz-flex;
-	display:-moz-box;
-	display:-ms-flexbox;
-	display:flex;
-	flex-direction:row;
-	flex-wrap: wrap;
-}
 .cell-wrap {
 	align-self: stretch;
 	align-items: flex-start;
@@ -1452,8 +1454,10 @@ p a {
 	font-family: 'ff-tisa-web-pro',Slab-Serif,Sans-Serif;
 	font-size: inherit;
 	font-weight: inherit;
-	color: #baab8f;
+	color: #ffffff;
 	letter-spacing: inherit;
+	text-decoration: none;
+
 }
 
 .mobile-show{
@@ -1488,7 +1492,7 @@ html.wf-inactive .select-wrapper select{
 	float: left;
 	min-width: 200px;
 	position: relative;
-	color: #baab8f;
+	color: $app-color;
 }
 .mod-select .selected {
 	font-family: 'ff-tisa-web-pro',Slab-Serif,Sans-Serif;
@@ -1496,7 +1500,7 @@ html.wf-inactive .select-wrapper select{
 	padding: 10px 0px;
 	padding-right: 30px;
 	position: relative;
-	border-bottom: 1px dashed #baab8f;
+	border-bottom: 1px dashed $app-color;
 	text-align: left;
 }
 .mod-select.cl-drop .selected{
@@ -1558,7 +1562,7 @@ html.wf-inactive .mod-select.cl-drop .selected{
 .mod-select .dropdown li {
 	background: #000;
 	box-sizing: border-box;
-	color: #baab8f;
+	color: $app-color;
 	font-family: 'ff-tisa-web-pro',Slab-Serif,Sans-Serif;
 	font-size: 18px;
 	padding: 10px;
@@ -1604,7 +1608,7 @@ html.wf-inactive .mod-select .dropdown li{
 .content-nav.width-wrapper{
 	display: table;
     width: 100%;
-	border-bottom: 1px double #baab8f;
+	border-bottom: 1px double $app-color;
 	border-width: 4px;
 /*	margin-bottom: 25px;
 	margin-top: -20px;*/
@@ -1613,14 +1617,14 @@ html.wf-inactive .mod-select .dropdown li{
 }
 .page-recipe .content-nav.width-wrapper,
 .page-product .content-nav.width-wrapper {
-	border-top: 4px double #baab8f;
+	border-top: 4px double $app-color;
 	margin-top: 20px;
 }
 .content-nav h3{
 	font-size: 24px;
 }
 .content-nav .content-prev{
-	border-right: 1px solid #baab8f;
+	border-right: 1px solid $app-color;
 }
 .content-prev h3, .content-prev a{
 	text-align: right;
@@ -1631,7 +1635,7 @@ html.wf-inactive .mod-select .dropdown li{
 	text-decoration: none;
 }
 .content-nav a span {
-	color: #baab8f;
+	color: $app-color;
 }
 .content-next h3, .content-next a{
 	text-align: left;
@@ -1704,7 +1708,7 @@ a div.button-table .button-cell span.svg-wrap{
 	vertical-align: middle;
 }
 div.register-border{
-	border-top: double 1px #baab8f;
+	border-top: double 1px $app-color;
 	border-width: 4px;
 	padding-top: 28px;
 }
@@ -1717,8 +1721,8 @@ em {
 	text-decoration: underline;
 }
 .side-aligned-content .history-bars-div{
-	border-right: 1px solid #baab8f;
-    border-left: 1px solid #baab8f;
+	border-right: 1px solid $app-color;
+    border-left: 1px solid $app-color;
     height: 75px;
     width: 2px;
     margin: 5px auto;
@@ -1789,14 +1793,14 @@ em {
 
 	.content-nav .content-next,
 	.content-nav .content-prev{
-		border-bottom: 1px double #baab8f;
+		border-bottom: 1px double $app-color;
     	border-bottom-width: 4px;
 	}
 	.page-recipe .content-nav .content-next,
 	.page-recipe .content-nav .content-prev,
 	.page-product .content-nav .content-next,
 	.page-product .content-nav .content-prev {
-		border-top: 4px double #baab8f;
+		border-top: 4px double $app-color;
 	}
 	.bars-div{
 		height: 39px;
@@ -1817,7 +1821,7 @@ em {
 	.option.focus,
 	a:focus {
 		outline: none;
-		outline-color: #baab8f;
+		outline-color: $app-color;
 		outline-width: none;
 		-moz-outline-radius: none;
 	}
@@ -1870,7 +1874,7 @@ em {
 	a.button{
 		padding: 10px 20px;
 		font-size: 16px;
-		margin: 20px 0px
+		margin: 0px 0px
 	}
 	a.button.button-blk{
 		padding: 10px 20px;
@@ -1913,13 +1917,13 @@ em {
 	}
 	a.button:hover .svg-wrap svg,
 	button.button:hover .svg-wrap svg{
-		fill:#baab8f;
+		fill:$app-color;
 	}
 	a.button:hover,
 	button.button:hover,
 	span.button.input-button-wrap:hover,
 	span.button.input-button-wrap input:hover{
-		color: #baab8f;
+		color: $app-color;
 	}
 	a.button.button-blk:hover{
 		color: #000;

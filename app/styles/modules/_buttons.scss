@@ -88,12 +88,12 @@ button.button,
 span.button,
 div.xola-button{
 	background: none;
-  border: 3px solid #ffd72c;
-  zoom: 1;
+  	border: 3px solid #ffd72c;
+  	zoom: 1;
 	padding: 12px 25px;
 	margin: 2rem 0 2rem 0;
 	display: inline-block;
-	color: #ffd72c;
+	color: #ffd72c ;
 	text-decoration: none;
 	position: relative;
 	z-index: 2;
@@ -106,7 +106,13 @@ div.xola-button{
 	-moz-transition: color .25s ease-in-out, border-color .25s ease-in-out;
   	-ms-transition: color .25s ease-in-out, border-color .25s ease-in-out;
   	-o-transition: color .25s ease-in-out, border-color .25s ease-in-out;
-  	transition: color .25s ease-in-out, border-color .25s ease-in-out;
+	  transition: color .25s ease-in-out, border-color .25s ease-in-out;
+
+	  @media only screen and (max-width : 480px) {
+		padding: 10px 20px;
+		margin: 1rem 0 1rem 0;
+		width: 200px;
+	}
 }
 div.xola-button{
 	cursor: pointer;
@@ -146,6 +152,8 @@ button.button .svg-wrap,
 div.xola-button .svg-wrap{
 	padding-left: 15px;
 	align-self: center;
+	color: black;
+
 }
 
 a.button-text .svg-wrap svg{
@@ -165,7 +173,9 @@ div.xola-button .svg-wrap svg{
 	-moz-transition: fill .25s ease-in-out;
   	-ms-transition: fill .25s ease-in-out;
   	-o-transition: fill .25s ease-in-out;
-  	transition: fill .25s ease-in-out;
+	  transition: fill .25s ease-in-out;
+	  color: black;
+
 }
 a.button:hover .svg-wrap svg,
 /* div.xola-button:hover .svg-wrap svg */
@@ -177,6 +187,9 @@ button.button:hover,
 /* div.xola-button:hover */
 span.button.input-button-wrap:hover,
 span.button.input-button-wrap input:hover{
+	color: #000 !important;
+}
+#button-hover:hover{
 	color: #000;
 }
 a.button-text{
@@ -239,7 +252,7 @@ a.button.button-blk{
 }
 a.button.button-blk:after{
 	padding-left: 20px;
-	color: #000;
+	color: #000 !important;
 }
 a.button.button-blk:hover:after{
 	color:#ffd72c;

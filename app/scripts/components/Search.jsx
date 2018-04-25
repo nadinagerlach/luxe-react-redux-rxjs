@@ -106,11 +106,11 @@ export default function Search() {
                 </form>
               </li> */}
               <li>
-                <h3>I'm having a<MenuSelect attribute="cigar" className="ais-MenuSelect" /></h3>
+                <h3>I'm having a  <MenuSelect attribute="cigar" className="ais-MenuSelect" /></h3>
 
               </li>
               <li>
-                <h3>and I need the perfect pairing for<MenuSelect attribute="timeOfDay" className="ais-MenuSelect" seeAllOption='Nuts'/></h3>
+                <h3>and I need the perfect pairing for  <MenuSelect attribute="timeOfDay" className="ais-MenuSelect" seeAllOption='Nuts'/></h3>
               </li>
               <li>
                 <Link className="button" to="/find-your-blend">

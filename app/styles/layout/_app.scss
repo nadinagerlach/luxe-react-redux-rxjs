@@ -14,7 +14,7 @@
 
   &__route {
     min-height: calc(100vh - #{$header-height} - #{$footer-height});
-    padding: $grid-gutter-width 0;
+    // padding: $grid-gutter-width 0;
   }
   &__slider {
     height: auto;
@@ -25,6 +25,12 @@
     @include app-container();
 
     margin: 0 auto;
+
+    &__hero {
+      background-size: cover;
+      background-position: center center;
+      min-height: 30%;
+    }
   }
 
   &__cancel {
@@ -42,3 +48,9 @@
   opacity: 1;
   transition: opacity 250s ease-in;
 }
+
+// .slide {
+//   @include sm {
+//     min-height: 33%;
+//   }
+// }

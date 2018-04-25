@@ -24,13 +24,13 @@ export default class Contact extends Component {
       backgroundPosition: 'center center',
     };
     return (
-      <div>
+      <div key="Contact" className="app__route">
         <div className="app__home__intro">
           <div className="overlay">
             <div className="app__container carousel slide" style={style_1} data-ride="carousel">
               <div className="app__carousel__caption">
                 <h1 className="app__carousel__title">{title}</h1>
-                <h4 className="tagline">Check out our FAQ below or <br />use the form to send us a message.</h4>
+                <h4 className="app__carousel__tagline">Check out our FAQ below or <br />use the form to send us a message.</h4>
               </div>
             </div>
           </div>
@@ -40,7 +40,8 @@ export default class Contact extends Component {
             <div className="app__home__find-your-blend">
               <div id="form-main">
                 <div id="form-div">
-                  <h3 className="h6">Send Us A Message</h3>
+                  <h5 className="verification__subtitle" id="no-space-contact">Contact JM</h5>
+
                   <form className="form" id="form1" method="POST" action="https://formspree.io/jmtobaccosite@gmail.com">
                     <fieldset>
                       <p className="name">
@@ -66,12 +67,74 @@ export default class Contact extends Component {
                         <span className="input-group-btn">
                           <button className="button" type="submit" value="Send">Send</button>
                         </span>
+                        <span className="input-group-btn">
+                        <button className="button" type="submit" value="Send">Send</button>
+                        </span>
+                      </div>
+                      <div>
+                      <div id="accordion" role="tablist" aria-multiselectable="true">
+                    <div className="card">
+                      <div className="card-header" role="tab" id="headingTwo">
+                        <h5 className="mb-0">
+                          <a
+                            data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseFive"
+                          >
+                        <i className="i-pencil" /> Press Inquiries
+                          </a>
+                        </h5>
+                      </div>
+
+                      <div id="collapseFive" className="collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div className="card-block">
+                    <p>Anto</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card">
+                      <div className="card-header" role="tab" id="headingSix">
+                        <h5 className="mb-0">
+                          <a
+                            className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseSix"
+                          >
+                      <i className="i-thumbs-up" /> Social Media
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseSix" className="collapse" role="tabpanel" aria-labelledby="headingSix">
+                        <div className="card-block">
+                    <p>Stranger Social</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card">
+                      <div className="card-header" role="tab" id="headingSeven">
+                        <h5 className="mb-0">
+                          <a
+                            className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"
+                            aria-expanded="false" aria-controls="collapseSeven"
+                          >
+                        <i className="i-envelope" /> Customer Support
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseSeven" className="collapse" role="tabpanel" aria-labelledby="headingSeven">
+                        <div className="card-block">
+                        <p> 3018 N Coolidge Ave<br />Los Angeles, CA<br />90039 US</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                      </div>
+                      <div>
                       </div>
                     </fieldset>
                   </form>
                 </div>
                 <div id="accordion-div">
-                  <h3 className="h6" id="no-space-contact">Frequently Asked Questions</h3>
+                  <h5 className="verification__subtitle" id="no-space-contact">Frequently Asked Questions</h5>
+
                   <div id="accordion" role="tablist" aria-multiselectable="true">
                     <div className="card">
                       <div className="card-header" role="tab" id="headingOne">
@@ -139,63 +202,6 @@ export default class Contact extends Component {
                       <div id="collapseFour" className="collapse" role="tabpanel" aria-labelledby="headingFour">
                         <div className="card-block">
                         <p>The two numbers are the length and ring gauge (diameter) of the cigar. The length is measured in inches. The ring gauge is measured in units of 1/64ths of an inch. For example, a cigar that is called 6.75 x 50 is 6.75 inches long and 50/64ths of an inch in diameter.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="accordion-div">
-                  <h3 className="h6" id="no-space-contact">Contact Us</h3>
-                  <div id="accordion" role="tablist" aria-multiselectable="true">
-                    <div className="card">
-                      <div className="card-header" role="tab" id="headingTwo">
-                        <h5 className="mb-0">
-                          <a
-                            data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
-                            aria-controls="collapseFive"
-                          >
-                        <i className="i-plus" /> Press Inquiries
-                          </a>
-                        </h5>
-                      </div>
-
-                      <div id="collapseFive" className="collapse" role="tabpanel" aria-labelledby="headingFive">
-                        <div className="card-block">
-                    <p>Anto</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card">
-                      <div className="card-header" role="tab" id="headingSix">
-                        <h5 className="mb-0">
-                          <a
-                            className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
-                            aria-expanded="false" aria-controls="collapseSix"
-                          >
-                      <i className="i-plus" /> Social Media
-                          </a>
-                        </h5>
-                      </div>
-                      <div id="collapseSix" className="collapse" role="tabpanel" aria-labelledby="headingSix">
-                        <div className="card-block">
-                    <p>Stranger Social</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card">
-                      <div className="card-header" role="tab" id="headingSix">
-                        <h5 className="mb-0">
-                          <a
-                            className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
-                            aria-expanded="false" aria-controls="collapseSix"
-                          >
-                        <i className="i-envelope" /> Customer Support &amp; Other Requests
-                          </a>
-                        </h5>
-                      </div>
-                      <div id="collapseSix" className="collapse" role="tabpanel" aria-labelledby="headingSix">
-                        <div className="card-block">
-                        <p> 3018 N Coolidge Ave<br />Los Angeles, CA<br />90039 US</p>
                         </div>
                       </div>
                     </div>

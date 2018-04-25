@@ -34,7 +34,7 @@ export class Home extends React.Component {
 
     return (
       <div key="Home" className="app__home app__route" >
-        <div className="app__home__intro" id="overlay">
+        <div className="app__home__intro">
           <Carousel />
         </div>
         <Search />

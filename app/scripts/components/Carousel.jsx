@@ -36,6 +36,8 @@ export default class Carousel extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       lazyLoad: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
       nextArrow: <NextArrow />,
       prevArrow: <PrevArrow />,
     };

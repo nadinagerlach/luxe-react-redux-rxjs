@@ -30,13 +30,13 @@ export default class PrivacyPolicy extends React.Component {
     const tagline = this.state.tagline;
 
     return (
-      <div key="OurStory" className="">
+      <div key="Terms" className="app__route">
         <div className="app__home__intro">
           <div className="overlay">
             <div className="app__container carousel slide" style={style_1} data-ride="carousel">
               <div className="app__carousel__caption">
                 <h1 className="app__carousel__title">{title}</h1>
-                <h4 className="tagline">{tagline} {this.state.date}</h4>
+                <h4 className="app__carousel__tagline">{tagline} {this.state.date}</h4>
               </div>
             </div>
           </div>

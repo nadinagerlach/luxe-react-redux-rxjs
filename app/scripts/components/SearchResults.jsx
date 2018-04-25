@@ -17,7 +17,7 @@ const Hit = ({ item }) => {
             <h2 className="our-cigars-heading"> <Highlight attribute="name" hit={item} /></h2>
             <a data-toggle="modal" data-target={`#${item.objectID}`} className="button">
               <div className="button-cell">
-                <span className="button-text-wrapper">View Recipe</span>
+                <span className="button-text-wrapper" id="button-hover">View Recipe</span>
               </div>
           </a>
           </div>
@@ -44,7 +44,7 @@ const Hit = ({ item }) => {
                   </h1>
                   <div className="share-module">
                     <span className="share-text">SHARE</span>
-                    <Link to="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.jmtobacco.com&amp;media=https://res.cloudinary.com/hjqklbxsu/image/upload/f_auto,fl_lossy,q_auto/v1469132303/social-share/Social_Whiskey_Sling.jpg" target="_blank" >
+                    <Link to={`https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.jmtobacco.com&amp;media=http://res.cloudinary.com/dygn/image/upload/v1513141613${item.image}`} target="_blank" >
                       <i className="fab fa-pinterest" />
                     </Link>
                     <Link to="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.jmtobacco.com" target="_blank" >
@@ -56,9 +56,9 @@ const Hit = ({ item }) => {
                   </div>
                   <div className="ingredients">
                     <h2 className="modal-second-title">Ingredients</h2>
-                    <ul className="ingredient-list">
-                      <li><Highlight attribute="ingredientString" hit={item} /></li>
-                    </ul>
+                    <div className="ingredient-list">
+                      <Highlight attribute="ingredientString" hit={item} />
+                      </div>
                   </div>
                   <div className="instructions">
                     <h2 className="modal-second-title">Instructions</h2>

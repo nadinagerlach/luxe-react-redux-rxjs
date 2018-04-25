@@ -34,13 +34,13 @@ export default class OurCigars extends React.Component {
     const button = this.state.button;
 
     return (
-      <div key="OurCigars" className="">
+      <div key="OurCigars" className="app__route">
         <div className="app__home__intro">
           <div className="overlay">
             <div className="app__container carousel slide" style={style_1} >
               <div className="app__carousel__caption">
                 <h1 className="app__carousel__title">{title}</h1>
-                <h4 className="tagline">{tagline}</h4>
+                <h4 className="app__carousel__tagline">{tagline}</h4>
                 <div className="d-flex justify-content-around align-content-center flex-wrap">
                   <div><Link to="/ourcigars/#Dominican" className="button"><div className="button-cell"><span className="button-text-wrapper">Dominican</span></div></Link></div>
                   <div><Link to="/ourcigars/#Nicaraguan" className="button"><div className="button-cell"><span className="button-text-wrapper">Nicaraguan</span></div></Link></div>
