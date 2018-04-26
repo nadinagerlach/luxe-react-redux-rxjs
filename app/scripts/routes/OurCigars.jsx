@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
-// import { HashLink as Link } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
+import { HashLink as Jump } from 'react-router-hash-link';
+
 // import classnames from 'classnames';
 import Dominican from '../components/SKU/Dominican';
 import DominicanHoney from '../components/SKU/Dominican-Honey';
@@ -24,6 +24,7 @@ export default class OurCigars extends React.Component {
   }
   render() {
     const imgUrl_1 = 'https://res.cloudinary.com/dygn/image/upload/v1516077484/cigars-hero_whoajk.jpg';
+    // Lighting one cream
     const style_1 = {
       backgroundImage: `url("${imgUrl_1}")`,
       backgroundSize: 'cover',
@@ -35,29 +36,28 @@ export default class OurCigars extends React.Component {
 
     return (
       <div key="OurCigars" className="app__route">
-        <div className="app__home__intro">
-          <div className="overlay">
-            <div className="app__container carousel slide" style={style_1} >
-              <div className="app__carousel__caption">
-                <h1 className="app__carousel__title">{title}</h1>
-                <h4 className="app__carousel__tagline">{tagline}</h4>
-                <div className="d-flex justify-content-around align-content-center flex-wrap">
-                  <div><Link to="/ourcigars/#Dominican" className="button"><div className="button-cell"><span className="button-text-wrapper">Dominican</span></div></Link></div>
-                  <div><Link to="/ourcigars/#Nicaraguan" className="button"><div className="button-cell"><span className="button-text-wrapper">Nicaraguan</span></div></Link></div>
-                  <div><Link to="/ourcigars/#Espanola" className="button"><div className="button-cell"><span className="button-text-wrapper">Espanola</span></div></Link></div>
-                  <div><Link to="/ourcigars/#Zoidian" className="button"><div className="button-cell"><span className="button-text-wrapper">Zoidian</span></div></Link></div>
-                </div>
+        <div className="app__page__intro">
+          <div className="app__page__intro__container" style={style_1}>
+            <div className="app__page__intro__caption">
+              <h1 className="app__page__intro__title">{title}</h1>
+              <h4 className="app__page__intro__tagline">{tagline}</h4>
+              <div className="app__page__intro__navigation">
+                <div className="app__page__intro__navigation__button"><Jump to="/ourcigars/#Dominican" className="button" id="yellow"><div className="button-cell"><span className="button-text-wrapper">Dominican</span></div></Jump></div>
+                <div className="app__page__intro__navigation__button"><Jump to="/ourcigars/#Nicaraguan" className="button" id="blue"><div className="button-cell"><span className="button-text-wrapper">Nicaraguan</span></div></Jump></div>
+                <div className="app__page__intro__navigation__button"><Jump to="/ourcigars/#Espanola" className="button"><div className="button-cell"><span className="button-text-wrapper">Espanola</span></div></Jump></div>
+                <div className="app__page__intro__navigation__button"><Jump to="/ourcigars/#Zoidian" className="button" id="burgundyred"><div className="button-cell"><span className="button-text-wrapper">Zoidian</span></div></Jump></div>
               </div>
             </div>
           </div>
         </div>
-        <Dominican />
-        <DominicanHoney />
-        <DominicanBoyGirl />
-        <Nicaraguan />
-        <Espanola />
-        <Zoidian />
+          <Dominican />
+          <DominicanHoney />
+          <DominicanBoyGirl />
+          <Nicaraguan />
+          <Espanola />
+          <Zoidian />
       </div>
+
     );
   }
 }

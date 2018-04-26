@@ -180,9 +180,6 @@ footer .legal-copyright-container{
 .subscribe{
   background-size: cover;
     background: url(http://image.noelshack.com/fichiers/2016/46/1479248501-smoke-pass-720p.gif) no-repeat center center;
-    /* background-image: url('https://i.makeagif.com/media/8-08-2015/xBVvZV.gif'); */
-    /* background-image: url('http://24.media.tumblr.com/8c315c41721b4ce4fc2c0962e5d2fed0/tumblr_n1kn3j0HIj1sgaq12o1_500.gif'); */
-    /* background-image: url('https://i.pinimg.com/originals/a5/05/d3/a505d3f9e5bea5e6c16c1e2e9e3f7eb6.gif'); */
   color: $white;
   width: 100%;
   margin: 0 auto;
@@ -349,4 +346,19 @@ fieldset[disabled] a.btn {
 #larger {
   font-size: 22px;
   padding-top:9px;
+}
+
+.line-div {
+  transform:scale(1,6); /* W3C */
+-webkit-transform:scale(1,6); /* Safari and Chrome */
+-moz-transform:scale(1,6); /* Firefox */
+-ms-transform:scale(1,6); /* IE 9 */
+-o-transform:scale(1,6); /* Opera */
+font-size:20px;
+font-weight: 100;
+  margin: 5px auto;
+  position: relative;
+  top: 0px;
+  opacity: 1;
+  padding-bottom: 0;
 }

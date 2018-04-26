@@ -7,6 +7,7 @@ const CleanPlugin = require('clean-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const OfflinePlugin = require('offline-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 const paths = require('./paths');
 const webpackConfig = require('./webpack.config.base');
@@ -61,6 +62,14 @@ module.exports = merge.smart(webpackConfig, {
         keep_fnames: true,
       },
     }),
+    new webpack.optimize.AggressiveMergingPlugin(),
+    // new CompressionPlugin({  
+    //   asset: "[path].gz[query]",
+    //   algorithm: "gzip",
+    //   test: /\.js$|\.css$|\.html$/,
+    //   threshold: 10240,
+    //   minRatio: 0.8
+    // })
     new OfflinePlugin({
       autoUpdate: true,
       safeToUseOptionalCaches: true,

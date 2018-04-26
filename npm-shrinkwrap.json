@@ -1129,9 +1129,9 @@
       }
     },
     "babel-loader": {
-      "version": "7.1.2",
-      "resolved": "https://registry.npmjs.org/babel-loader/-/babel-loader-7.1.2.tgz",
-      "integrity": "sha512-jRwlFbINAeyDStqK6Dd5YuY0k5YuzQUvlz2ZamuXrXmxav3pNqe9vfJ402+2G+OmlJSXxCOpB6Uz0INM7RQe2A==",
+      "version": "7.1.4",
+      "resolved": "https://registry.npmjs.org/babel-loader/-/babel-loader-7.1.4.tgz",
+      "integrity": "sha512-/hbyEvPzBJuGpk9o80R0ZyTej6heEOr59GoEUtn8qFKbnx4cJm9FWES6J/iv644sYgrtVw9JJQkjaLW/bqb5gw==",
       "dev": true,
       "requires": {
         "find-cache-dir": "1.0.0",
@@ -3324,6 +3324,19 @@
         "on-headers": "1.0.1",
         "safe-buffer": "5.1.1",
         "vary": "1.1.2"
+      }
+    },
+    "compression-webpack-plugin": {
+      "version": "1.1.11",
+      "resolved": "https://registry.npmjs.org/compression-webpack-plugin/-/compression-webpack-plugin-1.1.11.tgz",
+      "integrity": "sha512-ZVWKrTQhtOP7rDx3M/koXTnRm/iwcYbuCdV+i4lZfAIe32Mov7vUVM0+8Vpz4q0xH+TBUZxq+rM8nhtkDH50YQ==",
+      "dev": true,
+      "requires": {
+        "cacache": "10.0.2",
+        "find-cache-dir": "1.0.0",
+        "neo-async": "2.5.1",
+        "serialize-javascript": "1.4.0",
+        "webpack-sources": "1.1.0"
       }
     },
     "concat-map": {
@@ -10964,6 +10977,12 @@
       "version": "0.6.1",
       "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-0.6.1.tgz",
       "integrity": "sha1-KzJxhOiZIQEXeyhWP7XnECrNDKk="
+    },
+    "neo-async": {
+      "version": "2.5.1",
+      "resolved": "https://registry.npmjs.org/neo-async/-/neo-async-2.5.1.tgz",
+      "integrity": "sha512-3KL3fvuRkZ7s4IFOMfztb7zJp3QaVWnBeGoJlgB38XnCRPj/0tLzzLG5IB8NYOHbJ8g8UGrgZv44GLDk6CxTxA==",
+      "dev": true
     },
     "netmask": {
       "version": "1.0.6",

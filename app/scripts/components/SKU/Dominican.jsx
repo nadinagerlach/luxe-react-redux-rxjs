@@ -8,7 +8,7 @@ export default class Dominican extends React.Component {
       baseUrl: 'https://res.cloudinary.com/jmtoabcco/image/upload/v1524155729',
       allSkus: ['Dominican', 'Dominican-Honey', 'Conneticut', 'Corojo'],
       description: "JM Tobacco and its family of fine cigars brings you its most price point cigar, JM's Dominican. This cigar is hand rolled from well-aged Cuban seed tobacco leaves, grown in the rich soils of the Dominican Republic, then carefully wrapped with beautiful Sumatran, Connecticut, Corojo or Broadleaf Maduro wrappers. JM's Dominicans are the perfect cigars for 'Your Daily Choice.'",
-      wrappers: ['Classic', 'Sumatra', 'Maduro', 'Conneticut', 'Corojo'],
+      wrappers: ['Sumatra', 'Maduro', 'Conneticut', 'Corojo'],
       sku: 'Dominican',
       name: "JM's Dominican",
     };
@@ -28,8 +28,8 @@ const imgUrl_1 = 'https://res.cloudinary.com/dygn/image/upload/v1516763319/about
       customPaging(i) {
         return (
           <a>
-            <img src={`${baseUrl}/${sku}/0${i + 1}.png`} alt={wrappers[i]} />
-            <h6 className="caption">{wrappers[i]}</h6>
+            <img src={`${baseUrl}/${sku}/0${i + 1}.png`} alt={wrappers[i + 1]} />
+            <h6 className="caption">{wrappers[i + 1]}</h6>
           </a>
         );
       },
@@ -48,9 +48,6 @@ const imgUrl_1 = 'https://res.cloudinary.com/dygn/image/upload/v1516763319/about
           <p className="cigar-caption">{description}</p>
         </div>
         <Slider {...settings} className="wow fadeInUp animated our-cigars__height" >
-          <div>
-            <img src={`${baseUrl}/${sku}/01.png`} alt={wrappers[0]}  />
-          </div>
           <div>
             <img src={`${baseUrl}/${sku}/02.png`} alt={wrappers[1]} />
           </div>

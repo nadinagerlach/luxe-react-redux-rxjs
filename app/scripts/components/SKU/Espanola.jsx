@@ -42,16 +42,19 @@ export default class Espanola extends React.Component {
     };
     return (
       <div className={`background__${sku}`}>
+      {/* Cream and gold espanola */}
         <div className="col-md-6 col-sm-12">
           <h2 className="our-cigars-heading">{name}</h2>
           <p className="cigar-caption">{description}</p>
         </div>
         <Slider {...settings} className="wow fadeInUp animated" id="skuimg">
           <div>
-            <img src={`${baseUrl}/${sku}/01.png`} alt={wrappers[0]} />
+            <img src={`${baseUrl}/${sku}/01.png`} alt={wrappers[0]} /> 
+            {/* CT */}
           </div>
           <div>
             <img src={`${baseUrl}/${sku}/02.png`} alt={wrappers[1]} />
+            {/* Maduro */}
           </div>
         </Slider>
       </div>
