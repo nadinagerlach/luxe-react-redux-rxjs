@@ -33,16 +33,16 @@ export default class PrivacyPolicy extends React.Component {
       <div key="Terms" className="app__route">
         <div className="app__home__intro">
           <div className="overlay">
-            <div className="app__container carousel slide" style={style_1} data-ride="carousel">
-              <div className="app__carousel__caption">
-                <h1 className="app__carousel__title">{title}</h1>
-                <h4 className="app__carousel__tagline">{tagline} {this.state.date}</h4>
+            <div className="gutters carousel slide" style={style_1} data-ride="carousel">
+              <div className="app__page__intro__caption">
+                <h1 className="app__page__intro__title">{title}</h1>
+                <h4 className="app__page__intro__tagline">{tagline} {this.state.date}</h4>
               </div>
             </div>
           </div>
         </div>
         <div className="app__home__marketingblock">
-          <div className="app__container">
+          <div className="gutters">
             <p><strong>To access this Website you must be of legal smoking age in the country where you reside. Please exit this Website immediately if you are not of a legal age for consuming tobacco products in the country or territory in which you reside, or are in a country or territory where the access to this Website is not permitted.</strong></p>
 
             <p>&nbsp;</p>

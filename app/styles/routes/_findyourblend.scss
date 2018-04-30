@@ -35,3 +35,475 @@
     clear: both;
   }
   
+.ais-ClearAll__root {
+  display: block;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: black;
+  color: yellow;
+}
+
+#hits {
+}
+.cont-no-margin {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 960px) {
+  #hits {
+    margin-left: 0px !important;
+  }
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: black;
+  border-color: black;
+  color: black!important;
+}
+
+#hits:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hit {
+width: calc(33.3vw);
+overflow: hidden;
+  float: left;
+  position: relative;
+  background: no-repeat center center;
+  background-size: cover;
+height: calc(40vh);
+
+
+}
+/* .hit-
+color:white !important;
+margin-bottom: 0px!important;
+padding-right: 0;
+padding-left: 0;
+border-radius: 0;
+padding: 2rem 1rem; */
+
+@media (max-width: 960px) {
+  .hit {
+    width: calc(100vw);
+  margin-left: 0px !important;
+  height: calc(40vh);
+    
+  }
+}
+
+.product-picture-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 10%;
+  text-align: center;
+  margin-bottom: 5px;
+  position: absolute;
+  height: 100%;
+z-index: 2;
+color: $app-color;
+background-color: rgba(5, 7, 10, 0.863);
+
+
+&:hover {
+  background-color: rgba(10, 5, 5, 0.356);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+  
+}
+
+.hit .product-picture {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.hit .product-picture img {
+  -webkit-transition: opacity 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  /* height: 150px; */
+max-width: 100%;
+
+}
+
+@media (min-width: 1400px) {
+  .hit .product-picture img {
+    height: inherit;
+  }
+}
+
+.hit .product-desc-wrapper {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.hit .product-name {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: .9em;
+  margin: 0 0 8px;
+  min-width: 120px;
+}
+
+.hit .product-type {
+  font-size: .8em;
+  margin: 0 0 10px;
+  color: #a2a2a2;
+}
+
+.hit em {
+  color: #000000;
+  font-style: normal;
+  background-color: #FFBE61;
+}
+
+.thank-you {
+  text-align: center;
+  font-size: .8em;
+  padding: 10px;
+}
+
+/* Modals */
+
+.modal-content {
+  background-color: black;
+  border: 1px solid $app-color;
+  margin: 0 auto;
+  max-width: 760px;
+  width: 100%;
+  position: relative;
+}
+
+.modal-header {
+  border-bottom: 1px solid black;
+}
+
+.modal-footer {
+  border-top: 1px solid black;
+}
+
+.modal-title {
+  color: white;
+  font-size: 48px;
+  line-height: 50px;
+}
+.modal-second-title{
+  padding-top: 10px;
+  font-size: 32px;
+  line-height: 34px;
+}
+
+.close {
+  float: right;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+}
+.close:hover {
+  float: right;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+}
+  
+.modal-body .share-module {
+  font-family: 'acumin-pro-extra-condensed',Sans-Serif;
+  margin: 15px 0px;
+  font-weight: bold;
+  letter-spacing: .105em;
+  font-size: 18px;
+  border-top: 2px solid $app-color;
+  border-bottom: 2px solid $app-color;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.recipe-scroll{
+  height: auto;
+  overflow: visible;
+}
+
+.ingredients {
+  border-right: none;
+  padding-left: 0px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.ingredients-list {
+  padding-bottom: 5px;
+
+}
+.instructions {
+  padding-left: 0px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cigar-pairing {
+  border-right: none;
+  padding-left: 0px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+}
+
+.fab {
+  letter-spacing: .065em;
+  margin: 0px 0px 0px 4%;
+}
+
+.ais-MenuSelect {
+  font-family: 'ff-tisa-web-pro',Slab-Serif,Sans-Serif;
+  font-size: 24px;
+  margin-left: 10px;
+  padding: 10px 0px;
+  padding-right: 30px;
+  position: relative;
+  border-bottom: 1px dashed $app-color;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  text-align: left;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  color: $app-color;
+background: none;
+@media only screen and (max-width : 480px) {
+  padding: 5px 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  font-size: 18px;
+  min-width:20px;
+}
+}
+.ais-MenuSelect--count {
+  display: none;
+}
+.ais-MenuSelect__option--count {
+  display:none;
+}
+
+
+
+.control-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 320px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  padding: 12px 24px;
+  margin: 20px;
+  font-size: 13px;
+  line-height: 2;
+  color: #6b6b76;
+  text-transform: uppercase;
+  outline: none;
+}
+
+
+
+.hit .product-picture {
+display: table-cell;
+vertical-align: middle;
+margin: 0 auto;
+}
+
+.hit .product-picture img {
+-webkit-transition: opacity 500ms cubic-bezier(0.19, 1, 0.22, 1);
+transition: opacity 500ms cubic-bezier(0.19, 1, 0.22, 1);
+/* height: 150px; */
+max-width: 100%;
+}
+
+@media (min-width: 1400px) {
+.hit .product-picture img {
+  height: inherit;
+}
+}
+
+.hit .product-desc-wrapper {
+height: 100px;
+width: 100%;
+overflow: hidden;
+padding: 2px;
+}
+
+.hit .product-name {
+font-weight: bold;
+color: #ffffff;
+font-size: .9em;
+margin: 0 0 8px;
+min-width: 120px;
+}
+
+.hit .product-type {
+font-size: .8em;
+margin: 0 0 10px;
+color: #a2a2a2;
+}
+
+.hit em {
+color: #000000;
+font-style: normal;
+background-color: #FFBE61;
+}
+
+.thank-you {
+text-align: center;
+font-size: .8em;
+padding: 10px;
+}
+
+/* Modals */
+
+.modal-content {
+background-color: black;
+border: 1px solid $app-color;
+margin: 0 auto;
+max-width: 760px;
+width: 100%;
+position: relative;
+}
+
+.modal-header {
+border-bottom: 1px solid black;
+}
+
+.modal-footer {
+border-top: 1px solid black;
+}
+
+.modal-title {
+color: white;
+font-size: 48px;
+line-height: 50px;
+}
+.modal-second-title{
+padding-top: 10px;
+font-size: 32px;
+line-height: 34px;
+}
+
+.close {
+float: right;
+font-size: 2rem;
+font-weight: 700;
+line-height: 1.5;
+color: rgb(255, 255, 255);
+}
+.close:hover {
+float: right;
+font-size: 2rem;
+font-weight: 700;
+line-height: 1.5;
+color: rgb(255, 255, 255);
+}
+
+.modal-body .share-module {
+font-family: 'acumin-pro-extra-condensed',Sans-Serif;
+margin: 15px 0px;
+font-weight: bold;
+letter-spacing: .105em;
+font-size: 18px;
+border-top: 2px solid $app-color;
+border-bottom: 2px solid $app-color;
+padding: 20px 0px;
+text-align: center;
+}
+
+.recipe-scroll{
+height: auto;
+overflow: visible;
+}
+
+.ingredients {
+border-right: none;
+padding-left: 0px;
+text-align: center;
+box-sizing: border-box;
+}
+
+.ingredients-list {
+padding-bottom: 5px;
+
+}
+.instructions {
+padding-left: 0px;
+text-align: center;
+box-sizing: border-box;
+}
+
+.cigar-pairing {
+border-right: none;
+padding-left: 0px;
+text-align: center;
+box-sizing: border-box;
+padding-bottom: 40px;
+}
+
+.fab {
+letter-spacing: .065em;
+margin: 0px 0px 0px 4%;
+}
+
+.ais-MenuSelect__select {
+font-family: 'ff-tisa-web-pro',Slab-Serif,Sans-Serif;
+font-size: 24px;
+padding: 10px 0px;
+padding-right: 30px;
+position: relative;
+border-bottom: 1px dashed $app-color;
+border-top: transparent;
+border-right: transparent;
+border-left: transparent;
+text-align: left;
+cursor: pointer;
+display: inline-block;
+min-width: 200px;
+position: relative;
+color: $app-color;
+background: none;
+}
+.ais-MenuSelect__option {
+color:blue;
+
+}
+.ais-MenuSelect__option--count {
+display:none;
+}
+.ais-MenuSelect__itemCount {
+color:red;
+}
+
+
+.control-panel {
+position: absolute;
+top: 0;
+right: 0;
+max-width: 320px;
+background: #fff;
+box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+padding: 12px 24px;
+margin: 20px;
+font-size: 13px;
+line-height: 2;
+color: #6b6b76;
+text-transform: uppercase;
+outline: none;
+}
+

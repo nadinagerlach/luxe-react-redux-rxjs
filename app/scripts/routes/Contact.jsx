@@ -27,16 +27,16 @@ export default class Contact extends Component {
       <div key="Contact" className="app__route">
         <div className="app__home__intro">
           <div className="overlay">
-            <div className="app__container carousel slide" style={style_1} data-ride="carousel">
-              <div className="app__carousel__caption">
-                <h1 className="app__carousel__title">{title}</h1>
-                <h4 className="app__carousel__tagline">Check out our FAQ below or <br />use the form to send us a message.</h4>
+            <div className="gutters carousel slide" style={style_1} data-ride="carousel">
+              <div className="app__page__intro__caption">
+                <h1 className="app__page__intro__title">{title}</h1>
+                <h4 className="app__page__intro__tagline">Check out our FAQ below or <br />use the form to send us a message.</h4>
               </div>
             </div>
           </div>
         </div>
         <div className="app__home__marketingblock" id="min-height">
-          <div className="app__container2">
+          <div className="gutters2">
             <div className="app__home__find-your-blend">
               <div id="form-main">
                 <div id="form-div">

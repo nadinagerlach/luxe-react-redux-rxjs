@@ -1,5 +1,4 @@
 .app__footer {
-  background-color: $black;
   display: block;
   overflow: hidden;
     & ul > li {
@@ -8,7 +7,7 @@
 
   
   
-  .app__container {
+  .gutters {
     padding-bottom: $grid-gutter-width / 2;
     padding-top: $grid-gutter-width / 2;
   }
@@ -346,19 +345,4 @@ fieldset[disabled] a.btn {
 #larger {
   font-size: 22px;
   padding-top:9px;
-}
-
-.line-div {
-  transform:scale(1,6); /* W3C */
--webkit-transform:scale(1,6); /* Safari and Chrome */
--moz-transform:scale(1,6); /* Firefox */
--ms-transform:scale(1,6); /* IE 9 */
--o-transform:scale(1,6); /* Opera */
-font-size:20px;
-font-weight: 100;
-  margin: 5px auto;
-  position: relative;
-  top: 0px;
-  opacity: 1;
-  padding-bottom: 0;
 }

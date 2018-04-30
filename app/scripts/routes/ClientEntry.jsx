@@ -82,7 +82,7 @@ export default class ClientEntry extends React.Component {
     return (
       <div key="ClientEntry" className="app__splash app__route">
         <div className="app__splash__intro">
-          <div className="app__container">
+          <div className="gutters">
             <Logo />
             <h5 className="verification__subtitle">Just one thing...</h5>
             <h1> Are you 18 or older? </h1>

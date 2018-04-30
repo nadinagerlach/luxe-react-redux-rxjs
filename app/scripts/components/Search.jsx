@@ -43,9 +43,9 @@ const ConnectedHits = connectInfiniteHits(PairingHits);
 
 export default function Search() {
   return (
-    <div className="app__container" id="negative-pad-top">
-      <div className="app__home__marketingblock">
-        <div className="app__container2">
+    <div className="gutters" id="negative-pad-top">
+      <div className="app__home__grid">
+        <div className="gutters2">
           <div className="app__home__find-your-blend">
             <ul>
               <li>

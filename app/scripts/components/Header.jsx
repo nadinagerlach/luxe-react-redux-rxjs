@@ -13,7 +13,7 @@ export default class Header extends React.Component {
   render() {  
   return (
       <header className="app__header">
-        <div className="app__container">
+        <div className="gutters">
           <ul className="app__header__menu">
             <li>
               <NavLink

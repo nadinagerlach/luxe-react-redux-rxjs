@@ -33,16 +33,16 @@ export default class PrivacyPolicy extends React.Component {
       <div key="Privacy" className="app__route">
         <div className="app__home__intro">
           <div className="overlay">
-            <div className="app__container carousel slide" style={style_1} data-ride="carousel">
-              <div className="app__carousel__caption">
-                <h1 className="app__carousel__title">{title}</h1>
-                <h4 className="app__carousel__tagline">{tagline} {this.state.date}</h4>
+            <div className="gutters carousel slide" style={style_1} data-ride="carousel">
+              <div className="app__page__intro__caption">
+                <h1 className="app__page__intro__title">{title}</h1>
+                <h4 className="app__page__intro__tagline">{tagline} {this.state.date}</h4>
               </div>
             </div>
           </div>
         </div>
         <div className="app__home__marketingblock">
-          <div className="app__container">
+          <div className="gutters">
             <p>Welcome to our Web Site (the “Site”).&nbsp;This Site is administered by JM tobacco (“JM”) in Los Angeles, CA, USA.&nbsp;We are committed to protecting the privacy of Internet users who visit our Site.&nbsp;This Privacy Practices Policy (“Privacy Policy”) is intended to inform you of the ways in which this Site collects information for the JM brand featured on the Site (the “Brand”), the uses for that information, and the ways in which we will protect any personal information you choose to provide us.&nbsp;</p>
 
             <p>&nbsp;</p>

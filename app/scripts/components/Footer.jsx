@@ -9,7 +9,7 @@ import Logo from './Logo';
 const Footer = () => (
   <footer className="app__footer">
 
-    <div className="app__container padding-none">
+    <div className="gutters padding-none">
       <div className="subscribe text-center hidden-xs">
         <div className="subscribe-container">
           <div className="col-sm-6 col-md-6 col-xs-12">

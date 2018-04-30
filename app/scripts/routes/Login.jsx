@@ -6,7 +6,7 @@ import Logo from '../components/Logo';
 const Login = ({ location: { state } }) => (
   <div key="login" className="app__splash app__route">
     <div className="app__splash__intro">
-      <div className="app__container">
+      <div className="gutters">
         <Logo />
         <h5 className="dark">{`Please verify your age to view ${state ? `${state.from}` : 'this page'}`}</h5>
         <NavLink

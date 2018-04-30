@@ -63,8 +63,8 @@ export class Instagram extends React.Component {
     }
 
     return (
-      <div key="Instagram" className="app__home__marketingblock">
-        <div className="app__container">
+      <div key="Instagram" className="app__home__grid">
+        <div className="gutters">
           <h2 id="center">Share your bands to win</h2>
           {output.html}
           <p className="text-center pad-top">
