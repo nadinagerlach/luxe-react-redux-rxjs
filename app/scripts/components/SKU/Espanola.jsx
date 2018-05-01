@@ -8,9 +8,9 @@ export default class Espanola extends React.Component {
 
     this.state = {
       baseUrl: 'https://res.cloudinary.com/jmtoabcco/image/upload/v1524155729',
-      allSkus: ['Espanola', 'Espanola-Honey', 'Conneticut', 'Corojo'],
+      allSkus: ['Espanola'],
       description: "Created in the Espanola Republic over 20 years ago by craftsmen schooled in their long standing tradition, the Española cigar combines the finest, most patiently cultivated tobaccos, to create a smoke like no other. This cigar is smooth and well-balanced with a subtle sweetness gleaned from its Connecticut and Maduro wrappers. The Española Fine Cigar gives the smoker a pleasure that can only be gained by cigars made in the time-honored tradition. ",
-      wrappers: ['Classic', 'Sumatra', 'Maduro', 'Conneticut', 'Corojo'],
+      wrappers: ['Maduro', 'Conneticut'],
       sku: 'Espanola',
       name: "Espanola Fine Cigars",
     };
@@ -41,9 +41,9 @@ export default class Espanola extends React.Component {
       slidesToScroll: 1,
     };
     return (
-      <div className={`background__${sku}`}>
+      <div className={`background__${sku}`} id={sku}>
       {/* Cream and gold espanola */}
-        <div className="col-md-6 col-sm-12">
+        <div className="col-md-6 col-sm-10 cigar-gutters">
           <h2 className="our-cigars-heading">{name}</h2>
           <p className="cigar-caption">{description}</p>
         </div>

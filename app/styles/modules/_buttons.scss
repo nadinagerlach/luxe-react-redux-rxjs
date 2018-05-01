@@ -232,12 +232,10 @@ button.button:hover:before,
 span.button.input-button-wrap:hover:before{
 	right:0px;
 }
-a.button.button-blk{
-	border: 3px solid black;
-	padding: 15px 40px 15px 20px;
-	margin: 40px 0px 40px 0px;
+a.button.button-blue{
+	border: 3px solid blue;
 	display: inline-block;
-	color: black;
+	color: white;
 	text-decoration: none;
 	position: relative;
 	z-index: 2;
@@ -250,27 +248,75 @@ a.button.button-blk{
   	-ms-transition: color .25s ease-in-out;
   	transition: color .25s ease-in-out;
 }
-a.button.button-blk:after{
-	padding-left: 20px;
-	color: #000 !important;
+a.button.button-blue:after{
+	color: white !important;
 }
-a.button.button-blk:hover:after{
-	color:#ffd72c;
+a.button.button-blue:hover:after{
+	color:blue;
 }
-a.button.button-blk:hover{
-	color:#ffd72c;
+a.button.button-blue:hover{
+	color:white !important;
 	-webkit-transition: color .25s ease-in-out;
 	-moz-transition: color .25s ease-in-out;
   	-o-transition: color .25s ease-in-out;
   	-ms-transition: color .25s ease-in-out;
   	transition: color .25s ease-in-out;
 }
-a.button.button-blk:hover:before {
+a.button.button-blue:hover:before {
 	right:0px;
 }
-a.button.button-blk:before{
+a.button.button-blue:before{
 	position: absolute;
-	background-color:black;
+	background-color:blue;
+	right: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	-webkit-transition: right .15s ease-in-out;
+	-moz-transition: right .15s ease-in-out;
+  	-o-transition: right .15s ease-in-out;
+  	-ms-transition: right .15s ease-in-out;
+  	transition: right .15s ease-in-out;
+  	content: '';
+}
+//Burg
+a.button.button-burg{
+	border: 3px solid #9c0000;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	position: relative;
+	z-index: 2;
+	font-weight:bold;
+	overflow: hidden;
+	text-transform: uppercase;
+	-webkit-transition: color .25s ease-in-out;
+	-moz-transition: color .25s ease-in-out;
+  	-o-transition: color .25s ease-in-out;
+  	-ms-transition: color .25s ease-in-out;
+  	transition: color .25s ease-in-out;
+}
+a.button.button-burg:after{
+	color: white !important;
+}
+a.button.button-burg:hover:after{
+	color:#9c0000;
+}
+a.button.button-burg:hover{
+	color:#9c0000;
+	-webkit-transition: color .25s ease-in-out;
+	-moz-transition: color .25s ease-in-out;
+  	-o-transition: color .25s ease-in-out;
+  	-ms-transition: color .25s ease-in-out;
+  	transition: color .25s ease-in-out;
+}
+a.button.button-burg:hover:before {
+	right:0px;
+}
+a.button.button-burg:before{
+	position: absolute;
+	background-color: #9c0000;
 	right: 100%;
 	left: 0;
 	top: 0;

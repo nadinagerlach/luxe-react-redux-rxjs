@@ -31,14 +31,10 @@ export default class PrivacyPolicy extends React.Component {
 
     return (
       <div key="Privacy" className="app__route">
-        <div className="app__home__intro">
-          <div className="overlay">
-            <div className="gutters carousel slide" style={style_1} data-ride="carousel">
-              <div className="app__page__intro__caption">
-                <h1 className="app__page__intro__title">{title}</h1>
-                <h4 className="app__page__intro__tagline">{tagline} {this.state.date}</h4>
-              </div>
-            </div>
+        <div className="app__page__intro">
+          <div className="app__page__intro__cell" style={style_1} >
+            <h1 className="title">{title}</h1>
+            <h4 className="tagline">{tagline} {this.state.date}</h4>
           </div>
         </div>
         <div className="app__home__marketingblock">

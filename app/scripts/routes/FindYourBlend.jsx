@@ -28,29 +28,27 @@ export default class FindYourBlend extends React.PureComponent {
 
     return (
       <div key="FindYourBlend" className="app__route">
-        <div className="app__home__intro">
-          <div className="overlay">
-            <div className="gutters carousel slide" style={style_1} >
-              <div className="app__page__intro__caption">
-                <h1 className="app__page__intro__title">{title}</h1>
-                <h4 className="app__page__intro__tagline">{tagline}</h4>
-                <div className="d-flex justify-content-around align-content-center flex-wrap">
-                  <div className="xola-button">
+        <div className="app__page__intro">
+          <div className="app__page__intro__cell" style={style_1}>
+            <h1 className="title">{title}</h1>
+            <h4 className="tagline">{tagline}</h4>
+            <div className="navigation">
+              <div className="navigation__button">
+                    <div className="xola-button">
                     <div className="button-cell">
                       <span className="button-text-wrapper">I'm having a ...</span>
                     </div>
                     <MenuSelect attribute="cigar" className="dropdown__max"/>
-                    
                   </div>
-
-                  <div className="xola-button">
+                </div>
+                <div className="navigation__button">
+                <div className="xola-button">
                     <div className="button-cell">
                       <span className="button-text-wrapper">I need the perfect drink for ...</span>
                     </div>
                     <MenuSelect attribute="timeOfDay" />
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>

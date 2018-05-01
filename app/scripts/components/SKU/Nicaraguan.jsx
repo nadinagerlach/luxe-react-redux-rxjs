@@ -10,7 +10,7 @@ export default class Nicaraguan extends React.Component {
       baseUrl: 'https://res.cloudinary.com/jmtoabcco/image/upload/v1524155729',
       allSkus: ['Nicaraguan', 'Nicaraguan-Honey', 'Conneticut', 'Corojo'],
       description: "JM's Nicaraguan Cigars are the newest addition to the JM family. These cigars are hand rolled from well-aged Nicarguan Cuban seed tobacco leaves, grown in the rich region of Estelli, Nicaragua. They are then wrapped with beautiful Sumatra and Maduro wrappers. The medium-bodied Nicaraguan delivers a creamy-smooth smoke, with hints of chocolate and spice, sure to please the palate. ",
-      wrappers: ['Classic', 'Sumatra', 'Maduro', 'Conneticut', 'Corojo'],
+      wrappers: ['Sumatra', 'Maduro'],
       sku: 'Nicaraguan',
       name: "JM's Nicaraguan",
     };
@@ -27,7 +27,7 @@ export default class Nicaraguan extends React.Component {
       customPaging(i) {
         return (
           <a>
-            <img src={`${baseUrl}/${sku}/0${i + 1}.png`} alt={wrappers[i]} />
+            <img src={`${baseUrl}/${sku}/0${i+1}.png`} alt={wrappers[i]} />
             <h6 className="caption">{wrappers[i]}</h6>
           </a>
         );
@@ -42,16 +42,16 @@ export default class Nicaraguan extends React.Component {
     };
     return (
       <div className={`background__${sku}`}>
-        <div className="col-md-6 col-sm-12">
+        <div className="col-md-6 col-sm-10 cigar-gutters">
           <h2 className="our-cigars-heading">{name}</h2>
           <p className="cigar-caption">{description}</p>
         </div>
         <Slider {...settings} className="wow fadeInUp animated" id="skuimg">
           <div>
-            <img src={`${baseUrl}/${sku}/01.png`} alt={wrappers[0]} />
+            <img src={`${baseUrl}/${sku}/01.png`} alt={wrappers[1]} />
           </div>
           <div>
-            <img src={`${baseUrl}/${sku}/02.png`} alt={wrappers[1]} />
+            <img src={`${baseUrl}/${sku}/02.png`} alt={wrappers[2]} />
           </div>
         </Slider>
       </div>

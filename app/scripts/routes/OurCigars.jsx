@@ -37,25 +37,23 @@ export default class OurCigars extends React.Component {
     return (
       <div key="OurCigars" className="app__route">
         <div className="app__page__intro">
-          <div className="app__page__intro__container" style={style_1}>
-            <div className="app__page__intro__caption">
-              <h1 className="app__page__intro__title">{title}</h1>
-              <h4 className="app__page__intro__tagline">{tagline}</h4>
-              <div className="app__page__intro__navigation">
-                <div className="app__page__intro__navigation__button"><Jump to="/ourcigars/#Dominican" className="button" id="yellow"><div className="button-cell"><span className="button-text-wrapper">Dominican</span></div></Jump></div>
-                <div className="app__page__intro__navigation__button"><Jump to="/ourcigars/#Nicaraguan" className="button" id="blue"><div className="button-cell"><span className="button-text-wrapper">Nicaraguan</span></div></Jump></div>
-                <div className="app__page__intro__navigation__button"><Jump to="/ourcigars/#Espanola" className="button"><div className="button-cell"><span className="button-text-wrapper">Espanola</span></div></Jump></div>
-                <div className="app__page__intro__navigation__button"><Jump to="/ourcigars/#Zoidian" className="button" id="burgundyred"><div className="button-cell"><span className="button-text-wrapper">Zoidian</span></div></Jump></div>
-              </div>
+          <div className="app__page__intro__cell" style={style_1}>
+            <h1 className="title">{title}</h1>
+            <h4 className="tagline">{tagline}</h4>
+            <div className="navigation">
+              <div className="navigation__button"><Jump to="/ourcigars/#Dominican" className="button" id="yellow"><div className="button-cell"><span className="button-text-wrapper">Dominican</span></div></Jump></div>
+              <div className="navigation__button"><Jump to="/ourcigars/#Nicaraguan" className="button button-blue"><div className="button-cell"><span className="button-text-wrapper">Nicaraguan</span></div></Jump></div>
+              <div className="navigation__button"><Jump to="/ourcigars/#Espanola" className="button"><div className="button-cell"><span className="button-text-wrapper">Espanola</span></div></Jump></div>
+              <div className="navigation__button"><Jump to="/ourcigars/#Zoidian" className="button button-burg"><div className="button-cell"><span className="button-text-wrapper">Zoidian</span></div></Jump></div>
             </div>
           </div>
         </div>
-          <Dominican />
-          <DominicanHoney />
-          <DominicanBoyGirl />
-          <Nicaraguan />
-          <Espanola />
-          <Zoidian />
+        <Dominican />
+        <DominicanHoney />
+        <DominicanBoyGirl />
+        <Nicaraguan />
+        <Espanola />
+        <Zoidian />
       </div>
 
     );

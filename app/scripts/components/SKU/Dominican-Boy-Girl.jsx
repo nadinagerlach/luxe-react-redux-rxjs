@@ -9,7 +9,7 @@ export default class DominicanBoyGirl extends React.Component {
       baseUrl: 'https://res.cloudinary.com/jmtoabcco/image/upload/v1524155729',
       allSkus: ['Dominican', 'Dominican-Honey', 'Conneticut', 'Corojo'],
       description: "Celebrate and announce the special occasion with our JM's Dominican It's a Boy! and It's a Girl! cigars. Our cigars are hand rolled from well aged Cuban seed tobacco leaves, grown in the rich soils of the Dominican Republic, with a beautiful Sumatra wrapper.  Each cigar is individually cellophaned and labeled, making it a wonderful gift, you'll always cherish.",
-      wrappers: ['Honey', 'Berry', 'Rum', 'Vanilla'],
+      wrappers: ["It's a Boy", "It's a Girl"],
       sku: 'Dominican-Boy-Girl',
       name: "It's A Boy | It's A Girl",
     };
@@ -40,8 +40,8 @@ export default class DominicanBoyGirl extends React.Component {
       slidesToScroll: 1,
     };
     return (
-      <div className={`background__${sku}`}>
-        <div className="col-md-6 col-sm-12">
+      <div className={`background__${sku}`} id={sku}>
+        <div className="col-md-6 col-sm-10 cigar-gutters">
           <h2 className="our-cigars-heading">{name}</h2>
           <p className="cigar-caption">{description}</p>
         </div>

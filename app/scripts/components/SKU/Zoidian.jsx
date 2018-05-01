@@ -9,7 +9,7 @@ export default class Zoidian extends React.Component {
       baseUrl: 'https://res.cloudinary.com/jmtoabcco/image/upload/v1524155729',
       allSkus: ['Zoidian', 'Zoidian-Honey', 'Conneticut', 'Corojo'],
       description: "Zoidian Cigars, with its Maduro and Sumatran wrappers, features a medium bodied cigar that offers notes of dark caramel, with a hint of spice at the finish. Its smooth, even burn, yields consistency from beginning to end. This cigar delivers a pleasant smoke at an affordable price. Enjoy Zoidian Cigars…An Affordable Luxury.",
-      wrappers: ['Classic', 'Sumatra', 'Maduro', 'Conneticut', 'Corojo'],
+      wrappers: ['Natural', 'Maduro'],
       sku: 'Zoidian',
       name: "Zoidian Cigars",
     };
@@ -41,7 +41,7 @@ export default class Zoidian extends React.Component {
     };
     return (
       <div className={`background__${sku}`}>
-        <div className="col-md-6 col-sm-12">
+        <div className="col-md-6 col-sm-10 cigar-gutters">
           <h2 className="our-cigars-heading">{name}</h2>
           <p className="cigar-caption">{description}</p>
         </div>

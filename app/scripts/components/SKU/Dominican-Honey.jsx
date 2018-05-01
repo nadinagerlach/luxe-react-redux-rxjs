@@ -9,7 +9,7 @@ export default class DominicanHoney extends React.Component {
       baseUrl: 'https://res.cloudinary.com/jmtoabcco/image/upload/v1524155729',
       allSkus: ['Dominican', 'Dominican-Honey', 'Conneticut', 'Corojo'],
       description: "JM's Dominican Honeys combine smooth cigars with exotic flavors. A rich Sumatran wrapper compliments the right blend of flavoring, producing the delicious taste and an irresistible aroma everyone will love. JM's Dominican Honeys are available in Natural, Vanilla, Berry and Rum flavors.",
-      wrappers: ['Honey', 'Berry', 'Rum', 'Vanilla'],
+      wrappers: ['Honey', 'Rum', 'Vanilla', 'Berry'],
       sku: 'Dominican-Honey',
       name: "JM's Dominican Honey",
     };
@@ -40,8 +40,8 @@ export default class DominicanHoney extends React.Component {
       slidesToScroll: 1,
     };
     return (
-      <div className={`background__${sku}`}>
-        <div className="col-md-6 col-sm-12">
+      <div className={`background__${sku}`} id={sku}>
+        <div className="col-md-6 col-sm-10 cigar-gutters">
           <h2 className="our-cigars-heading">{name}</h2>
           <p className="cigar-caption">{description}</p>
         </div>
