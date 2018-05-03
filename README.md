@@ -9,7 +9,11 @@ luxe-react-redux-rxjs
 
 **Live Demo**: [www.jmtobac.co](www.jmtobac.co)
 
-A consumer facing marketing template. Currently under active development. Feel free to rip for your own projects. 😮😎
+A consumer facing marketing template. Following currently under active development:
+- API for Ecomm
+- Redux + Google Maps Store Locator
+
+ Feel free to rip for your own projects. 😮😎
 #### Contents
 
 1. [Prerequisites](#Prerequisites)
