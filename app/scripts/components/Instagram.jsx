@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import { ActionTypes } from 'constants/index';
 import { fetchLatestPosts } from 'actions/index';
 
-
 import Loader from 'components/Loader';
 
 export class Instagram extends React.Component {

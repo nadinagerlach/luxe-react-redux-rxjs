@@ -69,5 +69,5 @@ export function request(action: Object = {}): Promise<*> {
  * @returns {string}
  */
 export function parseError(error: string): string {
-  return error || 'Something went wrong';
+  return error || 'Something went wrong with ajax, check up on it like Beyonce';
 }

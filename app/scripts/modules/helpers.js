@@ -6,7 +6,7 @@
  */
 
 /**
- * Generate reducer.
+ * Create reducer.
  *
  * @param {Object} initialState
  * @param {Object} handlers

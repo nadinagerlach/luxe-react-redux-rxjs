@@ -1,6 +1,6 @@
 /**
- * @module Epics/userLogin
- * @desc User
+ * @module Epics/github
+ * @desc Github
  */
 
 import { Observable } from 'rxjs/Observable';
