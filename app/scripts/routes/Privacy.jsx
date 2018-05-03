@@ -37,7 +37,7 @@ export default class PrivacyPolicy extends React.Component {
             <h4 className="tagline">{tagline} {this.state.date}</h4>
           </div>
         </div>
-        <div className="app__home__marketingblock">
+          <div className="app__page__grid">
           <div className="gutters">
             <p>Welcome to our Web Site (the “Site”).&nbsp;This Site is administered by JM tobacco (“JM”) in Los Angeles, CA, USA.&nbsp;We are committed to protecting the privacy of Internet users who visit our Site.&nbsp;This Privacy Practices Policy (“Privacy Policy”) is intended to inform you of the ways in which this Site collects information for the JM brand featured on the Site (the “Brand”), the uses for that information, and the ways in which we will protect any personal information you choose to provide us.&nbsp;</p>
 
@@ -68,7 +68,7 @@ export default class PrivacyPolicy extends React.Component {
             <ul>
               <li><strong>Agents and Service Providers.</strong>&nbsp;We sometimes contract with other companies and individuals to perform functions or services on our behalf.&nbsp;They may have access to Personal Information needed to perform their functions, but are restricted from using the Personal Information for purposes other than providing services for us.</li>
               <li><strong>Business Transfers.</strong> In the event that our business is transferred to or merged with another company or entity, your Personal Information may be transferred to another company or entity that is part of the business transfer or merger.&nbsp;</li>
-              <li><strong>Legal Matters.</strong> We may preserve and disclose any Personal Information and any information about your use of this Site if we have a good faith belief that such action is necessary to: (a) protect and defend the rights, property or safety of JM, its affiliates, other users of this Site, or the public; (b) enforce the Site’s <strong><a href="/terms-use">TERMS OF USE</a></strong>&nbsp;or (c) respond to claims that any content violates the rights of third-parties. We may also disclose information as we deem necessary to satisfy any applicable law, regulation, legal process or governmental request.</li>
+              <li><strong>Legal Matters.</strong> We may preserve and disclose any Personal Information and any information about your use of this Site if we have a good faith belief that such action is necessary to: (a) protect and defend the rights, property or safety of JM, its affiliates, other users of this Site, or the public; (b) enforce the Site’s <strong><a href="/terms">TERMS OF USE</a></strong>&nbsp;or (c) respond to claims that any content violates the rights of third-parties. We may also disclose information as we deem necessary to satisfy any applicable law, regulation, legal process or governmental request.</li>
             </ul>
 
             <p>The Personal Information we receive will be used in our marketing, promotion and advertising of the Brand.&nbsp;As a result of providing us with your contact information, we may contact you by sending you mailings or other communications (electronic or otherwise) regarding the Brand’s products, services, promotions, or upcoming events that we believe may be of interest to you. We may also ask you (or have a service provider ask on your behalf) to participate in a survey seeking information or opinions related to our category of products. &nbsp;</p>

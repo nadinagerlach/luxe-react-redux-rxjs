@@ -7,7 +7,7 @@ export default class Espanola extends React.Component {
     super(props);
 
     this.state = {
-      baseUrl: 'https://res.cloudinary.com/jmtoabcco/image/upload/v1524155729',
+      baseUrl: 'https://res.cloudinary.com/jmtoabcco/image/upload/v1525198429',
       allSkus: ['Espanola'],
       description: "Created in the Espanola Republic over 20 years ago by craftsmen schooled in their long standing tradition, the Española cigar combines the finest, most patiently cultivated tobaccos, to create a smoke like no other. This cigar is smooth and well-balanced with a subtle sweetness gleaned from its Connecticut and Maduro wrappers. The Española Fine Cigar gives the smoker a pleasure that can only be gained by cigars made in the time-honored tradition. ",
       wrappers: ['Maduro', 'Conneticut'],

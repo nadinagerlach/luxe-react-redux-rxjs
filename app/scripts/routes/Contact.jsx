@@ -36,7 +36,7 @@ export default class Contact extends Component {
             <div className="app__home__find-your-blend">
               <div id="form-main">
                 <div id="form-div">
-                  <h5 className="verification__subtitle" id="no-space-contact">Contact JM</h5>
+                  <h5 className="verification__subtitle" id="no-space-contact">Send JM a message</h5>
 
                   <form className="form" id="form1" method="POST" action="https://formspree.io/jmtobaccosite@gmail.com">
                     <fieldset>
@@ -63,11 +63,9 @@ export default class Contact extends Component {
                         <span className="input-group-btn">
                           <button className="button" type="submit" value="Send">Send</button>
                         </span>
-                        <span className="input-group-btn">
-                          <button className="button" type="submit" value="Send">Send</button>
-                        </span>
                       </div>
                       <div>
+                        <h5 className="verification__subtitle" id="no-space-contact">Additional Contacts</h5>
                         <div id="accordion" role="tablist" aria-multiselectable="true">
                           <div className="card">
                             <div className="card-header" role="tab" id="headingTwo">
@@ -76,50 +74,64 @@ export default class Contact extends Component {
                                   data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
                                   aria-controls="collapseFive"
                                 >
-                            <i className="i-pencil" /> Press Inquiries
+                                  <i className="i-plus" /> Press Inquiries
                                 </a>
                               </h5>
                             </div>
 
                             <div id="collapseFive" className="collapse" role="tabpanel" aria-labelledby="headingFive">
                               <div className="card-block">
-                                <p>Anto</p>
+                                <p>
+                                  JM Tobacco
+                                  <br />
+                                3018 N Coolidge Ave
+                                  <br />
+                                Los Angeles, CA
+                                  <br />
+                                90039 US
+                                  <br />
+                                  <a href="mailto:jmtobaccosite@gmail.com">info@jmtobacco.com</a>
+                                </p>
                               </div>
                             </div>
                           </div>
-                        <div className="card">
+                          <div className="card">
                             <div className="card-header" role="tab" id="headingSix">
-                              <h5 className="mb-0">
+                            <h5 className="mb-0">
                                 <a
                                   className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
                                   aria-expanded="false" aria-controls="collapseSix"
                                 >
-                            <i className="i-thumbs-up" /> Social Media
+                                  <i className="i-plus" /> Social Media
                                 </a>
                               </h5>
-                            </div>
-                            <div id="collapseSix" className="collapse" role="tabpanel" aria-labelledby="headingSix">
-                              <div className="card-block">
-                                <p>Stranger Social</p>
-                              </div>
-                            </div>
                           </div>
-                        <div className="card">
+                            <div id="collapseSix" className="collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div className="card-block">
+                            <p>
+                              Stranger Social
+                                  <br />
+                                  <a href="mailto:hello@strangersocial.com">hello@strangersocial.com</a>
+                                </p>
+                              </div>
+                          </div>
+                          </div>
+                          <div className="card">
                             <div className="card-header" role="tab" id="headingSeven">
-                              <h5 className="mb-0">
+                            <h5 className="mb-0">
                                 <a
                                   className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"
                                   aria-expanded="false" aria-controls="collapseSeven"
                                 >
-                                  <i className="i-envelope" /> Customer Support
+                                  <i className="i-plus" /> Customer Support
                                 </a>
                               </h5>
-                            </div>
+                          </div>
                             <div id="collapseSeven" className="collapse" role="tabpanel" aria-labelledby="headingSeven">
-                              <div className="card-block">
+                            <div className="card-block">
                                 <p> 3018 N Coolidge Ave<br />Los Angeles, CA<br />90039 US</p>
                               </div>
-                            </div>
+                          </div>
                           </div>
                         </div>
                       </div>

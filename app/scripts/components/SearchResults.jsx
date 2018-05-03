@@ -14,7 +14,7 @@ const Hit = ({ item }) => {
       <article className="hit wow fadeInUp animated" style={pairingImageStyle}>
         <div className="product-picture-wrapper">
           <div className="product-picture">
-            <h2 className="our-cigars-heading"> <Highlight attribute="name" hit={item} /></h2>
+            <h2 className="blend-heading"> <Highlight attribute="name" hit={item} /></h2>
             <a data-toggle="modal" data-target={`#${item.objectID}`} className="button">
               <div className="button-cell">
                 <span className="button-text-wrapper" id="button-hover">View Recipe</span>

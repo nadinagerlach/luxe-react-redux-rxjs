@@ -83,6 +83,15 @@
         margin: 0px 0px 20px;
         padding: 0;
 
+          .gutters {
+            text-align: left;
+            padding: 1em 30px 1em 30px;
+            p {
+              font-size: 14px !important;
+
+            }
+          }
+
       p {
         font-size: 20px;
       }
@@ -311,6 +320,3 @@
 }
 
 
-// .Grid--gutters {
-//   margin: -1em 0 1em -1em;
-// }

@@ -6,7 +6,7 @@ export default class DominicanHoney extends React.Component {
     super(props);
 
     this.state = {
-      baseUrl: 'https://res.cloudinary.com/jmtoabcco/image/upload/v1524155729',
+      baseUrl: 'https://res.cloudinary.com/jmtoabcco/image/upload/v1525198423',
       allSkus: ['Dominican', 'Dominican-Honey', 'Conneticut', 'Corojo'],
       description: "JM's Dominican Honeys combine smooth cigars with exotic flavors. A rich Sumatran wrapper compliments the right blend of flavoring, producing the delicious taste and an irresistible aroma everyone will love. JM's Dominican Honeys are available in Natural, Vanilla, Berry and Rum flavors.",
       wrappers: ['Honey', 'Rum', 'Vanilla', 'Berry'],

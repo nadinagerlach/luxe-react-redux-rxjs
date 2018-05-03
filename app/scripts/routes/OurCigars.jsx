@@ -1,6 +1,5 @@
 import React from 'react';
-import Slider from 'react-slick';
-import { HashLink as Jump } from 'react-router-hash-link';
+import { HashLink as Link } from 'react-router-hash-link';
 
 // import classnames from 'classnames';
 import Dominican from '../components/SKU/Dominican';
@@ -41,10 +40,18 @@ export default class OurCigars extends React.Component {
             <h1 className="title">{title}</h1>
             <h4 className="tagline">{tagline}</h4>
             <div className="navigation">
-              <div className="navigation__button"><Jump to="/ourcigars/#Dominican" className="button" id="yellow"><div className="button-cell"><span className="button-text-wrapper">Dominican</span></div></Jump></div>
-              <div className="navigation__button"><Jump to="/ourcigars/#Nicaraguan" className="button button-blue"><div className="button-cell"><span className="button-text-wrapper">Nicaraguan</span></div></Jump></div>
-              <div className="navigation__button"><Jump to="/ourcigars/#Espanola" className="button"><div className="button-cell"><span className="button-text-wrapper">Espanola</span></div></Jump></div>
-              <div className="navigation__button"><Jump to="/ourcigars/#Zoidian" className="button button-burg"><div className="button-cell"><span className="button-text-wrapper">Zoidian</span></div></Jump></div>
+              <div className="navigation__button">
+                <Link to="/our-cigars/#Dominican" className="button">
+                  <div className="button-cell">
+                    <span className="button-text-wrapper">
+                      Dominican
+                    </span>
+                  </div>
+                </Link>
+              </div>
+              <div className="navigation__button"><Link smooth to="/our-cigars/#Nicaraguan" className="button button-blue"><div className="button-cell"><span className="button-text-wrapper">Nicaraguan</span></div></Link></div>
+              <div className="navigation__button"><Link smooth to="/our-cigars/#Espanola" className="button"><div className="button-cell"><span className="button-text-wrapper">Espanola</span></div></Link></div>
+              <div className="navigation__button"><Link smooth to="/our-cigars/#Zoidian" className="button button-burg"><div className="button-cell"><span className="button-text-wrapper">Zoidian</span></div></Link></div>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 
 import photo from '../../../assets/media/images/our-story/about-fw2.jpg';
+
 export default class OurStory extends React.Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
@@ -75,6 +76,7 @@ export default class OurStory extends React.Component {
             <div className="Demo">
               <h2
                 className={`subtagline ${fadeUp}`}
+                id="1975"
               >
                 1977-1985
               </h2>
@@ -84,13 +86,13 @@ export default class OurStory extends React.Component {
               >
                 Our Founding
               </h2>
-              <p className={`lead ${fadeUp}`} id="1975">
+              <p className={`lead ${fadeUp}`}>
               The early years that began the JM legacy.
               </p>
               <p className={`line-div ${fadeUp}`} >&#8214;</p>
               <h2 className={`subtitle ${fadeUp}`} >1977</h2>
               <p className={`lead ${fadeUp}`}>
-              Anto Mahroukian, current President of JM Tobacco, was born.              
+              Anto Mahroukian, current President of JM Tobacco, was born.
               </p>
               <p className={`line-div ${fadeUp}`}>&#8214;</p>
               <h2 className={`subtitle ${fadeUp}`} >
@@ -110,7 +112,7 @@ export default class OurStory extends React.Component {
         </div>
         <div className="app__page__grid" style={comingOfAge}>
           <div className="app__page__grid__cell u-med-1of2 u-small-full align__center">
-            <img className="wow fadeInRight left animated" src="https://res.cloudinary.com/dygn/image/upload/v1516759912/1995_mbtvxt.jpg" alt="1995" />
+            <img className="wow fadeInLeft left animated" src="https://res.cloudinary.com/dygn/image/upload/v1516759912/1995_mbtvxt.jpg" alt="1995" />
           </div>
           <div className="app__page__grid__cell u-med-1of2 u-small-full">
             <div className="Demo">
@@ -127,9 +129,14 @@ export default class OurStory extends React.Component {
         <div className="app__page__grid" style={growingTheFamily}>
           <div className="app__page__grid__cell u-med-1of2 u-small-full">
             <div className="Demo">
-              <h2 className={`subtagline ${fadeUp}`}>1996-2005</h2>
+              <h2
+                className={`subtagline ${fadeUp}`}
+                id="1996"
+              >
+                1996-2005
+              </h2>
               <h2 className={`subtitle ${fadeUp}`} id="no-space" >Growing the Family</h2>
-              <p className={`lead ${fadeUp}`} id="1996">Anto Mahroukian taking formal leadership of the company as it continues to grow.</p>
+              <p className={`lead ${fadeUp}`} >Anto Mahroukian taking formal leadership of the company as it continues to grow.</p>
               <p className={`line-div ${fadeUp}`}>&#8214;</p>
               <h2 className={`subtitle ${fadeUp}`}>2000</h2>
               <p className={`lead ${fadeUp}`}>JM's Dominican is launched.</p>
@@ -151,13 +158,13 @@ export default class OurStory extends React.Component {
           </div>
           <div className="app__page__grid__cell u-med-1of2 u-small-full">
             <div className="Demo">
-              <h2 className={`subtagline ${fadeUp}`} >2006-Present</h2>
+              <h2 className={`subtagline ${fadeUp}`} id="2006">2006-Present</h2>
               <h2 className={`subtitle ${fadeUp}`} id="no-space" >Modern Era</h2>
-              <p className={`lead ${fadeUp}`} id="2006">An exciting new era of innovation begins with the biggest expansion to our family of brands with Zoidian cigars.</p>
+              <p className={`lead ${fadeUp}`}>An exciting new era of innovation begins with the biggest expansion to our family of brands with Zoidian cigars.</p>
               <p className={`line-div ${fadeUp}`}>&#8214;</p>
               <h2 className={`subtitle ${fadeUp}`} >2017</h2>
               <p className={`lead ${fadeUp}`}>JM Tobacco introduces Zoidian cigars.</p>
-              <img className="img-fluid mx-auto wow fadeInRight right animated" src="https://res.cloudinary.com/dygn/image/upload/v1516759924/2017_fwqk2l.jpg" alt="2017" />
+              <img className={`app__page__grid__image ${fadeUp}`} src="https://res.cloudinary.com/dygn/image/upload/v1516759924/2017_fwqk2l.jpg" alt="2017" />
             </div>
           </div>
         </div>

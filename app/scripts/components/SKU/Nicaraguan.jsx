@@ -7,7 +7,7 @@ export default class Nicaraguan extends React.Component {
     super(props);
 
     this.state = {
-      baseUrl: 'https://res.cloudinary.com/jmtoabcco/image/upload/v1524155729',
+      baseUrl: 'https://res.cloudinary.com/jmtoabcco/image/upload/v1525198437',
       allSkus: ['Nicaraguan', 'Nicaraguan-Honey', 'Conneticut', 'Corojo'],
       description: "JM's Nicaraguan Cigars are the newest addition to the JM family. These cigars are hand rolled from well-aged Nicarguan Cuban seed tobacco leaves, grown in the rich region of Estelli, Nicaragua. They are then wrapped with beautiful Sumatra and Maduro wrappers. The medium-bodied Nicaraguan delivers a creamy-smooth smoke, with hints of chocolate and spice, sure to please the palate. ",
       wrappers: ['Sumatra', 'Maduro'],
@@ -41,7 +41,7 @@ export default class Nicaraguan extends React.Component {
       slidesToScroll: 1,
     };
     return (
-      <div className={`background__${sku}`}>
+      <div className={`background__${sku}`} id={sku}>
         <div className="col-md-6 col-sm-10 cigar-gutters">
           <h2 className="our-cigars-heading">{name}</h2>
           <p className="cigar-caption">{description}</p>
