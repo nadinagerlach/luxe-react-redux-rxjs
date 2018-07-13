@@ -1,13 +1,10 @@
 ![](https://lh3.googleusercontent.com/rVduSg1MkKOFJCTY2mzz1q30wSEk8VmhpH7_cJuz-Y9CX_JRuUvvtiFF79wKLNmbN1XNEj44JYe5dSE=w3200-h1746-rw)
 luxe-react-redux-rxjs
 =======================
-A consumer facing marketing template. Following currently under active development:
-- API for Ecomm
-- Redux + Google Maps Store Locator
+A consumer facing marketing template [WIP]
 
 #### Contents
 
-1. [Prerequisites](#Prerequisites)
 1. [Getting Started](#Getting)
 1. [Development](#development)
 1. [Deployment](#deployment)
@@ -20,17 +17,12 @@ Prerequisites
 - Command Line Tools
  - <img src="http://dc942d419843af05523b-ff74ae13537a01be6cfec5927837dcfe.r14.cf1.rackcdn.com/wp-content/uploads/windows-8-50x50.jpg" height="17">&nbsp;**Windows:** [Visual Studio](https://www.visualstudio.com/products/visual-studio-community-vs)
  - <img src="https://lh5.googleusercontent.com/-2YS1ceHWyys/AAAAAAAAAAI/AAAAAAAAAAc/0LCb_tsTvmU/s46-c-k/photo.jpg" height="17">&nbsp;**Ubuntu** / <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Logo_Linux_Mint.png" height="17">&nbsp;**Linux Mint:** `sudo apt-get install build-essential`
-  - [create-react-app](https://www.react.js)🙌
-
-**Note:** If you are new to Node or Express, check out the
-[Node.js and Express 101](https://www.youtube.com/watch?v=BN0JlMZCtNU)
-screencast by Alex Ford that teaches Node and Express from scratch. Alternatively,
-here is another great tutorial for complete beginners - [Getting Started With Node.js, Express, MongoDB](http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/).
-
-**Note:** If you are new to React, RxJS, and Redux, check out OG React documentation, as well as [TODO] this live React+Redux / Node testing workshop by Kent C. Dodds, showcasing [how a React+Redux and Node stacks work with TDD](https://www.youtube.com/watch?v=DdqiXcYDv-8).
-
+  - [create-react-app](https://www.react.js )🙌
+  
 Getting Started
 -------------
+Check you have Node installed (if you're really new, check out [Node.js and Express 101](https://www.youtube.com/watch?v=BN0JlMZCtNU)).
+
 The easiest way to get started is to clone the repository:
 
 ```bash
@@ -69,13 +61,6 @@ npm i -s && npm run start
 
 `npm test`
 `npm run test:watch`
-
-### Browser Automation
-- nightwatch ^0.9
-- selenium ^3.4
-
-`npm run test:automation` (with dev-server already running)
-`npm run test:automation:start` (start dev-server, run tests and exit)
 
 A note on API Keys
 ------------------
